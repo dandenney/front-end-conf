@@ -1,0 +1,691 @@
+{% block content %}
+
+  <div class="presentation inner">
+
+    <h1>jQuery Nuts, Bolts&nbsp;and&nbsp;Bling</h1>
+
+    <div class="iframe">
+      <script src="http://speakerdeck.com/embed/4e381d046a6e810001005005.js?size=preview"></script>
+    </div>
+
+    <aside>
+
+      <h5>Presented by:</h5>
+        
+      <img src="{{ "doug-neiner.jpg" | asset_url }}" alt="Doug Neiner">
+
+      <img src="{{ "doug-neiner.svg" | asset_url }}" alt="Doug Neiner" class="character">
+      
+      <h4>Doug Neiner</h4>
+
+      <p>Doug Neiner is a front-end web developer with a love for semantic markup, powerful CSS, and efficient, reusable jQuery/JavaScript. With over 12 years of web development experience, Doug works to combine his love for design with his passion for new technology as a Senior Designer at appendTo, LLC.</p>
+      
+      <p class="h5">July 22, 2011 - 11:30AM to 12:30AM</p>
+
+    </aside>
+
+  </div>
+
+  <section id="feedback" class="inner">
+
+    <h2>Feedback</h2>
+
+    <ul class="tweets">
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @murdaugh: Very impressed with @dougneiner. #jQuery #frontendconf #fb</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/intriguewd" title="intriguewd"><img src="http://a3.twimg.com/profile_images/448898524/INTRIGUE_logo-crop_normal.jpg" alt="intriguewd"/></a></li>
+          <li class="tw-tweet">I need to learn Jquery like @dougneiner #frontendconf #neverhappen</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/world_famous" title="world_famous"><img src="http://a0.twimg.com/profile_images/831695864/blockhead_normal.jpg" alt="world_famous"/></a></li>
+          <li class="tw-tweet">noticing @dandenney reminds me of E from #Entourage #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/webcraftsman" title="webcraftsman"><img src="http://a1.twimg.com/profile_images/1180017791/profile-pict_normal.jpg" alt="webcraftsman"/></a></li>
+          <li class="tw-tweet">@beep looking really sharp (dressed up with tie.) Looking forward to hearing his talk. #responsivedesign #frontendconf #designprofessional</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/world_famous" title="world_famous"><img src="http://a0.twimg.com/profile_images/831695864/blockhead_normal.jpg" alt="world_famous"/></a></li>
+          <li class="tw-tweet">very impressed with the hearing impaired lady #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/tabithakarcher" title="tabithakarcher"><img src="http://a1.twimg.com/profile_images/1411035454/38892ce_normal.jpg" alt="tabithakarcher"/></a></li>
+          <li class="tw-tweet">@gabrielvaldivia aww cmon gabe! Lol #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/cogsprocket" title="cogsprocket"><img src="http://a3.twimg.com/profile_images/1340764411/IMG_0080_normal.jpg" alt="cogsprocket"/></a></li>
+          <li class="tw-tweet">Going to have to hook up with @thedotmack.  I didn't know he was going to be here. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/murdaugh" title="murdaugh"><img src="http://a1.twimg.com/profile_images/1172971260/bryan-square_normal.png" alt="murdaugh"/></a></li>
+          <li class="tw-tweet">Very impressed with @dougneiner. #jQuery #frontendconf #fb</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/gabrielvaldivia" title="gabrielvaldivia"><img src="http://a0.twimg.com/profile_images/1303557742/eightbit-aca81297-c2d0-449a-98d2-0c18c484c3a0_normal.png" alt="gabrielvaldivia"/></a></li>
+          <li class="tw-tweet">.@johnneiner just made my head hurt with his ultra speed while coding. What an awesome dude though! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/rchlm" title="rchlm"><img src="http://a1.twimg.com/profile_images/1361721039/rich_normal.jpg" alt="rchlm"/></a></li>
+          <li class="tw-tweet">Pretty sure the "For Hearing Impaired" lady is signing the Lord of the Rings trilogy. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/MinaMarkham" title="MinaMarkham"><img src="http://a3.twimg.com/profile_images/1114338590/avatar-240x240_normal.jpg" alt="MinaMarkham"/></a></li>
+          <li class="tw-tweet">RT @allisongrayce: I am impressed that the sign language person can keep up with Doug Neiner! What is the sign for jQuery? Dribbble? Hmm ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brandmitchell" title="brandmitchell"><img src="http://a3.twimg.com/profile_images/1352367031/IMG_20100622_170844_normal.png" alt="brandmitchell"/></a></li>
+          <li class="tw-tweet">RT @ericazares: Lando's Pancake Hat @dribbble: http://t.co/StUo8mv @thedotmack #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/world_famous" title="world_famous"><img src="http://a0.twimg.com/profile_images/831695864/blockhead_normal.jpg" alt="world_famous"/></a></li>
+          <li class="tw-tweet">RT @allisongrayce: I am impressed that the sign language person can keep up with Doug Neiner! What is the sign for jQuery? Dribbble? Hmm ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/BigSea" title="BigSea"><img src="http://a2.twimg.com/profile_images/1303530785/Screen_shot_2010-04-19_at_10.01.15_AM_normal.png" alt="BigSea"/></a></li>
+          <li class="tw-tweet">Despite the delicious offer of free pizza, we're opting for beer and food at Three Birds #frontendconf  Join us!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Lando's pancake hat by @thedotmack coded by @dougneiner #frontendconf http://twitpic.com/5u2cv0</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dougmays" title="dougmays"><img src="http://a1.twimg.com/profile_images/1455360060/member_6076056_normal.jpeg" alt="dougmays"/></a></li>
+          <li class="tw-tweet">@dougneiner i dont suppose this talk video is available online anywhere? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ericazares" title="ericazares"><img src="http://a2.twimg.com/profile_images/1429358483/image_normal.jpg" alt="ericazares"/></a></li>
+          <li class="tw-tweet">Lando's Pancake Hat @dribbble: http://t.co/StUo8mv @thedotmack #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/threecleartones" title="threecleartones"><img src="http://a3.twimg.com/sticky/default_profile_images/default_profile_4_normal.png" alt="threecleartones"/></a></li>
+          <li class="tw-tweet">kudos to the #frontendconf organizers for the free pizza!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a1.twimg.com/profile_images/1403680614/profile-pic_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">I am impressed that the sign language person can keep up with Doug Neiner! What is the sign for jQuery? Dribbble? Hmm.. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ejstembler" title="ejstembler"><img src="http://a1.twimg.com/profile_images/69499407/wp_cutaway_1024_normal.jpg" alt="ejstembler"/></a></li>
+          <li class="tw-tweet">Really enjoying the jQuery session at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/douglogue" title="douglogue"><img src="http://a3.twimg.com/profile_images/645238720/t_normal.jpg" alt="douglogue"/></a></li>
+          <li class="tw-tweet">Listen here self.. Yes you can run on pure caffeine. #1st5hrdown #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/PatNarciso" title="PatNarciso"><img src="http://a3.twimg.com/profile_images/408497195/l_69298b8c125fc2c9ce442b8a877a6904_normal.jpg" alt="PatNarciso"/></a></li>
+          <li class="tw-tweet">"CacheUp": the filling of a cache #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jackiesmith1011" title="jackiesmith1011"><img src="http://a0.twimg.com/profile_images/1425024993/me-2_normal.jpg" alt="jackiesmith1011"/></a></li>
+          <li class="tw-tweet">Way awesomer. He's speaking my language! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @lorielue: Love OCD coders who use proper indention :) #frontendconf @dougneiner</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jpetersen" title="jpetersen"><img src="http://a1.twimg.com/profile_images/1312063322/Jesse-brown-shirt-full_normal.jpg" alt="jpetersen"/></a></li>
+          <li class="tw-tweet">@rchlm She's having to do a lot of word spelling, LOL@ #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jpetersen" title="jpetersen"><img src="http://a1.twimg.com/profile_images/1312063322/Jesse-brown-shirt-full_normal.jpg" alt="jpetersen"/></a></li>
+          <li class="tw-tweet">Conference poll: Is TextMate seriously worth the $57 price over plain old TextEdit? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/rchlm" title="rchlm"><img src="http://a1.twimg.com/profile_images/1361721039/rich_normal.jpg" alt="rchlm"/></a></li>
+          <li class="tw-tweet">Do you think the "For Hearing Impaired" lady has the slightest clue what @dougneiner is talking about? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jmchafin" title="jmchafin"><img src="http://a0.twimg.com/profile_images/1309258558/tweetpic_normal.jpg" alt="jmchafin"/></a></li>
+          <li class="tw-tweet">RT @pirateheist: Good call on the bacon @dandenney! This is one of the few events it would be so  appreciated on every level.  #frontend ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ibjhb" title="ibjhb"><img src="http://a2.twimg.com/profile_images/1047794449/ibjhb-Eiffel_normal.jpg" alt="ibjhb"/></a></li>
+          <li class="tw-tweet">Using mockjax and jQuery templating is EXACTLY how we build enterprise websites (desktop and mobile). Very cool!!! @dougneiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brianburridge" title="brianburridge"><img src="http://a1.twimg.com/profile_images/1366751587/Photo1-2_normal.jpg" alt="brianburridge"/></a></li>
+          <li class="tw-tweet">RT @Soben: Chocolate-covered bacon, cake, and soon to be food and #beer. This weekend is not going to be healthy for me. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a1.twimg.com/profile_images/1403680614/profile-pic_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">@JHaldane would love Doug Neiner's talk on jQuery nuts, bolts and bling! We'll take notes to share on Tues! cc @ohthatmeagan #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/HelloJonnyOh" title="HelloJonnyOh"><img src="http://a0.twimg.com/profile_images/1281119703/jonnyoh_normal.png" alt="HelloJonnyOh"/></a></li>
+          <li class="tw-tweet">#frontendconf - Really bummed that I am missing the Frontend Design Conference. That is two regrets this month. The first was #combichrist.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Script tags only render if they are typed javascript (type="type/javascript" ) #frontendconf @dougneiner</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a2.twimg.com/profile_images/1180341979/home_twitter_normal.jpg" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">Wise call to stop testing UI in the mindset of a builder from @rjs #frontendconf http://instagr.am/p/IPgcE/</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Impressto" title="Impressto"><img src="http://a3.twimg.com/profile_images/1140216871/impressto_avatar_normal.jpg" alt="Impressto"/></a></li>
+          <li class="tw-tweet">RT @derekbender: Just finished being interviewed by @Blueys for @unmatchedstyle what a sweet gig. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/wddbs" title="wddbs"><img src="http://a3.twimg.com/profile_images/1386227472/twittericon_normal.png" alt="wddbs"/></a></li>
+          <li class="tw-tweet">RT @xirclebox: This #jQuery session by @dougneiner is great. Good info and best practices #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">This #jQuery session by @dougneiner is great. Good info and best practices #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/LarryHipp" title="LarryHipp"><img src="http://a0.twimg.com/profile_images/118479269/Copy_of_IMG_1374_normal.JPG" alt="LarryHipp"/></a></li>
+          <li class="tw-tweet">RT @stevenbristol: .@dougneiner just pronounced it "jay-sun." If he doesn't know then nobody does. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jpetersen" title="jpetersen"><img src="http://a1.twimg.com/profile_images/1312063322/Jesse-brown-shirt-full_normal.jpg" alt="jpetersen"/></a></li>
+          <li class="tw-tweet">@stevenbristol @dougneiner Reminds me of the great SQL pronunciation debate at WordCamp Orlando 2009. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lorielue" title="lorielue"><img src="http://a2.twimg.com/profile_images/1246537167/NY_normal.png" alt="lorielue"/></a></li>
+          <li class="tw-tweet">Love OCD coders who use proper indention :) #frontendconf @dougneiner</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jakeasmith" title="jakeasmith"><img src="http://a2.twimg.com/profile_images/1433654626/Screen_shot_2011-07-09_at_7.30.40_normal.png" alt="jakeasmith"/></a></li>
+          <li class="tw-tweet">RT @GavinStark: Check with your devs before publishing designs to customers or you'll get stabbed. #frontendconf  http://t.co/aJlXEag</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/stevenbristol" title="stevenbristol"><img src="http://a1.twimg.com/profile_images/1397611859/steve3_normal.jpg" alt="stevenbristol"/></a></li>
+          <li class="tw-tweet">.@dougneiner just pronounced it "jay-sun." If he doesn't know then nobody does. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jpetersen" title="jpetersen"><img src="http://a1.twimg.com/profile_images/1312063322/Jesse-brown-shirt-full_normal.jpg" alt="jpetersen"/></a></li>
+          <li class="tw-tweet">How the heck did I miss the chocolate covered protein at #frontendconf?</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Blueys" title="Blueys"><img src="http://a3.twimg.com/profile_images/1059004456/41723_12600313_6095_n_normal.jpg" alt="Blueys"/></a></li>
+          <li class="tw-tweet">I think the #unmatchedstyle crew is going to join the cool kids at three bird for lunch. #frontendconf Come meet us!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Mock Your Ajax Requests with Mockjax for Rapid Development | Enterprise jQuery
+http://bit.ly/qOSxs7 #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/TwoGiraffes" title="TwoGiraffes"><img src="http://a1.twimg.com/profile_images/1351023105/photo_normal.jpg" alt="TwoGiraffes"/></a></li>
+          <li class="tw-tweet">RT @stevenbristol: “@erikstmartin: @stevenbristol just ordered 50 pizzas for #frontendconf” &lt;- @allanbranch too!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/pirateheist" title="pirateheist"><img src="http://a1.twimg.com/profile_images/1379158250/Screen_shot_2011-06-02_at_2.18.20_PM_normal.png" alt="pirateheist"/></a></li>
+          <li class="tw-tweet">Good call on the bacon @dandenney! This is one of the few events it would be so  appreciated on every level.  #frontendconf #internetgeeks</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/derekbender" title="derekbender"><img src="http://a3.twimg.com/profile_images/1370033782/4_normal.jpg" alt="derekbender"/></a></li>
+          <li class="tw-tweet">Just finished being interviewed by @Blueys for @unmatchedstyle what a sweet gig. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/stevenbristol" title="stevenbristol"><img src="http://a1.twimg.com/profile_images/1397611859/steve3_normal.jpg" alt="stevenbristol"/></a></li>
+          <li class="tw-tweet">“@erikstmartin: @stevenbristol just ordered 50 pizzas for #frontendconf” &lt;- @allanbranch too!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/monooptical" title="monooptical"><img src="http://a2.twimg.com/profile_images/604779471/je1ZA_normal.jpg" alt="monooptical"/></a></li>
+          <li class="tw-tweet">RT @lilsooner: Mmmmm chocolate covered bacon at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Soben" title="Soben"><img src="http://a2.twimg.com/profile_images/1378357886/avatar_normal.jpg" alt="Soben"/></a></li>
+          <li class="tw-tweet">Chocolate-covered bacon, cake, and soon to be food and #beer. This weekend is not going to be healthy for me. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/radinfo" title="radinfo"><img src="http://a2.twimg.com/profile_images/1200951259/me-bell-blue_normal.jpg" alt="radinfo"/></a></li>
+          <li class="tw-tweet">RT @hotspacejustice: Want a job @Grooveshark? Come find Joe, @dustinallenpace or @jmsbrns at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/see_kay" title="see_kay"><img src="http://a2.twimg.com/profile_images/1357664762/buh_normal.jpg" alt="see_kay"/></a></li>
+          <li class="tw-tweet">Doug Neiner.. my jQuery hero! http://yfrog.com/ki3vmfqj #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/IsmaelBurciaga" title="IsmaelBurciaga"><img src="http://a1.twimg.com/profile_images/1447426337/5722415393_9648133eaa_z_normal.jpg" alt="IsmaelBurciaga"/></a></li>
+          <li class="tw-tweet">if you get paid by the hour, writing "jQuery" instead of "$" in your code might be beneficial but DONT DO IT! (@dougneiner) #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/PatNarciso" title="PatNarciso"><img src="http://a3.twimg.com/profile_images/408497195/l_69298b8c125fc2c9ce442b8a877a6904_normal.jpg" alt="PatNarciso"/></a></li>
+          <li class="tw-tweet">@dougneiner digging your session -- you're on fire! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/benmarte" title="benmarte"><img src="http://a3.twimg.com/profile_images/1065388918/27370_569653453_1479_q_normal.jpg" alt="benmarte"/></a></li>
+          <li class="tw-tweet">So jealous of all the peeps @frontendconf I hope it's great #frontendconf #FML</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/webcraftsman" title="webcraftsman"><img src="http://a1.twimg.com/profile_images/1180017791/profile-pict_normal.jpg" alt="webcraftsman"/></a></li>
+          <li class="tw-tweet">Enjoyed chatting with @brand_clay during the break. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ericazares" title="ericazares"><img src="http://a2.twimg.com/profile_images/1429358483/image_normal.jpg" alt="ericazares"/></a></li>
+          <li class="tw-tweet">Learning some jQuery #frontendconf  http://instagr.am/p/IPcSo/</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kellikreighbaum" title="kellikreighbaum"><img src="http://a0.twimg.com/profile_images/1346912695/profile-sm_reasonably_small_normal.jpg" alt="kellikreighbaum"/></a></li>
+          <li class="tw-tweet">Never seen so many apple products in one place #frontendconf gotta love it</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/wddbs" title="wddbs"><img src="http://a3.twimg.com/profile_images/1386227472/twittericon_normal.png" alt="wddbs"/></a></li>
+          <li class="tw-tweet">RT @dandenney: Doug Neiner at #frontendconf  http://instagr.am/p/IPcBA/</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a1.twimg.com/profile_images/1403680614/profile-pic_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">Yayyyy it works. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brianburridge" title="brianburridge"><img src="http://a1.twimg.com/profile_images/1366751587/Photo1-2_normal.jpg" alt="brianburridge"/></a></li>
+          <li class="tw-tweet">The @gauged2 and Tour Wrist teams will be having lunch at the Old Northeast Tavern. Feel free to join. #frontendconf http://ow.ly/1uSdpg</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dandenney" title="dandenney"><img src="http://a2.twimg.com/profile_images/1216037299/dan-social-avatar_normal.png" alt="dandenney"/></a></li>
+          <li class="tw-tweet">Doug Neiner at #frontendconf  http://instagr.am/p/IPcBA/</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kylecordes" title="kylecordes"><img src="http://a1.twimg.com/profile_images/582885123/kylesquare_normal.jpg" alt="kylecordes"/></a></li>
+          <li class="tw-tweet">It would be great to be at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Soben" title="Soben"><img src="http://a2.twimg.com/profile_images/1378357886/avatar_normal.jpg" alt="Soben"/></a></li>
+          <li class="tw-tweet">This will be good for me, hopefully :) RT @xirclebox: Listening to @DougNeiner talk about #jquery #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/wddbs" title="wddbs"><img src="http://a3.twimg.com/profile_images/1386227472/twittericon_normal.png" alt="wddbs"/></a></li>
+          <li class="tw-tweet">RT @hotspacejustice: Want a job @Grooveshark? Come find Joe, @dustinallenpace or @jmsbrns at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/miklb" title="miklb"><img src="http://a1.twimg.com/profile_images/1411180646/no_beard_normal.png" alt="miklb"/></a></li>
+          <li class="tw-tweet">"ugly working code always trumps pretty, broken code" - @dougneiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/unmatchedstyle" title="unmatchedstyle"><img src="http://a0.twimg.com/profile_images/750223819/Ums_icon_normal.png" alt="unmatchedstyle"/></a></li>
+          <li class="tw-tweet">First interview of the day with @derekbender #frontendconf   http://t.co/W7IS6Pe</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">"Write working code" @DougNeiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/pauljbeaton" title="pauljbeaton"><img src="http://a2.twimg.com/profile_images/1441517031/image_normal.jpg" alt="pauljbeaton"/></a></li>
+          <li class="tw-tweet">"Ugly working code trumps pretty broken code every time." @dougneiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brandmitchell" title="brandmitchell"><img src="http://a3.twimg.com/profile_images/1352367031/IMG_20100622_170844_normal.png" alt="brandmitchell"/></a></li>
+          <li class="tw-tweet">Chocolate covered bacon was ok, mini cupcakes were better. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lorielue" title="lorielue"><img src="http://a2.twimg.com/profile_images/1246537167/NY_normal.png" alt="lorielue"/></a></li>
+          <li class="tw-tweet">RT @DesignDocent: Ugly working code always trumps pretty broken code #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/DesignDocent" title="DesignDocent"><img src="http://a2.twimg.com/profile_images/1215080011/twitter_icon_normal.jpg" alt="DesignDocent"/></a></li>
+          <li class="tw-tweet">Ugly working code always trumps pretty broken code #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kellikreighbaum" title="kellikreighbaum"><img src="http://a0.twimg.com/profile_images/1346912695/profile-sm_reasonably_small_normal.jpg" alt="kellikreighbaum"/></a></li>
+          <li class="tw-tweet">RT @unmatchedstyle: Be mindful of design fatigue. - #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lorielue" title="lorielue"><img src="http://a2.twimg.com/profile_images/1246537167/NY_normal.png" alt="lorielue"/></a></li>
+          <li class="tw-tweet">RT @MinaMarkham: You guys are single-handedly trying to destroy my diet #frontendconf #BeStrong</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/intriguewd" title="intriguewd"><img src="http://a3.twimg.com/profile_images/448898524/INTRIGUE_logo-crop_normal.jpg" alt="intriguewd"/></a></li>
+          <li class="tw-tweet">I love code #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jpetersen" title="jpetersen"><img src="http://a1.twimg.com/profile_images/1312063322/Jesse-brown-shirt-full_normal.jpg" alt="jpetersen"/></a></li>
+          <li class="tw-tweet">Write working code - ugly working code always trumps pretty, broken code. @dougneiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/pirateheist" title="pirateheist"><img src="http://a1.twimg.com/profile_images/1379158250/Screen_shot_2011-06-02_at_2.18.20_PM_normal.png" alt="pirateheist"/></a></li>
+          <li class="tw-tweet">RT @hotspacejustice: Want a job @Grooveshark? Come find Joe, @dustinallenpace or @jmsbrns at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/grovesdesign" title="grovesdesign"><img src="http://a0.twimg.com/profile_images/1224194448/karen_normal.jpg" alt="grovesdesign"/></a></li>
+          <li class="tw-tweet">in Doug Neiner's session about #jQuery which I don't know a thing about....yet!  :) #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bybrandonbrown" title="bybrandonbrown"><img src="http://a0.twimg.com/profile_images/1180562381/kitty_normal.jpg" alt="bybrandonbrown"/></a></li>
+          <li class="tw-tweet">This jquery talk from Doug Neiner is going to be real good. I promise it's not the cupcakes talking. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/JJ_Web" title="JJ_Web"><img src="http://a3.twimg.com/profile_images/1137674223/9f1a466a-fbb2-488b-938e-458eb82fed1a_normal.png" alt="JJ_Web"/></a></li>
+          <li class="tw-tweet">The presentation I was most looking forward to! jQuery, Nuts, Bolts and Bling #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lorielue" title="lorielue"><img src="http://a2.twimg.com/profile_images/1246537167/NY_normal.png" alt="lorielue"/></a></li>
+          <li class="tw-tweet">Happy to be Getting into some code @dougneiner #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/erikstmartin" title="erikstmartin"><img src="http://a1.twimg.com/profile_images/115069408/me_normal.jpg" alt="erikstmartin"/></a></li>
+          <li class="tw-tweet">@stevenbristol just ordered 50 pizzas for #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a1.twimg.com/profile_images/1403680614/profile-pic_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">What wifi network is everyone on? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @nhagianis: Woot jquery talk! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a2.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Listening to @DougNeiner talk about #jquery #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bybrandonbrown" title="bybrandonbrown"><img src="http://a0.twimg.com/profile_images/1180562381/kitty_normal.jpg" alt="bybrandonbrown"/></a></li>
+          <li class="tw-tweet">RT @natashaisneat: Yummy cupcakes at #frontendconf !</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/MinaMarkham" title="MinaMarkham"><img src="http://a3.twimg.com/profile_images/1114338590/avatar-240x240_normal.jpg" alt="MinaMarkham"/></a></li>
+          <li class="tw-tweet">You guys are single-handedly trying to destroy my diet #frontendconf #BeStrong</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lilsooner" title="lilsooner"><img src="http://a2.twimg.com/profile_images/1225513165/steph_thumbNails_380x214px_normal.jpg" alt="lilsooner"/></a></li>
+          <li class="tw-tweet">Mmmmm chocolate covered bacon at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/nhagianis" title="nhagianis"><img src="http://a0.twimg.com/profile_images/1316558715/side_profile_normal.jpg" alt="nhagianis"/></a></li>
+          <li class="tw-tweet">Woot jquery talk! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/micky68" title="micky68"><img src="http://a3.twimg.com/profile_images/1455338397/IMG_0134_normal.JPG" alt="micky68"/></a></li>
+          <li class="tw-tweet">chocolate covered bacon at #frontendconf ... a new experience for me</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/nhagianis" title="nhagianis"><img src="http://a0.twimg.com/profile_images/1316558715/side_profile_normal.jpg" alt="nhagianis"/></a></li>
+          <li class="tw-tweet">Chocolate bacon! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">@BigSea @frontendconf we're down! You have room in the grocery getter for 2 more? If not we'll meet ya there :) #frontendconf</li>
+        </ul>
+      </li>
+    
+    </ul>
+
+  </section>
+
+{% endblock %}

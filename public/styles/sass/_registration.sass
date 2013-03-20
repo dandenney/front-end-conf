@@ -1,0 +1,145 @@
+//-------------------------------------
+//  Registration
+//-------------------------------------
+
+.registration
+  i
+    color: #e9e9e9
+
+// ----- Price ----- //
+
+.price
+  color: $color-base
+  display: block
+  font-size: 6em
+  line-height: 1
+  margin: 0.25em 0 0.1em
+  
+// ----- Thursday ----- //
+
+.workshop-character
+  display: inline-block
+  // height: 9.75em
+  width: 100px
+  +respond-to(768px)
+    width: 140px
+  +respond-to(1024px)
+    width: 156px
+    + .workshop-character
+      margin-left: 1em
+
+.meet-ups
+  i
+    display: block
+    font-size: 87px
+    line-height: 1
+    text-align: center
+    +respond-to(768px)
+      font-size: 127px
+    +respond-to(1024px)
+      font-size: 143px
+  
+// ----- Schedule ----- //
+
+h3.schedule,
+h3.locations,
+h3.speakers
+  margin: 1em 0 0.5em 0
+
+.schedule
+  > li
+    @extend %group
+    background: $color-feature
+    margin: 0.5em 0
+  p,
+  img
+    float: left
+    margin: 0
+    vertical-align: middle
+  p
+    padding: 0 0 0.5em 0.5em
+    +respond-to(768px)
+      padding: 0 0 0 0.5em
+      &:last-child
+        width: 45%
+    +respond-to(1024px)
+      &:last-child
+        width: 57%
+  p + p
+    padding: 0
+  img
+    height: 51px
+  .h2
+    font-size: 1.5em
+  .h4
+    font-size: 1.2em
+    line-height: 51px
+    margin-left: 0
+    +respond-to(768px)
+      margin-left: 0.25em
+  .h5
+    display: block
+  .time
+    height: 51px
+    line-height: 51px
+    min-width: 150px
+    +respond-to(850px)
+      background: #f1f1f1
+    +respond-to(1024px)
+      min-width: 170px
+    
+ol.schedule
+  margin-bottom: 2em
+  + .h4
+    margin-bottom: 1em
+
+// ----- Locations ----- //
+
+.locations
+  ul
+    margin-bottom: 3em
+
+
+// ----- Places ----- //
+
+.places
+  h4
+    margin-top: 3em
+  a
+    display: block
+  li
+    display: inline-block
+    margin: 1em 0 1em
+    vertical-align: top
+    +respond-to(768px)
+      width: 30%
+      &:nth-child(3n+2),
+      &:nth-child(3n+3)
+        margin-left: 4%
+        
+// ----- Day Two ----- //
+
+h3.day-two
+  border-bottom: none
+  margin: -0.5em 0 0 0
+  text-align: center
+
+.day-two 
+  h4
+    margin-top: 1em
+    padding-left: 1em
+  i
+    color: #e9e9e9
+    margin-left: -1em
+  +respond-to(768px)
+    p
+      padding-left: 1.75em
+  +respond-to(1024px)
+    p
+      padding-left: 3em
+  .h5
+    margin-top: 2em
+    padding-left: 0
+
+
+      

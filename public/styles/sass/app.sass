@@ -1,0 +1,132 @@
+@import "compass"
+
+@import "settings"
+@import "reset"
+@import "base"
+@import "home"
+@import "prev-events"
+@import "presentation"
+@import "nav"
+@import "registration"
+@import "modules"
+@import "attendee"
+
+@import "inbox"
+
+//-------------------------------------
+//  Sections
+//-------------------------------------
+
+// ----- Header ----- //
+
+header,
+footer
+  @extend %group
+  background: $color-feature
+  padding: 0.5em 1em
+  
+header
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
+  +respond-to(768px)
+    position: static
+  
+  i
+    cursor: pointer
+    color: scale-color($color-feature, $lightness: -30%)
+    float: right
+    font-size: 1.5em
+    margin-top: 0.25em
+    
+.logo
+  color: $color-highlight
+  cursor: pointer
+  float: left
+  font-family: $font-highlight
+  font-size: 24px
+  text-shadow: 0 1px 1px #fff
+  span
+    color: scale-color($color-feature, $lightness: -30%)
+    display: block
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 15px
+    margin-top: -.75em
+    text-transform: lowercase
+    
+// ----- Main ----- //
+
+main
+  padding-top: 4em
+  .home &
+    padding-top: 0
+  +respond-to(768px)
+    padding-top: 0
+
+// ----- Footer ----- //
+    
+footer
+  background: $color-base
+  margin-top: 2em
+  padding-top: 1em
+  text-align: center
+  li
+    display: inline-block
+    + li
+      &:before
+        content: "-"
+        color: #bababa
+        margin: 0 0.5em
+  a
+    color: #fff
+    
+.mixture
+  color: #999
+  display: inline-block
+  margin-bottom: 1em
+  text-align: center
+  vertical-align: middle
+  img
+    display: inline-block
+    margin: 0 0 0 0.5em
+    position: relative
+    top: 10px
+    width: 32px
+    
+// ----- Helpers ----- //
+
+.center-group
+  text-align: center
+  
+.coming-soon
+  +opacity(0.3)
+
+.temp
+  color: #fff
+  display: block
+  font-family: $font-highlight
+  left: 0
+  line-height: 1
+  margin: 0.5em auto 0 auto !important
+  padding: 0 20%
+  position: absolute
+  text-align: center
+  top: 0
+  width: 100%
+
+.sub-title
+  text-align: center
+  margin: -1em 0 1em 0
+  
+.dark-sub-title
+  color: $color-base
+
+.holy-shit-pay-attention-to-me
+  background: rgba(#FFE545, 0.6)
+  margin-top: 1em
+  padding: 0.5em
+  text-align: center
+  #hotels + & 
+    margin-bottom: 1em

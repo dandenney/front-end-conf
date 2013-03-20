@@ -1,0 +1,138 @@
+{% block content %}
+
+  <section class="stage">
+    <img src="{{ "/images/characters/matt-graham.svg" | asset_url }}" alt="Matt Graham" class="stage-character is--active">
+    <p class="stage-info h2 is--active">Matt <span>Graham</span>
+      <a href="http://madebygraham.com" class="stage-link">madebygraham.com</a>
+      <a href="https://twitter.com/michigangraham" class="stage-twitter">@michigangraham</a>
+    </p>
+    <img src="{{ "/images/characters/michael-parenteau.svg" | asset_url }}" alt="Michael Parenteau" class="stage-character">
+    <p class="stage-info h2">Michael <span>Parenteau</span>
+      <a href="http://michaelparenteau.com" class="stage-link">michaelparenteau.com</a>
+      <a href="https://twitter.com/parenteau" class="stage-twitter">@parenteau</a>
+    </p>
+    <img src="{{ "/images/characters/jenn-lukas.svg" | asset_url }}" alt="Jenn Lukas" class="stage-character">
+    <p class="stage-info h2">Jenn <span>Lukas</span>
+      <a href="http://jennlukas.com" class="stage-link">jennlukas.com</a>
+      <a href="https://twitter.com/jennlukas" class="stage-twitter">@jennlukas</a>
+    </p>
+    <img src="{{ "/images/characters/chris-coyier.svg" | asset_url }}" alt="Chris Coyier" class="stage-character">
+    <p class="stage-info h2">Chris <span>Coyier</span>
+      <a href="http://css-tricks.com" class="stage-link">css-tricks.com</a>
+      <a href="https://twitter.com/chriscoyier" class="stage-twitter">@chriscoyier</a>
+    </p>
+    <img src="{{ "/images/characters/allison-wagner.svg" | asset_url }}" alt="Allison Wagner" class="stage-character">
+    <p class="stage-info h2">Allison <span>Wagner</span>
+      <a href="http://alliwagner.com" class="stage-link">alliwagner.com</a>
+      <a href="https://twitter.com/alliwagner" class="stage-twitter">@alliwagner</a>
+    </p>
+    <img src="{{ "/images/characters/doug-neiner.svg" | asset_url }}" alt="Doug Neiner" class="stage-character">
+    <p class="stage-info h2">Doug <span>Neiner</span>
+      <a href="http://dougneiner.com" class="stage-link">dougneiner.com</a>
+      <a href="https://twitter.com/dougneiner" class="stage-twitter">@dougneiner</a>
+    </p>
+    <img src="{{ "/images/characters/cameron-moll.svg" | asset_url }}" alt="Cameron Moll" class="stage-character">
+    <p class="stage-info h2">Cameron <span>Moll</span>
+      <a href="http://cameronmoll.com" class="stage-link">cameronmoll.com</a>
+      <a href="https://twitter.com/cameronmoll" class="stage-twitter">@cameronmoll</a>
+    </p>
+    <img src="{{ "/images/stage.svg" | asset_url }}" alt="stage" class="bg-stage">
+  </section>
+
+  <section class="inner home">
+    
+    <div class="block-to-half">
+      <h2><span class="fit-03">June</span> <span class="fit-08">21st &amp; 22nd</span> <span class="fit-03">2013</span></h2>   
+    </div>
+
+    <div class="block-to-half florida">
+      <p class="h3">St. Petersburg, FL</p>
+      <img src="{{ "/images/florida.svg" | asset_url }}" alt="Map of Florida">
+    </div>
+
+    <h3 class="mission inner"><span class="fit-16">Front-End Conf is a few days of peer learning and celebrating how awesome our community&nbsp;is.</span></h3>
+
+    <div class="block-to-half counts">
+      <div class="block-to-half fit-009 h2">7</div> 
+      <div class="block-to-half fit-045 h3">Day One <br />Speakers</div>
+    </div>
+
+    <div class="block-to-half counts">
+      <div class="block-to-half fit-009 h2">?</div> 
+      <div class="block-to-half fit-045 h3">Day Two <br />Speakers</div>
+    </div>
+
+    <p class="h3 fit-16 workshop">1 Optional Workshop featuring:</p>
+
+    <div class="block-to-half center-group  fake-and">
+      <p class="h2">Nick Walsh</p>
+      <img src="{{ "/images/characters/nick-walsh.svg" | asset_url }}" alt="Nick Walsh">
+    </div>
+
+    <div class="block-to-half center-group">
+      <p class="h2">Drew Barontini</p>
+      <img src="{{ "/images/characters/drew-barontini.svg" | asset_url }}" alt="Drew Barontini">
+    </div>
+
+
+    <div class="block-to-half tickets">
+
+      <p>
+        <span class="h2 fit-03">250</span>
+        <span class="h3 fit-09">Tickets</span>
+      </p>
+
+    </div>
+
+    <div class="block-to-half tickets">
+
+      <p>
+        <span class="h2 fit-03">55</span>
+        <span class="h3 fit-09">Remaining</span>
+      </p>
+
+    </div>
+
+  </section>
+
+  <h2 class="show-title">Who is attending? <button class="btn btn-alt show--attendees">Show me</button></h2>
+  <div class="center-group">
+    
+  </div>
+  
+  <section class="attendees-2013 inner">
+    <div class="center-group">
+      <img src="{{ "/images/ajax-loader.gif" | asset_url }}" alt="loading...">
+    </div>
+  </section>
+
+  <script>
+
+    $('.show--attendees').click(function() {
+
+      $('.attendees-2013').addClass('is--visible');
+
+      $.ajax({
+          url: '/attending',
+          dataType: 'html',
+          success: function(html) {
+              var attendees = $('.attendees', $(html)).addClass('done');
+              $('.attendees-2013').html(attendees);
+              $('.attendee-website a:not([href^="http://"]):not([href^="https://"])').each( function(){
+                  $(this).attr('href', 'http://' + $(this).attr('href'));
+              });
+          }
+      });
+
+      $(this).addClass('is--invisible');
+      $(".show-title").addClass('is--invisible');
+
+    });
+
+  </script>
+
+  <div class="center-group">
+    <a href="/registration-info" class="btn">Registration Info</a>
+  </div>
+
+{% endblock %}

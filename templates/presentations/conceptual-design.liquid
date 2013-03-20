@@ -1,0 +1,1421 @@
+{% block content %}
+
+  <div class="presentation inner">
+
+    <h1>Conceptual Design</h1>
+
+    <div class="iframe">
+      <img src="{{ "/no-slides.svg" | asset_url }}" alt="Sorry! No Slides" class="no-slides">
+    </div>
+
+    <aside>
+
+      <h5>Presented by:</h5>
+        
+      <img src="{{ "gio-difeterici.jpg" | asset_url }}" alt="Giovanni DiFeterici">
+
+      <img src="{{ "gio-difeterici.svg" | asset_url }}" alt="Giovanni DiFeterici" class="character">
+      
+      <h4>Giovanni DiFeterici</h4>
+
+      <p>Gio wears many hats. He's a designer for <a href="http://period-three.com">Period Three</a>, part of the <a href="http://unmatchedstyle.com">Unmatched Style</a> crew and a teacher. His fine art studies and classical education background help him create awesome things for the web. He spoke in 2011 on Day 2 and was voted as the best talk, winning a <a href="http://ricardogimenes.com">Ricardo Gimenes</a> character. It's only fitting to have him on the stage this year!</p>
+      
+      <p class="h5">June 8, 2012 - 11:40AM to 12:30PM</p>
+
+    </aside>
+
+  </div>
+
+  <section id="feedback" class="inner">
+
+    <h2>Feedback</h2>
+
+    <ul class="tweets">
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/timothybsmith" title="timothybsmith"><img src="http://a0.twimg.com/profile_images/1743072755/avatar-tim22_normal.jpg" alt="timothybsmith"/></a></li>
+          <li class="tw-tweet">After this talk, I'm so switching to a pre-processor. The amount of time they save is ridiculous. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/BritMeronek" title="BritMeronek"><img src="http://a0.twimg.com/profile_images/1718704958/267705_10150242348996607_545796606_7782615_5996097_n_normal.jpeg" alt="BritMeronek"/></a></li>
+          <li class="tw-tweet">"Go way the fuck out to left field and know when to reel it back." @giodif Conceptual design is so damn important. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">So many minds are about to be blown with mixin's (if they haven't already). #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/SabaDesignz" title="SabaDesignz"><img src="http://a0.twimg.com/profile_images/2169188239/sa_normal.png" alt="SabaDesignz"/></a></li>
+          <li class="tw-tweet">@alisonmf - I agree it seems like it would be too confusing to use, and very easy to mess something up #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">@alisonmf ... Looks like it but ok still curious about it. #stylus #CSS #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/aimeebooth" title="aimeebooth"><img src="http://a0.twimg.com/profile_images/1213197103/aimee_normal.jpg" alt="aimeebooth"/></a></li>
+          <li class="tw-tweet">Am totally stealing @bermonpainter's Jurassic Park joke if I ever do a screencast about the command line. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/fisheespix" title="fisheespix"><img src="http://a0.twimg.com/profile_images/1879353858/about_andy-merhaut_480x681_normal.jpg" alt="fisheespix"/></a></li>
+          <li class="tw-tweet">Bermon Painter from #sass talking css preprocessors. Tip: avoid excessive specificity in your stylesheets #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a0.twimg.com/profile_images/2158007485/allison01_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">@mwestafer Any @RWCC folks at #frontendconf?</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Don't be overly specific in your CSS, pre-processor or not. @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/MarciaLKing" title="MarciaLKing"><img src="http://a0.twimg.com/profile_images/2199255373/circle-m_normal.jpg" alt="MarciaLKing"/></a></li>
+          <li class="tw-tweet">RT @eddiemachado: Chocolate covered bacon at #frontendconf http://t.co/pGTIBQgw</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @dimensionmedia: Seriously switching to a CSS pre-precessor. Variables and watchers are worth it alone. #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">Don't overdo it on your specificity on your CSS. @bermonpainter #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">Enjoying @bermonpainter/Bill "The Butcher" Cutting's talk on CSS pre-processors. http://t.co/xdYFDh3j #frontendconf #justsayin</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/alisonmf" title="alisonmf"><img src="http://a0.twimg.com/profile_images/1774016779/alison-twitter-square-prett_normal.jpg" alt="alisonmf"/></a></li>
+          <li class="tw-tweet">Is it just me or does Stylus lack structure? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Thank you! RT @giodif: #frontendconf This audience is the business, totally boss, super cool. Thanks for listening to me ramble :)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">Seriously switching to a CSS pre-precessor. Variables and watchers are worth it alone. #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/giodif" title="giodif"><img src="http://a0.twimg.com/profile_images/1315281560/Photo_on_2011-04-17_at_19.37__2_normal.jpg" alt="giodif"/></a></li>
+          <li class="tw-tweet">#frontendconf This audience is the business, totally boss, super cool. Thanks for listening to me ramble :)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">SASS you can use brackets. For *kinkier SASS*, you don't need brackets. @bermonpainter #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Get up and running really fast with CSS Pre-Processors use @codekit @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Blueys" title="Blueys"><img src="http://a0.twimg.com/profile_images/1059004456/41723_12600313_6095_n_normal.jpg" alt="Blueys"/></a></li>
+          <li class="tw-tweet">#frontendconf is always an awesomely well rounded conference. I'm actually learning things!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Matt_HY" title="Matt_HY"><img src="http://a0.twimg.com/profile_images/1485554477/MY6.sm_normal.jpg" alt="Matt_HY"/></a></li>
+          <li class="tw-tweet">Anyone who makes awesome word combos (Wombos) like that is a friend of mine. “@brennaob: .@giodif had me at "Sharktopus" #frontendconf”</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">@iMuriente yo! My friend!!!! Are you at #frontendconf ??? :)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/codex73" title="codex73"><img src="http://a0.twimg.com/profile_images/2288402697/sxnz9cwc0sonsztborn8_normal.png" alt="codex73"/></a></li>
+          <li class="tw-tweet">RT @olivierlacan: I really really want to help designers to not be afraid of the command line anymore. 
+
+Anybody want to help? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Another great article on CSS Pre-Processors - http://t.co/CzYKnvJE from @vanseodesign #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Raptor sighting at #frontendconf  http://t.co/8Q65oW9x</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/intriguewd" title="intriguewd"><img src="http://a0.twimg.com/profile_images/448898524/INTRIGUE_logo-crop_normal.jpg" alt="intriguewd"/></a></li>
+          <li class="tw-tweet">A little jealous of all the people attending #frontendconf  yesterday &amp; Today. #sad</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">RT @olivierlacan: I really really want to help designers to not be afraid of the command line anymore. 
+
+Anybody want to help? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ekovar" title="ekovar"><img src="http://a0.twimg.com/profile_images/99657489/IMG_0255_normal.JPG" alt="ekovar"/></a></li>
+          <li class="tw-tweet">RT @NathanielDeal: Designers be an advocate for the web! Go to http://t.co/GxeJvrML #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a0.twimg.com/profile_images/2191742877/3D2A0155-4B5F-4CA2-A11D-3B99421264F0_normal" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">I really really want to help designers to not be afraid of the command line anymore. 
+
+Anybody want to help? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">RT @bloqhead: For anyone interested, MacRabbit Espresso does live reloading. Great app. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/michaelmcgee" title="michaelmcgee"><img src="http://a0.twimg.com/profile_images/2235208550/freddie_normal.png" alt="michaelmcgee"/></a></li>
+          <li class="tw-tweet">"It's a UNIX system. I know this!" @bermonpainter #frontendconf #jurassicpark</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">For anyone interested, MacRabbit Espresso does live reloading. Great app. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Codekit, LiveReload, Scout are great ways to start using Pre-Processors.@bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/giodif" title="giodif"><img src="http://a0.twimg.com/profile_images/1315281560/Photo_on_2011-04-17_at_19.37__2_normal.jpg" alt="giodif"/></a></li>
+          <li class="tw-tweet">#frontendconf yummmmmmmy!!! http://t.co/FtfN7Z8Y</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Soben" title="Soben"><img src="http://a0.twimg.com/profile_images/1378357886/avatar_normal.jpg" alt="Soben"/></a></li>
+          <li class="tw-tweet">RT @xirclebox: Next up, Bermon Painter @bermonpainter : CSS-Preprocessors Stylus, Less and Saas #frontendconf  http://t.co/76Nl6jdX</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">CodeKit handles all three CSS pre-processors Interesting (mac app). http://t.co/ircFcE5o #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Pre-processor misconceptions: I can't use SASS because I don't know Ruby on Rails. #nottrue @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ryanplasma" title="ryanplasma"><img src="http://a0.twimg.com/profile_images/2229016300/37759_1345025026401_1254510058_30925608_4840937_n_normal.jpg" alt="ryanplasma"/></a></li>
+          <li class="tw-tweet">Let's see what this whole css preprocessor thing is about with @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/themattbrown" title="themattbrown"><img src="http://a0.twimg.com/profile_images/2239608343/temp1337652744strip20120521-32765-175yq7o_normal" alt="themattbrown"/></a></li>
+          <li class="tw-tweet">RT @ibjhb: I've never been to a conference where the speakers have such a man-crush on @paul_irish .  EVERYBODY is talking about him.  # ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Stylus
+http://t.co/plpO52Eb #frontendconf #CSS</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jamesblevins" title="jamesblevins"><img src="http://a0.twimg.com/profile_images/1572565433/Picture_3_normal.png" alt="jamesblevins"/></a></li>
+          <li class="tw-tweet">@bermonpainter Has one sweet stache! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Object Orientated CSS and SMACSS can help your css skills. @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">Links for @bermonpainter talk: Stylus (http://t.co/hhKI0IjE) LESS (http://t.co/oIYsx4v0) SASS (http://t.co/VWFHMaGR) #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/frontendconf" title="frontendconf"><img src="http://a0.twimg.com/profile_images/1218667040/front-end-twitter-avatar_normal.png" alt="frontendconf"/></a></li>
+          <li class="tw-tweet">RT @benmarte: Everyone @frontendconf just hugged @bermonpainter daughter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/nikibrown" title="nikibrown"><img src="http://a0.twimg.com/profile_images/2279345632/b6ip672dj6n2q0oej4lh_normal.jpeg" alt="nikibrown"/></a></li>
+          <li class="tw-tweet">I've always been apprehensive about css-preprocessors... hrm #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/internetAaron" title="internetAaron"><img src="http://a0.twimg.com/profile_images/1452429444/headShot_normal.png" alt="internetAaron"/></a></li>
+          <li class="tw-tweet">Excited to hear @bermonpainter talk about CSS preprocessors. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jackiesmith1011" title="jackiesmith1011"><img src="http://a0.twimg.com/profile_images/1669677086/me-2_normal.jpg" alt="jackiesmith1011"/></a></li>
+          <li class="tw-tweet">RT @DesignDocent: "showing and not telling IS better" - @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">A pre-processor is a system that adds lots of goodies that doesn't exsist in your CSS. @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ibjhb" title="ibjhb"><img src="http://a0.twimg.com/profile_images/1752968445/wbm-ibjhb_normal.jpg" alt="ibjhb"/></a></li>
+          <li class="tw-tweet">I've never been to a conference where the speakers have such a man-crush on @paul_irish .  EVERYBODY is talking about him.  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">Love the handle bar mustache on @bermonpainter - he looks like an evil nerd villian from a western. #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @jocelyne_s: this guy just got 250 ppl to air hug him @bermonpainter #awesome #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ryanaduffy" title="ryanaduffy"><img src="http://a0.twimg.com/profile_images/1185375857/avatar_normal.png" alt="ryanaduffy"/></a></li>
+          <li class="tw-tweet">CSS preprocessor lessons from @bermonpainter #frontendconf #helikescompass</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Next up, Bermon Painter @bermonpainter : CSS-Preprocessors Stylus, Less and Saas #frontendconf  http://t.co/76Nl6jdX</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kellikreighbaum" title="kellikreighbaum"><img src="http://a0.twimg.com/profile_images/1346912695/profile-sm_reasonably_small_normal.jpg" alt="kellikreighbaum"/></a></li>
+          <li class="tw-tweet">RT @DesignDocent: "showing and not telling IS better" - @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jocelyne_s" title="jocelyne_s"><img src="http://a0.twimg.com/profile_images/1173245309/profile_normal.jpg" alt="jocelyne_s"/></a></li>
+          <li class="tw-tweet">this guy just got 250 ppl to air hug him @bermonpainter #awesome #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">Thanks @github! #frontendconf http://t.co/KW7fQDMk</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/lilprgidget" title="lilprgidget"><img src="http://a0.twimg.com/profile_images/1884556748/image_normal.jpg" alt="lilprgidget"/></a></li>
+          <li class="tw-tweet">RT @frontendconf: If you tweet with #frontendconf, your tweets will go on to each speaker’s presentation page :)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">RT @Brand180: #frontendconf --history of css…this is going to be good!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/pagebreakpdcst" title="pagebreakpdcst"><img src="http://a0.twimg.com/profile_images/1126497211/pagebreak_logo_normal.png" alt="pagebreakpdcst"/></a></li>
+          <li class="tw-tweet">#frontendconf anyone have a clicky thingy for slides that we could borrow for the talk tomorrow? We'll give you hugs!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Brand180" title="Brand180"><img src="http://a0.twimg.com/profile_images/2289513193/image_normal.jpg" alt="Brand180"/></a></li>
+          <li class="tw-tweet">#frontendconf --history of css…this is going to be good!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">Not punked lol “@alexswanson09: future of shapes, fonts, and colors" -@giodif #frontendconf I really thought gio was being punked lol”</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/benmarte" title="benmarte"><img src="http://a0.twimg.com/profile_images/1809136673/Untitled-1_normal.jpg" alt="benmarte"/></a></li>
+          <li class="tw-tweet">Everyone @frontendconf just hugged @bermonpainter daughter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Go #TeamSASS @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/SabaDesignz" title="SabaDesignz"><img src="http://a0.twimg.com/profile_images/2169188239/sa_normal.png" alt="SabaDesignz"/></a></li>
+          <li class="tw-tweet">Great talk about Conceptualizing and implementing the Users Experience at #frontendconf by @giodif</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">@xirclebox ... Was that you that asked the question? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/fabuloso" title="fabuloso"><img src="http://a0.twimg.com/profile_images/1509031510/5999850623_4b0e93be8d_o_normal.jpg" alt="fabuloso"/></a></li>
+          <li class="tw-tweet">RT @iammilton: Audience: "can you tell us the future of shapes fonts and colors?"
+@giodif: "ummm, there's a lot of them."
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Love the stache! @bermonpainter #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">@alexswanson09 @giodif lol thought the same thing #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/benmarte" title="benmarte"><img src="http://a0.twimg.com/profile_images/1809136673/Untitled-1_normal.jpg" alt="benmarte"/></a></li>
+          <li class="tw-tweet">RT @thealina: #frontendconf "talk about shapes,fonts and colors" @giodif "there's a lot of them"</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @olivierlacan: "Design without a problem is just Art." /via @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @alexswanson09: "The future of shapes, fonts, and colors" -@giodif #frontendconf I really thought gio was being punked with that ques ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">RT @DesignDocent: "showing and not telling IS better" - @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bybrandonbrown" title="bybrandonbrown"><img src="http://a0.twimg.com/profile_images/2081805042/bbrowntwitter_normal.jpg" alt="bybrandonbrown"/></a></li>
+          <li class="tw-tweet">"What's the future of fonts and shapes?" "There's a lot of them." @giodof could not have answered more perfectly. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/fabuloso" title="fabuloso"><img src="http://a0.twimg.com/profile_images/1509031510/5999850623_4b0e93be8d_o_normal.jpg" alt="fabuloso"/></a></li>
+          <li class="tw-tweet">“@allisongrayce: RT @kellikreighbaum: The exploration of what is possible is often more important than what is right. @giodif #frontendconf”</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @dimensionmedia: "Shapes, fonts, and colors!" Response: "There's a lot of them." @giodif #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @cmdshiftdesign: Q: tell us about the future of shapes, fonts and colors. A: Umm...#frontendconf @giodif</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/DesignDocent" title="DesignDocent"><img src="http://a0.twimg.com/profile_images/1215080011/twitter_icon_normal.jpg" alt="DesignDocent"/></a></li>
+          <li class="tw-tweet">"showing and not telling IS better" - @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/alexswanson09" title="alexswanson09"><img src="http://a0.twimg.com/profile_images/2228966513/photo444-sml_normal.jpg" alt="alexswanson09"/></a></li>
+          <li class="tw-tweet">RT @kellikreighbaum: The exploration of what is possible is often more important than what is right. @giodif #frontendconf #newideas</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @thealina: #frontendconf "talk about shapes,fonts and colors" @giodif "there's a lot of them"</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">@xirclebox yup design trends shapes colors and fonts #frontendconf #lol</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kellikreighbaum" title="kellikreighbaum"><img src="http://a0.twimg.com/profile_images/1346912695/profile-sm_reasonably_small_normal.jpg" alt="kellikreighbaum"/></a></li>
+          <li class="tw-tweet">@jasonvanlue at #frontendconf - 
+“Solve real problems. Design real solutions for real people.” good talk man :)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/designwithpink" title="designwithpink"><img src="http://a0.twimg.com/profile_images/1458250596/drive03_normal.jpg" alt="designwithpink"/></a></li>
+          <li class="tw-tweet">"design without a problem is just art" #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @xirclebox: The future of shapes, fonts, and colors ... I guess he's referring to design trends #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/BigSea" title="BigSea"><img src="http://a0.twimg.com/profile_images/1551437548/twitter-sep11_normal.jpg" alt="BigSea"/></a></li>
+          <li class="tw-tweet">RT @allisongrayce: The future of shapes, fonts, and colors? "A lot more better." Heard first at #frontendconf  by @giodif.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @iammilton: Audience: "can you tell us the future of shapes fonts and colors?"
+@giodif: "ummm, there's a lot of them."
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a0.twimg.com/profile_images/2191742877/3D2A0155-4B5F-4CA2-A11D-3B99421264F0_normal" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">"Design without a problem is just Art." /via @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/alexswanson09" title="alexswanson09"><img src="http://a0.twimg.com/profile_images/2228966513/photo444-sml_normal.jpg" alt="alexswanson09"/></a></li>
+          <li class="tw-tweet">"The future of shapes, fonts, and colors" -@giodif #frontendconf I really thought gio was being punked with that question lol</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @chrismorata: "Shapes, fonts, and colors: There's a lot of them." -@giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/SabaDesignz" title="SabaDesignz"><img src="http://a0.twimg.com/profile_images/2169188239/sa_normal.png" alt="SabaDesignz"/></a></li>
+          <li class="tw-tweet">Great talk about Conceptualizing and implementing the Users Experience at #frontendconf by @giodef</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">Pumped for @bermonpainter's talk on CSS Preprocessors. Especially @TheSassWay :) #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">RT @allisongrayce: The future of shapes, fonts, and colors? "A lot more better." Heard first at #frontendconf  by @giodif.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jackiesmith1011" title="jackiesmith1011"><img src="http://a0.twimg.com/profile_images/1669677086/me-2_normal.jpg" alt="jackiesmith1011"/></a></li>
+          <li class="tw-tweet">Loved the presentation by @giodif. Humor and fine art always wins me over! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Yes RT @itsRayLand: "true beauty is functional" -@giodif excellent talk sir (yep I'm the shape, color, font question guy) haha #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/itsRayLand" title="itsRayLand"><img src="http://a0.twimg.com/profile_images/2119441149/image_normal.jpg" alt="itsRayLand"/></a></li>
+          <li class="tw-tweet">"true beauty is functional" -@giodif excellent talk sir (yep I'm the shape, color, font question guy) haha #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Next speaker is @bermonpainter on CSS Preprocessors: Stylus, LESS &amp; SASS #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jocelyne_s" title="jocelyne_s"><img src="http://a0.twimg.com/profile_images/1173245309/profile_normal.jpg" alt="jocelyne_s"/></a></li>
+          <li class="tw-tweet">RT @Blueys: "that's Julia Anderson. She has nice hands." @giodif #frontendconf I'm famous now right?!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kpkody" title="kpkody"><img src="http://a0.twimg.com/profile_images/1274933271/168786_1775486503629_1133332635_2013706_1522781_n_normal.jpg" alt="kpkody"/></a></li>
+          <li class="tw-tweet">@giodif - I love the dino!!!! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/geticonify" title="geticonify"><img src="http://a0.twimg.com/profile_images/2244113551/twitter_logo_normal.png" alt="geticonify"/></a></li>
+          <li class="tw-tweet">@unmatchedstyle hippogator for Converge SE 2013?? #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/cheriana" title="cheriana"><img src="http://a0.twimg.com/profile_images/1130277366/33509_596308161748_24702249_34546085_6194430_n_normal.jpg" alt="cheriana"/></a></li>
+          <li class="tw-tweet">RT @iammilton: Audience: "can you tell us the future of shapes fonts and colors?"
+@giodif: "ummm, there's a lot of them."
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a0.twimg.com/profile_images/2158007485/allison01_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">The future of shapes, fonts, and colors? "A lot more better." Heard first at #frontendconf  by @giodif.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/frankiejramirez" title="frankiejramirez"><img src="http://a0.twimg.com/profile_images/2281491651/OXeJuruR_normal" alt="frankiejramirez"/></a></li>
+          <li class="tw-tweet">I need to get more creative with my designs. Inspired by @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/aimeebooth" title="aimeebooth"><img src="http://a0.twimg.com/profile_images/1213197103/aimee_normal.jpg" alt="aimeebooth"/></a></li>
+          <li class="tw-tweet">@nickawalsh &amp; @olivierlacan #frontendconf  http://t.co/yZoJy3UI</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @jasonvanlue: Man, @giodif has some serious artistic talent. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/iammilton" title="iammilton"><img src="http://a0.twimg.com/profile_images/1916016483/399192_707448565666_42501071_34210744_6858688_n_normal.jpg" alt="iammilton"/></a></li>
+          <li class="tw-tweet">@iammilton: Audience: "can you tell us the future of shapes fonts and colors?"
+@giodif: "ummm, there's a lot of them."
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dougneiner" title="dougneiner"><img src="http://a0.twimg.com/profile_images/1219117972/doug-html5-2_normal.jpg" alt="dougneiner"/></a></li>
+          <li class="tw-tweet">RT @bybrandonbrown: I really appreciate @giodof sharing how important an artist's outlook is to a healthy design process.  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @thealina: #frontendconf "talk about shapes,fonts and colors" @giodif "there's a lot of them"</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/tylergoelz" title="tylergoelz"><img src="http://a0.twimg.com/profile_images/1785603489/facebook_logo_normal.jpg" alt="tylergoelz"/></a></li>
+          <li class="tw-tweet">Chocolate covered bacon.. That's hard to follow up, but I think @giodif did a "fuckin" great job! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kevinrazmus" title="kevinrazmus"><img src="http://a0.twimg.com/profile_images/612984535/profile_normal.jpg" alt="kevinrazmus"/></a></li>
+          <li class="tw-tweet">“@bloqhead: @giodif MAKE THE DINOSAUR WITH GUNS. #frontendconf” love it!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">Bring out the pitchforks and torches. I disliked the choco bacon. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">"Shapes, fonts, and colors: There's a lot of them." -@giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/iammilton" title="iammilton"><img src="http://a0.twimg.com/profile_images/1916016483/399192_707448565666_42501071_34210744_6858688_n_normal.jpg" alt="iammilton"/></a></li>
+          <li class="tw-tweet">Audience: "can you tell us the future of shapes fonts and colors?"
+@giodif: "ummm, there's a lot of them."
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">The future of shapes, fonts, and colors ... I guess he's referring to design trends #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">#frontendconf "talk about shapes,fonts and colors" @giodif "there's a lot of them"</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/cmdshiftdesign" title="cmdshiftdesign"><img src="http://a0.twimg.com/profile_images/1376883230/photo_normal.jpg" alt="cmdshiftdesign"/></a></li>
+          <li class="tw-tweet">Q: tell us about the future of shapes, fonts and colors. A: Umm...#frontendconf @giodif</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">"Shapes, fonts, and colors!" Response: "There's a lot of them." @giodif #FrontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">@giodif MAKE THE DINOSAUR WITH GUNS. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Great talk from @giodif, thanks! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xDanMorgan" title="xDanMorgan"><img src="http://a0.twimg.com/profile_images/1498707110/Screen_shot_2011-08-16_at_2.44.47_PM_normal.png" alt="xDanMorgan"/></a></li>
+          <li class="tw-tweet">RT @chrismorata: Love @giodif's illustrations. Follow him on @dribbble. Now. http://t.co/Oakt5Gpp #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/world_famous" title="world_famous"><img src="http://a0.twimg.com/profile_images/1887697806/image_normal.jpg" alt="world_famous"/></a></li>
+          <li class="tw-tweet">I'm loving the fine art + f-bomb converge! @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/aidanfeldman" title="aidanfeldman"><img src="http://a0.twimg.com/profile_images/1897480206/IMG_5882edit-med_normal.jpg" alt="aidanfeldman"/></a></li>
+          <li class="tw-tweet">RT @nrrrdcore: If a talk doesn't make you want to leave your seat and go build something, it's probably not one worth hearing. @darcy_cl ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ryanplasma" title="ryanplasma"><img src="http://a0.twimg.com/profile_images/2229016300/37759_1345025026401_1254510058_30925608_4840937_n_normal.jpg" alt="ryanplasma"/></a></li>
+          <li class="tw-tweet">Creating a unique visual experience works better if it involves dinosaurs @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/cmdshiftdesign" title="cmdshiftdesign"><img src="http://a0.twimg.com/profile_images/1376883230/photo_normal.jpg" alt="cmdshiftdesign"/></a></li>
+          <li class="tw-tweet">little jealous of everyone enjoyin the choco coverd bacon. no choco coverd fakon for vegetarians? Just kidding, not really. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xDanMorgan" title="xDanMorgan"><img src="http://a0.twimg.com/profile_images/1498707110/Screen_shot_2011-08-16_at_2.44.47_PM_normal.png" alt="xDanMorgan"/></a></li>
+          <li class="tw-tweet">@rickosborneorg where you at? #formerstudent #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/douglogue" title="douglogue"><img src="http://a0.twimg.com/profile_images/645238720/t_normal.jpg" alt="douglogue"/></a></li>
+          <li class="tw-tweet">@unmatchedstyle @genecrawford i want you to draw a dinosaur with guns! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/frontendconf" title="frontendconf"><img src="http://a0.twimg.com/profile_images/1218667040/front-end-twitter-avatar_normal.png" alt="frontendconf"/></a></li>
+          <li class="tw-tweet">Love how @giodif wraps all the theory he has shared into the execution of the Converge 2012 site #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ibjhb" title="ibjhb"><img src="http://a0.twimg.com/profile_images/1752968445/wbm-ibjhb_normal.jpg" alt="ibjhb"/></a></li>
+          <li class="tw-tweet">Giovanni DiFeterici without a mohawk !  http://t.co/nHUSfjJG   @giodif   @#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/timothybsmith" title="timothybsmith"><img src="http://a0.twimg.com/profile_images/1743072755/avatar-tim22_normal.jpg" alt="timothybsmith"/></a></li>
+          <li class="tw-tweet">RT @jasonvanlue: Man, @giodif has some serious artistic talent. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">Scrolling down on http://t.co/WbLJP3Pc is awesome. Plus dinosaur with GUNS. @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">@giodif is talking about the 2011 Converge Conference Tarot Deck - http://t.co/WJy8hfnh  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">RT @xirclebox: ConvergeSE 2012 - April 27-28 - Columbia, SC
+http://t.co/1JJ2tfzW #frontendconf #soldout #sadFace</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/MinaMarkham" title="MinaMarkham"><img src="http://a0.twimg.com/profile_images/1878583862/me-instagramed-no-border_normal.jpg" alt="MinaMarkham"/></a></li>
+          <li class="tw-tweet">I have that tarot deck. It is indeed fuckin' awesome. #frontendconf (via @bloqhead) Me too. Love ‘em.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Blueys" title="Blueys"><img src="http://a0.twimg.com/profile_images/1059004456/41723_12600313_6095_n_normal.jpg" alt="Blueys"/></a></li>
+          <li class="tw-tweet">"that's Julia Anderson. She has nice hands." @giodif #frontendconf I'm famous now right?!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/TidalWeb" title="TidalWeb"><img src="http://a0.twimg.com/profile_images/1105848148/TidalWebIcon2010_normal.jpg" alt="TidalWeb"/></a></li>
+          <li class="tw-tweet">#frontendconf Sharktopus is my next tatoo! http://t.co/kBAfgOyR</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">RT @chrismorata: Love @giodif's illustrations. Follow him on @dribbble. Now. http://t.co/Oakt5Gpp #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/allisongrayce" title="allisongrayce"><img src="http://a0.twimg.com/profile_images/2158007485/allison01_normal.jpg" alt="allisongrayce"/></a></li>
+          <li class="tw-tweet">RT @kellikreighbaum: The exploration of what is possible is often more important than what is right. @giodif #frontendconf #newideas</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bybrandonbrown" title="bybrandonbrown"><img src="http://a0.twimg.com/profile_images/2081805042/bbrowntwitter_normal.jpg" alt="bybrandonbrown"/></a></li>
+          <li class="tw-tweet">I really appreciate @giodof sharing how important an artist's outlook is to a healthy design process.  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">I have that tarot deck. It is indeed fuckin' awesome. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">ConvergeSE 2012 - April 27-28 - Columbia, SC
+http://t.co/1JJ2tfzW #frontendconf #soldout #sadFace</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Soben" title="Soben"><img src="http://a0.twimg.com/profile_images/1378357886/avatar_normal.jpg" alt="Soben"/></a></li>
+          <li class="tw-tweet">RT @thealina: #frontendconf Awesome animal smashing! http://t.co/IQxuRbp9</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brennaob" title="brennaob"><img src="http://a0.twimg.com/profile_images/2188924069/DSC_0460_normal.JPG" alt="brennaob"/></a></li>
+          <li class="tw-tweet">.@giodif had me at "Sharktopus" #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">RT @jasonvanlue: Man, @giodif has some serious artistic talent. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">Love @giodif's illustrations. Follow him on @dribbble. Now. http://t.co/Oakt5Gpp #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">#frontendconf Awesome animal smashing! http://t.co/IQxuRbp9</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">Love @giodif's illustrations. Follow him on @dribbble. Now. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jasonvanlue" title="jasonvanlue"><img src="http://a0.twimg.com/profile_images/1797130406/JVL_twitter-new_normal.jpg" alt="jasonvanlue"/></a></li>
+          <li class="tw-tweet">Man, @giodif has some serious artistic talent. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ryanplasma" title="ryanplasma"><img src="http://a0.twimg.com/profile_images/2229016300/37759_1345025026401_1254510058_30925608_4840937_n_normal.jpg" alt="ryanplasma"/></a></li>
+          <li class="tw-tweet">"we'll just take animals and smash them together!" @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">@fabuloso ... I remember reading about that installation of the seeds. Amazing #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/zulsdesign" title="zulsdesign"><img src="http://a0.twimg.com/profile_images/2014292043/F79FC46B-BF0A-47AB-BF33-BC2A18552731_normal" alt="zulsdesign"/></a></li>
+          <li class="tw-tweet">RT @dimensionmedia: #frontendconf we design for people. you cannot understand good design if you don't understand people. @jasonvanlue</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Designers take pride in your concepts. Deliver your vision before you deliver your creative. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/hyperspunk" title="hyperspunk"><img src="http://a0.twimg.com/profile_images/1633781761/uniform-drop_normal.jpg" alt="hyperspunk"/></a></li>
+          <li class="tw-tweet">RT @NathanielDeal: Designers be an advocate for the web! Go to http://t.co/GxeJvrML #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/benmarte" title="benmarte"><img src="http://a0.twimg.com/profile_images/1809136673/Untitled-1_normal.jpg" alt="benmarte"/></a></li>
+          <li class="tw-tweet">RT @GavinStark: The chocolate covered bacon at #frontendconf was delicious. Conference has the BEST snacks.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/catidahlia" title="catidahlia"><img src="http://a0.twimg.com/profile_images/1954873212/image_normal.jpg" alt="catidahlia"/></a></li>
+          <li class="tw-tweet">Process Illustration- wow what an amazing way to present a process. #frontendconf @giodif</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">i feel @giodif pain about a client changing your concept into something you don't even recognize anymore. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Clients can sometimes destroy your concept, it is the designers job to embrace and adapt. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bybrandonbrown" title="bybrandonbrown"><img src="http://a0.twimg.com/profile_images/2081805042/bbrowntwitter_normal.jpg" alt="bybrandonbrown"/></a></li>
+          <li class="tw-tweet">RT @dimensionmedia: "we can make things not only beautiful, but also an inner depth to it." DEEP @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">@giodif's apptopia illustrations are awesome. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/fabuloso" title="fabuloso"><img src="http://a0.twimg.com/profile_images/1509031510/5999850623_4b0e93be8d_o_normal.jpg" alt="fabuloso"/></a></li>
+          <li class="tw-tweet">“@xirclebox: Ai Weiwei is the man!!! #frontendconf” dope!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/WallarooPrints" title="WallarooPrints"><img src="http://a0.twimg.com/profile_images/2182638552/xipkf0lN_normal" alt="WallarooPrints"/></a></li>
+          <li class="tw-tweet">“@adellecharles: Mmmmm chocolate covered bacon #frontendconf” Now I'm jealous!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Every great design has an underlying concept. @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/kellikreighbaum" title="kellikreighbaum"><img src="http://a0.twimg.com/profile_images/1346912695/profile-sm_reasonably_small_normal.jpg" alt="kellikreighbaum"/></a></li>
+          <li class="tw-tweet">The exploration of what is possible is often more important than what is right. @giodif #frontendconf #newideas</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Take a chance &amp; push the boundries of the norm. Design without limits and you may discover things you've never imagined. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/Soben" title="Soben"><img src="http://a0.twimg.com/profile_images/1378357886/avatar_normal.jpg" alt="Soben"/></a></li>
+          <li class="tw-tweet">Delicious delicious bacon. RT @norcross: there were multiple plates of chocolate covered bacon at #frontendconf  that's all you need to know</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chadbercea" title="chadbercea"><img src="http://a0.twimg.com/profile_images/1714894617/150F792C-7486-4B58-B999-D7894C32A1AA_normal" alt="chadbercea"/></a></li>
+          <li class="tw-tweet">Just now realizing I should be at #FrontEndConf too busy designing these last few months with my head down. :/</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/BigSea" title="BigSea"><img src="http://a0.twimg.com/profile_images/1551437548/twitter-sep11_normal.jpg" alt="BigSea"/></a></li>
+          <li class="tw-tweet">@Soben we are all heading to Wood Fired Pizza on 4th St and 1st Ave S. join us! #Frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">"we can make things not only beautiful, but also an inner depth to it." DEEP @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chadbercea" title="chadbercea"><img src="http://a0.twimg.com/profile_images/1714894617/150F792C-7486-4B58-B999-D7894C32A1AA_normal" alt="chadbercea"/></a></li>
+          <li class="tw-tweet">RT @dougneiner: Regarding Designers: “@timothybsmith: "At our core, we are problem solvers"
+
+—Jason Van Lue, #frontendconf”</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/chrismorata" title="chrismorata"><img src="http://a0.twimg.com/profile_images/1667680103/chrismorata_normal.jpg" alt="chrismorata"/></a></li>
+          <li class="tw-tweet">RT @xDanMorgan: The opening day of #Euro2012 &amp; #FrontEndConf, what a friday!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/NathanielDeal" title="NathanielDeal"><img src="http://a0.twimg.com/profile_images/2036880150/nate-html5_normal.jpg" alt="NathanielDeal"/></a></li>
+          <li class="tw-tweet">Conceptual design is possible within web design. It's time to think outside of the box. @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/AlxRodz" title="AlxRodz"><img src="http://a0.twimg.com/profile_images/2194417997/temp1336272194strip20120505-7362-3p4d9q_normal" alt="AlxRodz"/></a></li>
+          <li class="tw-tweet">Does @darcy_clarke have his slides available online? #frontEndConf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/InVisionApp" title="InVisionApp"><img src="http://a0.twimg.com/profile_images/1251585468/invision_avatar_normal.png" alt="InVisionApp"/></a></li>
+          <li class="tw-tweet">Mr. @giodif challenging us to be conceptual in our design work. A la fine art #frontendconf http://t.co/g3vhh9Cs</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/vmadesign" title="vmadesign"><img src="http://a0.twimg.com/profile_images/2251254366/vma_normal.jpg" alt="vmadesign"/></a></li>
+          <li class="tw-tweet">RT @NathanielDeal: Designers be an advocate for the web! Go to http://t.co/GxeJvrML #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/brianburridge" title="brianburridge"><img src="http://a0.twimg.com/profile_images/1366751587/Photo1-2_normal.jpg" alt="brianburridge"/></a></li>
+          <li class="tw-tweet">The snacks provided during #frontendconf break http://t.co/SNl4scDL</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xDanMorgan" title="xDanMorgan"><img src="http://a0.twimg.com/profile_images/1498707110/Screen_shot_2011-08-16_at_2.44.47_PM_normal.png" alt="xDanMorgan"/></a></li>
+          <li class="tw-tweet">The opening day of #Euro2012 &amp; #FrontEndConf, what a friday!</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/bloqhead" title="bloqhead"><img src="http://a0.twimg.com/profile_images/1868043304/daryn_normal.jpg" alt="bloqhead"/></a></li>
+          <li class="tw-tweet">I think that the beauty in art is sometimes less about the art itself and more about what it evokes in the viewer. #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/ShawnCBerg" title="ShawnCBerg"><img src="http://a0.twimg.com/profile_images/1269949301/Avatar2_normal.jpg" alt="ShawnCBerg"/></a></li>
+          <li class="tw-tweet">RT @cmdshiftdesign: nipples have become a running theme today at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/GavinStark" title="GavinStark"><img src="http://a0.twimg.com/profile_images/421546158/4ffa397c06b8c8b3b8be65c255ccc06a_normal.jpeg" alt="GavinStark"/></a></li>
+          <li class="tw-tweet">The chocolate covered bacon at #frontendconf was delicious. Conference has the BEST snacks.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/norcross" title="norcross"><img src="http://a0.twimg.com/profile_images/2167046973/meagain_normal.jpg" alt="norcross"/></a></li>
+          <li class="tw-tweet">there were multiple plates of chocolate covered bacon at #frontendconf  that's all you need to know</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/hyperspunk" title="hyperspunk"><img src="http://a0.twimg.com/profile_images/1633781761/uniform-drop_normal.jpg" alt="hyperspunk"/></a></li>
+          <li class="tw-tweet">RT @dimensionmedia: CSS Flexible Box Layout was mentioned. Here's a good link explaining it: http://t.co/TFOJ25rA #frontendconf @darcy_c ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Ai Weiwei is the man!!! #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">#frontendconf @giodif was surprised nobody remembered the movie "The Cell". I've blocked it out of my mind, sorry.</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/AlxRodz" title="AlxRodz"><img src="http://a0.twimg.com/profile_images/2194417997/temp1336272194strip20120505-7362-3p4d9q_normal" alt="AlxRodz"/></a></li>
+          <li class="tw-tweet">After chocolate bacon talking about Bacon #frontendconf http://t.co/b7x6YZxP (via @thealina)</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Paintings by Odd Nerdrum : Google image search 
+http://t.co/FPEAFZ2x #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xDanMorgan" title="xDanMorgan"><img src="http://a0.twimg.com/profile_images/1498707110/Screen_shot_2011-08-16_at_2.44.47_PM_normal.png" alt="xDanMorgan"/></a></li>
+          <li class="tw-tweet">RT @olivierlacan: The Interplay of Beauty, Goodness, &amp; Usability in Interactive Products by Marc Hassenzahl. http://t.co/I1iaFeHp /v ...</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/timothybsmith" title="timothybsmith"><img src="http://a0.twimg.com/profile_images/1743072755/avatar-tim22_normal.jpg" alt="timothybsmith"/></a></li>
+          <li class="tw-tweet">RT @cmdshiftdesign: nipples have become a running theme today at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/thealina" title="thealina"><img src="http://a0.twimg.com/profile_images/2282603561/p6cqld8m6wiv9lho04o9_normal.jpeg" alt="thealina"/></a></li>
+          <li class="tw-tweet">After chocolate bacon talking about Bacon #frontendconf http://t.co/Szmve5bW</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/hyperspunk" title="hyperspunk"><img src="http://a0.twimg.com/profile_images/1633781761/uniform-drop_normal.jpg" alt="hyperspunk"/></a></li>
+          <li class="tw-tweet">RT @xirclebox: Great web design is just art if it's not usable. Yet a well designed site adds to its credibility  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a0.twimg.com/profile_images/2191742877/3D2A0155-4B5F-4CA2-A11D-3B99421264F0_normal" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">RT @aimeebooth: "Think in open mode. Execute in closed mode." - @jasonvanlue at #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jaVanderslice" title="jaVanderslice"><img src="http://a0.twimg.com/profile_images/1728902543/image_normal.jpg" alt="jaVanderslice"/></a></li>
+          <li class="tw-tweet">Gio's concept behind his Mohawk design? 
+
+awesome, with a splash of red. 
+
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/xirclebox" title="xirclebox"><img src="http://a0.twimg.com/profile_images/1259277712/saycheese_orNot_normal.jpg" alt="xirclebox"/></a></li>
+          <li class="tw-tweet">Great web design is just art if it's not usable. Yet a well designed site adds to its credibility  #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a0.twimg.com/profile_images/2191742877/3D2A0155-4B5F-4CA2-A11D-3B99421264F0_normal" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">RT @jasonvanlue: Had a blast with that talk, thanks everyone for the kind words. Slides are here - https://t.co/RS0Q7uCx
+
+#frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/jasonvanlue" title="jasonvanlue"><img src="http://a0.twimg.com/profile_images/1797130406/JVL_twitter-new_normal.jpg" alt="jasonvanlue"/></a></li>
+          <li class="tw-tweet">RT @NathanielDeal: Designers be an advocate for the web! Go to http://t.co/GxeJvrML #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/olivierlacan" title="olivierlacan"><img src="http://a0.twimg.com/profile_images/2191742877/3D2A0155-4B5F-4CA2-A11D-3B99421264F0_normal" alt="olivierlacan"/></a></li>
+          <li class="tw-tweet">The Interplay of Beauty, Goodness, &amp; Usability in Interactive Products by Marc Hassenzahl. http://t.co/I1iaFeHp /via @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+      <li>
+        <ul class="tweet">
+          <li class="tw-profile"><a href="http://twitter.com/dimensionmedia" title="dimensionmedia"><img src="http://a0.twimg.com/profile_images/2077195320/avatar_medium_compressed_normal.jpg" alt="dimensionmedia"/></a></li>
+          <li class="tw-tweet">The mention of Francis Bacon is making me hungry. @giodif #frontendconf</li>
+        </ul>
+      </li>
+    
+    </ul>
+    
+
+
+  </section>
+
+{% endblock %}

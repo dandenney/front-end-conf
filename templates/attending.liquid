@@ -1,0 +1,125 @@
+{% block content %}
+
+  <h1>Thank you!</h1>
+
+  <section class="attending inner">
+    
+    <div class="wrapper--thirds">
+
+        <div class="block-to-one-third">
+
+          <h5>Spam, er, communication</h5>
+
+          <p>You will receive a confirmation email with your registration details and you'll show up on the site shortly. We can't wait for June!</p>
+
+        </div>
+
+        <div class="block-to-one-third">
+
+          <h5>Bio Updates</h5>
+
+          <p>We know things change and we hope you all get promoted between now and the conference. If you need to add/edit anything, just <a href="https://dandenney.wufoo.com/forms/frontend-design-conference-support">send me an email</a>.</p>
+
+        </div>
+
+        <div class="block-to-one-third">
+
+          <h5>Want to speak?</h5>
+
+          <p>We're looking for people that want to share! If you'd like to speak on Day 2, please just <a href="https://dandenney.wufoo.com/forms/frontend-conf-13-day-two">fill out the form</a> and we'll start working on a lineup.</p>
+
+        </div>
+
+      </div>
+
+
+    <article class="attendees">
+
+      <h3>2013 Attendees</h3>
+
+        {% for attendee in attendees reversed %}
+
+          {% if attendee.status == "Paid" and attendee.show == "Yes" %}
+
+            {% case attendee.attended %} 
+              {% when "This is my first!" or "This is their first!" %} 
+                <ol class="attendee attendeeFirst">
+              {% when "This is my second!" or "This is their second!" %} 
+                <ol class="attendee attendeeSecond">  
+              {% when "This is my third!" or "This is their third!" %} 
+                <ol class="attendee attendeeThird">
+              {% when "This is my fourth!" or "This is their fourth!" %}  
+                <ol class="attendee attendeeFourth"> 
+              {% when "I've been to them all!" or "They've been to them all!" %}
+                <ol class="attendee attendeeFifth">
+            {% endcase %} 
+
+              {% if attendee.avatar != '' %}  
+                <li class="attendee-avatar"><img src="{{ attendee.avatar }}" /></li>
+              {% else %}
+                <li class="attendee-avatar"><img src="{{"images/missing.png" | asset_url }}"</li>
+              {% endif %}
+
+              <li class="attendee-name">{{ attendee.firstName }} {{ attendee.lastName }}</li>
+
+              {% if attendee.title != '' %}
+                <li class="attendee-title">{{ attendee.title }}</li>
+              {% endif %}
+
+              {% if attendee.company != '' %}
+                <li class="attendee-company">{{ attendee.company }}</li>
+              {% endif %}
+
+              {% if attendee.twitter != '' %}
+                <li class="attendee-twitter">
+                  <a href="https://twitter.com/{{ attendee.twitter }}"><i aria-role="hidden" data-icon="&#x74;"></i></a>
+                </li>
+              {% endif %}
+
+              {% if attendee.github != '' %}
+                <li class="attendee-github">
+                  <a href="https://github.com/{{ attendee.github }}"><i aria-role="hidden" data-icon="&#x75;"></i></a>
+                </li>
+              {% endif %}
+
+              {% if attendee.dribbble != '' %}
+                <li class="attendee-dribbble">
+                  <a href="http://dribbble.com/{{ attendee.dribbble }}"><i aria-role="hidden" data-icon="&#x64;"></i></a>
+                </li>
+              {% endif %}
+
+              {% if attendee.codepen != '' %}
+                <li class="attendee-codepen">
+                  <a href="http://www.codepen.io/{{ attendee.codepen }}"><i><img src="{{ "codepen.svg" | asset_url }}" height="18" width="20" /></i></a></li>
+              {% endif %}
+
+              {% if attendee.website != '' %}
+                <li class="attendee-website">
+                  <a href="{{ attendee.website }}"><i aria-role="hidden" data-icon="&#x62;"></i></a>
+                </li>
+              {% endif %}
+
+              {% case attendee.attended %} 
+                {% when "This is my first!" or "This is their first!" %} 
+                  <li class="attendeeFirst attendee-year">1st Time Attending</li> 
+                {% when "This is my second!" or "This is their second!" %} 
+                  <li class="attendeeSecond attendee-year">2nd Time Attending</li>  
+                {% when "This is my third!" or "This is their third!" %} 
+                  <li class="attendeeThird attendee-year">3rd Time Attending</li>
+                {% when "This is my fourth!" or "This is their fourth!" %}  
+                  <li class="attendeeFourth attendee-year">4th Time Attending</li> 
+                {% when "I've been to them all!" or "They've been to them all!" %}  
+                  <li class="attendeeFifth attendee-year">Attended Every Time!</li>
+              {% endcase %} 
+
+            </ol>
+
+          {% endif %}
+
+        {% endfor %}
+
+    </article>
+
+  </section>
+
+{% endblock %}

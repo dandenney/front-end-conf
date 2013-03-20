@@ -1,0 +1,268 @@
+//-------------------------------------
+//  Home
+//-------------------------------------
+
+.home
+
+  header
+    border-bottom: 1px solid #fff
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.4)
+    position: relative
+    z-index: 1 // 1 is the highest number so far
+    +respond-to(1024px)
+      box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2)
+
+  h1, 
+  h2,
+  h3,
+  .h1,
+  .h2,
+  .h3
+    border: none
+
+  h2,
+  .h2,
+  h3,
+  .h3,
+  p > span
+    line-height: 1.05
+
+  h2 > span,
+  h3 > span,
+  p > span
+    display: block
+    
+  h2 > .fit-08
+    color: $color-alt
+    
+  .fit-009 
+    margin: 0
+  
+  .fit-045
+    margin-top: 1em
+
+  .florida
+    .h3
+      position: relative
+      top: 5.5em
+      +respond-to(768px)
+        top: 3.5em
+      +respond-to(1250px)
+        top: 4.5em
+    img
+      margin-top: -1.75em
+      
+  .mission
+    color: #595959
+    line-height: 1.3
+    margin: 0 0 1.75em 0
+    +respond-to(768px)
+      margin-top: 0.5em
+    
+  .counts
+    .h3
+      margin-top: -1em
+      +respond-to(768px)
+        margin-top: 1em
+  
+  .workshop,
+  .tickets
+    text-align: center
+    
+  .tickets 
+    .h2
+      margin: 0.5em 0 0 0
+    .h3
+      margin: -0.5em 0 0 0
+      
+  .btn
+    margin-bottom: 3em
+
+    &.btn-alt
+      display: block
+      font-size: 0.75em
+      margin: 1em auto
+      position: relative
+      top: -0.5em
+      +respond-to(480px)
+        display: inline-block
+        font-size: 0.4em
+        margin: 0 0 1em
+        top: -0.7em
+  
+  .attendees-2013
+    display: none
+    margin: 5em 0
+    + .btn
+      margin: 3em 0
+    &.is--visible
+      display: block
+    
+  .is--invisible
+    +transition(all 250ms linear)
+    font-size: 0
+    visibility: hidden
+
+    
+// ----- Curtain ----- //
+  
+.stage
+  margin-bottom: 4em
+  position: relative
+  width: 100%
+  .bg-stage
+    display: block
+    width: 100%
+  .stage-character
+    +transition(all 250ms linear)
+    bottom: 9%
+    cursor: pointer
+    left: 0
+    position: absolute
+    width: percentage(1/10)
+    z-index: 1 // 1 is the highest number
+    &:nth-child(3)
+      left: 10%
+    &:nth-child(5)
+      left: 20%
+    &:nth-child(7)
+      left: auto
+      right: 30%
+    &:nth-child(9)
+      left: auto
+      right: 20%
+    &:nth-child(11)
+      left: auto
+      right: 10%
+      &.is--active
+        right: 20%
+    &:nth-child(13)
+      left: auto
+      right: 0
+      &.is--active
+        right: 18%
+    &.is--active
+      bottom: 17%
+      left: 27%
+      width: 36%
+      z-index: 0 // Bringing back to base
+      &:nth-child(5)
+        left: 30%
+      &:nth-child(7)
+        left: auto
+        right: 32%
+      &:nth-child(9)
+        left: auto
+        right: 35%
+      &:nth-child(11),
+      &:nth-child(13)
+        left: auto
+        right: 34%
+      +respond-to(768px)
+        left: 29%
+  .stage-info
+    color: #fff 
+    font-size: 0
+    left: 19%
+    position: absolute
+    text-align: left
+    text-shadow: none
+    top: 20%
+    width: 60%
+    span
+      float: right
+    a
+      color: #f2bd38
+      font-size: 0
+      position: absolute
+      top: -2em
+      &:hover
+        color: scale-color(#f2bd38, $lightness: 20%)
+    .icn-before
+      -webkit-font-smoothing: antialiased
+      font-family: 'IcoMoon'
+      font-style: normal
+      font-weight: normal
+      margin-right: 0.25em
+      line-height: 1
+      position: relative
+      speak: none
+      top: 0.15em
+    .stage-link
+      left: 0
+      &:before
+        @extend .icn-before
+        content: "b"
+    .stage-twitter
+      right: 0
+      &:before
+        @extend .icn-before
+        content: "t"
+    &.is--active
+      +transition(font-size 250ms linear)
+      font-size: 18px
+      &:nth-child(4)
+        left: 5%
+        width: 80%
+      &:nth-child(10)
+        left: 15%
+        width: 70%
+      &:nth-child(14)
+        left: 13%
+      a
+        +transition(font-size 250ms linear)
+        font-size: 6px
+      +respond-to(768px)
+        font-size: 42px
+        left: 18%
+        top: 23%
+        width: 65%
+        &:nth-child(2)
+          left: 23%
+          width: 55%
+        &:nth-child(4)
+          left: 9%
+          width: 75%
+        &:nth-child(10)
+          left: 18% 
+          width: 63%
+        &:nth-child(8)
+          left: 18%
+          width: 54%
+        &:nth-child(6)
+          left: 23%
+          width: 54%
+        &:nth-child(14)
+          left: 15%
+          width: 54%
+        a
+          font-size: 12px
+      +respond-to(1024px)
+        font-size: 48px
+        a
+          font-size: 16px
+      +respond-to(1240px)
+        font-size: 60px
+        a
+          font-size: 18px
+      +respond-to(1400px)
+        font-size: 80px
+        a
+          font-size: 22px
+
+.fake-and
+  position: relative
+.fake-and:after
+  @extend .h3
+  color: #888888
+  content: "&"
+  display: block
+  margin-top: 1.5em 
+  +respond-to(768px)
+    margin-left: 1em
+    margin-top: 0
+    position: absolute
+    right: 0
+    top: 1.25em
+  +respond-to(1024px)
+    top: 2.75em

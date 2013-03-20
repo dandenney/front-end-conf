@@ -1,0 +1,146 @@
+//-------------------------------------
+//  Base
+//-------------------------------------
+
+*
+  +box-sizing(border-box)
+
+html
+  background: #fefefe
+
+body
+  color: $color-base
+  font-family: $font-base
+  font-size: 14px
+  font-weight: 300
+  line-height: 1.5
+  +respond-to(768px)
+    padding: 0
+  +respond-to(1200px)
+    font-size: 16px
+
+// ----- Block Content ----- //
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5
+  color: $color-highlight
+  font-family: $font-highlight
+
+h1,
+.h1 
+  border-bottom: 1px solid $color-feature
+  font-size: 2em
+  margin: 1em 0 0.5em 0
+  text-align: center
+  +respond-to(1024px)
+    font-size: 7em
+    margin: 0
+
+h2,
+.h2
+  border-bottom: 1px solid $color-feature
+  font-size: 1.5em
+  margin: 2em 0 0.5em 0
+  text-align: center
+  text-shadow: 1px 1px 0 #fff
+  +respond-to(1024px)
+    font-size: 4em
+    margin: 0.25em 0
+
+h3,
+.h3 
+  border-bottom: 1px solid $color-feature
+  color: $color-alt
+  font-size: 1.25em
+  margin: 2em 0 0.5em 0
+  +respond-to(768px)
+    font-size: 1.75em
+    margin: 0
+  +respond-to(1024px)
+    font-size: 3em
+
+h4,
+.h4
+  color: $color-base
+  font-size: 1.2em
+  line-height: 1.2
+  +respond-to(768px)
+    font-size: 1.5em
+    margin: 0
+  +respond-to(1024px)
+    font-size: 2.25em
+  + p
+    margin-top: 0.25em
+
+h5,
+.h5
+  color: $color-base
+  font-size: 1.1em
+
+p
+  margin: 0.5em 0
+  + p
+    margin-top: 1.5em
+
+// ----- Inline Content ----- //
+
+a
+  color: $color-link
+  text-decoration: none
+  &:hover,
+  &:focus
+    color: lighten($color-link, 20%)
+
+strong
+  font-weight: bold
+
+img,
+svg,
+iframe
+  max-width: 100%
+
+// ----- Block Styles ----- //
+
+.inner
+  margin-left: auto
+  margin-right: auto
+  padding: 0 2em
+
+
+// ----- Lists ----- //
+
+ul,
+ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+// Inline List
+
+.list-inline
+  @extend %group
+  li
+    float: left
+
+.list-bulleted
+  list-style: disc
+  li
+    margin-left: 1.5em
+
+.list-numbered
+  list-style: decimal
+  li
+    margin-left: 1.5em
+    
+.list-spaced
+  li + li
+    margin-top: 1em
+
