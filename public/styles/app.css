@@ -434,7 +434,7 @@ h2,
   h2,
   .h2 {
     font-size: 4em;
-    margin: 0.25em 0;
+    margin: 1em 0 0.5em 0;
   }
 }
 
@@ -2263,4 +2263,13 @@ footer a {
 /* line 131, sass/app.sass */
 #hotels + .holy-shit-pay-attention-to-me {
   margin-bottom: 1em;
+}
+
+/* line 135, sass/app.sass */
+.sold-out h3 {
+  margin-top: 0.5em;
+}
+/* line 137, sass/app.sass */
+.sold-out h3 + p {
+  margin-top: -1em;
 }
