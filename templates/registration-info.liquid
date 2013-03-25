@@ -7,11 +7,11 @@
 
     <div class="block-to-one-third">
       <p class="price h4 fit-03">$149</p>
-      <h4 class="one-moneys">Conference</h4>
+      <h4 class="one-moneys">Conference Only</h4>
       <p>Full access to both conference days and the after-party. Join a few hundred people who build the web to share and celebrate how awesome our community is. </p>
       <div class="center-group">
         <a href="https://dandenney.wufoo.com/forms/2013-frontend-design-conference-registration" class="btn">Register Now</a>
-        <h5>36 of 225 Remaining</h5>
+        <h5>25 of 225 Remaining</h5>
       </div>
 
     </div>
@@ -392,6 +392,37 @@
         <p>Your registration confirmation will have a link to a form to submit a proposal for a talk! We're being more flexible with them this year, so they can be 10-30 minutes.</p>
 
       </div>
+
+      <section class="wrapper--thirds">
+
+        <h3 class="speakers"><i aria-role="hidden" data-icon="&#x71;"></i> Speakers</h3>
+
+        <div class="center-group">
+
+          {% for speaker in speakers %}
+
+            <article class="past-speaker">
+              
+              <img src="{{ speaker.speaker-avatar }}" alt="{{ speaker.speaker-firstName }} {{ speaker.speaker-lastName }}" />
+              
+              <h4>{{ speaker.speaker-firstName }} {{ speaker.speaker-lastName }}</h4>
+              <h5>{{ speaker.topic-title }}</h5>
+
+              <p>{{ speaker.speaker-bio }}</p>
+              
+              <ol class="block-to-inline">
+
+                <li><a href="http://twitter.com/{{ speaker.speaker-twitter }}"><i aria-role="hidden" data-icon="&#x74;"></i>  @{{ speaker.speaker-twitter }}</a></li>
+                <li><a href="http://{{ speaker.speaker-website }}"><i aria-role="hidden" data-icon="&#x62;"></i>  {{ speaker.speaker-website }}</a></li>
+
+              </ol>  
+            </article>
+
+          {% endfor %}
+
+        </div>
+
+      </section>
 
       <p class="h5 fit-4 center-group">Final Beers and Conversation to follow!</p>
 
