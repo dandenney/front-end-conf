@@ -1,6 +1,17 @@
 {
   "speakers" : [
     {
+      "speaker-firstName" : "Alex",
+      "speaker-lastName" : "DiSebastian",
+      "topic-title" : "SEO: Mysticism of the Front-End World",
+      "topic-description" : "Design must be useful, aesthetic, discrete, lasting, useful. Most importantly, good design must be as little as possible. \r\n\r\nIn today's web design, we seem to have reached a level of aesthetic saturation. Design has struggled to find happiness in the minimal. We will explore how micro-interactions can bring a sublime sense of happiness to the user. During this talk, we will explore how the nuances of User Interface Design can positively make a user remember their experience. Isn't that what we all strive for as designers? We seek to evoke emotion. By the end of our conversation, we will have examined and come to the conclusion that happiness bears no extravagant and excessive design. Rather, happiness is born out of the microinteractions that tap into the user's psychological emotion.\r\n\r\nOne part theory and one part technical, this talk will employ the theoretical basis set up by UI Design Principles and offer simple visual & code examples and that can achieve successful micro-interactions. \r\n\r\nUI Design Principles that we will talk about include:\r\n- Our vision is optimized to see structure\r\n- Know your user\r\n- State visualization\r\n- Focus\r\n- Help\r\n- Aesthetics\r\n\r\nWe will make use of code snippets that include:\r\n- SASS (Mixins, Compass)\r\n- CSS3 Transitions\r\n- CSS3 Animations\r\n- CSS3 Flex-box\r\n- CSS3 Gradients\r\n\r\nNote: This talk can also be offered in a 15 minute timeslot. We would focus solely on examining Design Theory and UI Design Principles.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "I'm Alex DiSebastian, the SEO Director at PaperStreet, a full service award winning design firm located in Fort Lauderdale, Florida.",
+      "speaker-twitter" : "paperstreet",
+      "speaker-website" : "paperstreet.com",
+      "speaker-avatar" : "/public/images/avatars/alex-disebastian.jpg"
+    },
+    {
       "speaker-firstName" : "Ricardo",
       "speaker-lastName" : "Vazquez",
       "topic-title" : "Finding Happiness In User Interface Design",

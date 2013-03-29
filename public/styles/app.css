@@ -2272,3 +2272,13 @@ footer a {
 .sold-out h3 + p {
   margin-top: -1em;
 }
+
+/* line 140, sass/app.sass */
+.github {
+  margin-top: 9em;
+}
+
+/* line 143, sass/app.sass */
+.conftocat {
+  margin-top: 4em;
+}
