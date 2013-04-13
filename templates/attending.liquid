@@ -3,6 +3,7 @@
   <h1>Thank you!</h1>
 
   <section class="attending inner">
+
     
     <div class="wrapper--thirds">
 
@@ -32,10 +33,7 @@
 
       </div>
 
-
     <article class="attendees">
-
-      <h3>2013 Attendees</h3>
 
         {% for attendee in attendees reversed %}
 
@@ -57,7 +55,7 @@
               {% if attendee.avatar != '' %}  
                 <li class="attendee-avatar"><img src="{{ attendee.avatar }}" /></li>
               {% else %}
-                <li class="attendee-avatar"><img src="{{"images/missing.png" | asset_url }}"</li>
+                <li class="attendee-avatar"><img src="{{"images/missing.png" | asset_url }}" /></li>
               {% endif %}
 
               <li class="attendee-name">{{ attendee.firstName }} {{ attendee.lastName }}</li>

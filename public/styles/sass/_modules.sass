@@ -113,6 +113,23 @@
         margin-top: 0
         padding-left: 3em
         
+.wrapper--halves-spaced
+  .block-to-half
+    &:last-child
+      margin-top: 2em
+  +respond-to(768px)
+    .block-to-half
+      margin-left: 7%
+      margin-right: 2%
+      width: 40%
+      &:first-child
+        padding-right: 0
+      &:last-child
+        margin-left: 5%
+        margin-right: 4%
+        margin-top: 0
+        padding-left: 0
+        
 .wrapper--two-thirds-third
   +respond-to(768px)
     .block-to-one-third

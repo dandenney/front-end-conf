@@ -92,7 +92,7 @@
   
   .attendees-2013
     display: none
-    margin: 5em 0
+    margin: 2em 0
     + .btn
       margin: 3em 0
     &.is--visible
@@ -107,7 +107,6 @@
 // ----- Curtain ----- //
   
 .stage
-  margin-bottom: 4em
   position: relative
   width: 100%
   .bg-stage
@@ -266,3 +265,84 @@
     top: 1.25em
   +respond-to(1024px)
     top: 2.75em
+
+.home-attendees
+  @extend %group
+  li
+    float: left
+    width: 33.3333%
+    +respond-to(1200px)
+      width: percentage(1px / 12px)
+      
+.message
+  margin: 2em 0
+  h1
+    line-height: 1.1
+  p,
+  p + p
+    margin-top: 0
+
+.wrapper--halves-spaced
+  + h3
+    margin-top: 1em
+    
+.home-attending
+  @extend %group
+
+.home-attendee
+  float: left
+  position: relative
+  width: 8.3333333%
+  img
+    display: block
+    width: 100%
+  .home-attendee-info
+    +transition(all 250ms linear)
+    background: #fefefe
+    height: 100%
+    left: 0
+    opacity: 0
+    padding: 0 1em
+    position: absolute
+    top: 100%
+    width: 100%
+    z-index: 0
+    .attendee-twitter,
+    .attendee-codepen,
+    .attendee-dribbble,
+    .attendee-website,
+    .attendee-github
+      margin: 0
+      padding: 0
+  &:hover
+    .home-attendee-info
+      opacity: 1
+      width: 400px
+      z-index: 3
+
+.sponsors
+  margin: 2em auto
+  width: 70%
+  li
+    display: inline-block
+    padding: 1em
+    vertical-align: middle
+  +respond-to(768px)
+    width: 85%
+    li
+      width: 24.5%
+      
+.home-sponsor
+  h5,
+  .h5
+    color: $color-alt
+    margin-top: 2.5em
+    + a
+      display: inline-block
+      margin-top: 1.5em
+      max-width: 20em
+  .conftocat
+    margin-top: 0
+    max-height: 19em
+    + .h5
+      margin-top: 1em
