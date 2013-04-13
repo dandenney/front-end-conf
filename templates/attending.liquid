@@ -88,7 +88,7 @@
 
               {% if attendee.codepen != '' %}
                 <li class="attendee-codepen">
-                  <a href="http://www.codepen.io/{{ attendee.codepen }}"><i><img src="{{ "codepen.svg" | asset_url }}" height="18" width="20" /></i></a></li>
+                  <a href="http://www.codepen.io/{{ attendee.codepen }}"><i aria-role="hidden" data-icon="&#x21;"></i></a></li>
               {% endif %}
 
               {% if attendee.website != '' %}
