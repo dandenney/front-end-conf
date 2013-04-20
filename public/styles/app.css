@@ -1049,11 +1049,11 @@ ol {
   transition: all 250ms linear;
   background: #fefefe;
   height: 100%;
-  left: 0;
+  left: 100%;
   opacity: 0;
   padding: 0 1em;
   position: absolute;
-  top: 100%;
+  top: 0;
   width: 100%;
   z-index: 0;
 }
@@ -2241,6 +2241,130 @@ sup {
 /* line 52, sass/_inbox.sass */
 .h3.workshop, .workshop.fake-and:after {
   margin: 0.5em auto;
+}
+
+/* line 56, sass/_inbox.sass */
+.home .home-date {
+  font-size: 1.25em;
+  line-height: 1.3;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  /* line 56, sass/_inbox.sass */
+  .home .home-date {
+    font-size: 2em;
+  }
+}
+
+/* line 64, sass/_inbox.sass */
+.test i {
+  color: #dedede;
+  display: block;
+  font-size: 4em;
+  text-align: center;
+}
+/* line 69, sass/_inbox.sass */
+.test h5 {
+  text-align: center;
+}
+/* line 71, sass/_inbox.sass */
+.test p {
+  font-size: 0.875em;
+}
+/* line 73, sass/_inbox.sass */
+.test li {
+  display: inline-block;
+  padding: 0 2em;
+  vertical-align: top;
+  width: 24.75%;
+}
+
+/* line 79, sass/_inbox.sass */
+.timeline {
+  position: relative;
+}
+/* line 81, sass/_inbox.sass */
+.timeline:before {
+  background: #f9f9f9;
+  content: "";
+  left: 50%;
+  margin-left: -0.5em;
+  position: absolute;
+  height: 100%;
+  min-height: 100%;
+  width: 0.5em;
+}
+
+/* line 92, sass/_inbox.sass */
+.timeline-group h2 {
+  border-bottom: none;
+  display: inline-block;
+  font-size: 3em;
+  padding-right: 0.5em;
+  text-align: right;
+  width: 49.5%;
+}
+/* line 99, sass/_inbox.sass */
+.timeline-group h2:after {
+  background: #e0e0e0;
+  border-radius: 0.25em;
+  content: "";
+  float: right;
+  margin: 0.4em -0.82em 0 0;
+  height: 0.5em;
+  position: relative;
+  width: 0.5em;
+  z-index: 1;
+}
+/* line 109, sass/_inbox.sass */
+.timeline-group h2 + .h3, .timeline-group h2 + .fake-and:after {
+  border-bottom: none;
+  font-size: 2em;
+  margin-top: -1.25em;
+  padding-right: 1em;
+  text-align: right;
+  width: 49.5%;
+}
+/* line 117, sass/_inbox.sass */
+.timeline-group:nth-child(even) h2 {
+  margin-left: 50%;
+  padding-left: 0.5em;
+  text-align: left;
+}
+/* line 121, sass/_inbox.sass */
+.timeline-group:nth-child(even) h2:after {
+  float: left;
+  margin: 0.4em 0 0 -0.83em;
+}
+/* line 124, sass/_inbox.sass */
+.timeline-group:nth-child(even) h2 + .h3, .timeline-group:nth-child(even) h2 + .fake-and:after {
+  margin-left: 50%;
+  padding-left: 1em;
+  text-align: left;
+}
+/* line 128, sass/_inbox.sass */
+.timeline-group:nth-child(even) .timeline-item {
+  margin: 1em 0 0 52.5%;
+  position: relative;
+  width: 49.5%;
+}
+/* line 132, sass/_inbox.sass */
+.timeline-group:nth-child(even) .timeline-item:before {
+  background: #e0e0e0;
+  border-radius: 0.5em;
+  content: "";
+  float: left;
+  margin: 0.25em 0 0 -3em;
+  height: 1em;
+  position: relative;
+  width: 1em;
+  z-index: 1;
+}
+/* line 142, sass/_inbox.sass */
+.timeline-group:nth-child(even) .timeline-item:nth-child(even) {
+  margin: 1em 0 0 0;
+  padding-right: 2em;
+  text-align: right;
 }
 
 /* line 22, sass/app.sass */

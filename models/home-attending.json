@@ -3843,6 +3843,36 @@
       "avatar" : "/public/images/avatars/james-webb.jpg",
       "show" : "Yes",
       "status" : "Paid"
+    },
+    {
+      "firstName" : "Neil",
+      "lastName" : "Kinnish",
+      "attended" : "This is my first!",
+      "title" : "Developer / Creative / Consultant",
+      "company" : "Mixture.io",
+      "twitter" : "neiltak",
+      "github" : "neilkinnish",
+      "dribbble" : "",
+      "codepen" : "neilkinnish",
+      "website" : "http://mixture.io",
+      "avatar" : "/public/images/avatars/neil-kinnish.jpg",
+      "show" : "Yes",
+      "status" : "Paid"
+    },
+    {
+      "firstName" : "Pete",
+      "lastName" : "Nelson",
+      "attended" : "This is my first!",
+      "title" : "Co-founder, web and app developer",
+      "company" : "Mixture.io",
+      "twitter" : "petetak",
+      "github" : "petetak",
+      "dribbble" : "",
+      "codepen" : "",
+      "website" : "http://mixture.io",
+      "avatar" : "/public/images/avatars/pete-nelson.jpg",
+      "show" : "Yes",
+      "status" : "Paid"
     }
   ]
 }
