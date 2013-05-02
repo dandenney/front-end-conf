@@ -1100,26 +1100,25 @@ ol {
 }
 
 /* line 339, sass/_home.sass */
-.home-sponsor h5,
-.home-sponsor .h5 {
-  color: #888888;
-  margin-top: 2.5em;
+.home-sponsor a {
+  display: block;
+  margin-top: 3em;
 }
-/* line 343, sass/_home.sass */
-.home-sponsor h5 + a,
-.home-sponsor .h5 + a {
-  display: inline-block;
-  margin-top: 1.5em;
-  max-width: 20em;
+/* line 342, sass/_home.sass */
+.home-sponsor img {
+  max-width: 80%;
 }
-/* line 347, sass/_home.sass */
-.home-sponsor .conftocat {
-  margin-top: 0;
-  max-height: 19em;
+@media (min-width: 768px) {
+  /* line 345, sass/_home.sass */
+  .home-sponsor img {
+    max-width: 60%;
+  }
 }
-/* line 350, sass/_home.sass */
-.home-sponsor .conftocat + .h5 {
-  margin-top: 1em;
+@media (min-width: 1024px) {
+  /* line 348, sass/_home.sass */
+  .home-sponsor img {
+    max-width: 37.5%;
+  }
 }
 
 /* line 9, sass/_prev-events.sass */
