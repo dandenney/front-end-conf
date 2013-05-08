@@ -35,7 +35,7 @@
 
     <article class="attendees">
 
-        {% for attendee in attendees reversed %}
+        {% for attendee in model.attendees reversed %}
 
           {% if attendee.status == "Paid" and attendee.show == "Yes" %}
 
