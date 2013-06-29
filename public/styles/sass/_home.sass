@@ -330,15 +330,26 @@
     display: inline-block
     padding: 1em
     vertical-align: middle
+  a 
+    +transition(opacity 0.25s ease-in)
+    &:hover
+      +opacity(0.6)
   +respond-to(768px)
     width: 85%
     li
       width: 24.5%
       
+.sponsor-codeschool
+  position: relative
+  top: -0.5em
+      
 .home-sponsor
   a
+    +transition(opacity 0.25s ease-in)
     display: block
     margin-top: 3em
+    &:hover
+      +opacity(0.6)
   img
     max-width: 80%
   +respond-to(768px)
@@ -348,3 +359,10 @@
     img
       max-width: 37.5%
 
+.sponsor-adobe
+  img
+    max-height: 150px
+    
+.sponsor-unmatchedstyle
+  img
+    width: 100%

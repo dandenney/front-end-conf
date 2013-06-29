@@ -58,7 +58,7 @@
     {
       "speaker-firstName" : "Milton",
       "speaker-lastName" : "Jackson",
-      "topic-title" : "18 months, 250 pixels",
+      "topic-title" : "Our Sites Suck Because…",
       "topic-description" : "How the WatchESPN team strategized, prototyped, tested, strategized, built and launched live sports scores and content for 8 sports in 250 pixels on the iPad. ",
       "topic-length" : "30 Minutes",
       "speaker-bio" : "Milton is the Senior Designer at WatchESPN/ESPN. He's also an avid side job dude who dabbles in web application development with CodeIgniter for non-profits. ",
@@ -76,16 +76,6 @@
       "speaker-twitter" : "minamarkham",
       "speaker-website" : "mina.is/here",
       "speaker-avatar" : "/public/images/avatars/mina-markham.jpg"
-    },
-    {
-      "speaker-firstName" : "Kody",
-      "speaker-lastName" : "Peterson",
-      "topic-title" : "Designers CAN NOT Develop Apps (Not.)",
-      "topic-description" : "Websites are so 2012, this is 2013 and apps are where its at! Everyone thinks that designers design the site/app and then pass that to the GODLY developers who then do the coding and slicing to create the end product. But, it doesn't have to be that way. Designers can be that one stop shop, with just a bit of HTML, JS, can CSS magic (That most designers know). Designers are more powerful than they think and this talk encourages and teaches designers to successfully use tools like PhoneGap to build and design amazing apps all by themselves. This is a PhoneGap centric talk, I love PhoneGap. Live PhoneGap. And will, in this talk, promote the hell out of PhoneGap :D ",
-      "topic-length" : "15 Minutes",
-      "speaker-bio" : "I am a developer that loves everything about the web. Currently developing for Walt Disney Parks & Resorts.",
-      "speaker-twitter" : "kpkody",
-      "speaker-avatar" : "/public/images/avatars/kody-peterson.jpg"
     },
     {
       "speaker-firstName" : "David",

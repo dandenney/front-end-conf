@@ -130,6 +130,8 @@ footer
   text-align: center
   #hotels + & 
     margin-bottom: 1em
+  .home &
+    margin-top: 0
     
 .sold-out
   h3
@@ -142,3 +144,34 @@ footer
   
 .conftocat
   margin-top: 4em
+  
+.align-right
+  padding-right: 2em
+  text-align: right
+  
+.event
+  padding: 1em 0
+  h4
+    margin-top: 0.125em
+  .block-to-half
+    &:first-child
+      text-align: center
+    img
+      height: 100px
+  
+  +respond-to(1200px)
+    font-size: 1.5em
+    
+  .block-to-half
+    +respond-to(768px)
+      &:first-child
+        text-align: right
+        width: 45%
+        img
+          height: 80px
+      &:last-child
+        width: 53%
+    +respond-to(1200px)
+      &:first-child
+        img
+          height: 150px
