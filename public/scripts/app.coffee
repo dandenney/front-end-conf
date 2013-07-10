@@ -123,7 +123,7 @@ window.FE = {
   tylerPatch: ->
     $(".attendee-website a:not([href^=\"http://\"]):not([href^=\"https://\"])").each ->
       $(this).attr "href", "http://" + $(this).attr("href")
-
+    
 }
 
 #-----------------------------------------------------------------------
@@ -136,4 +136,5 @@ jQuery ($) ->
   FE.navToggle()
   FE.tylerPatch()
   $(".video-wrapper").fitVids()
+
 
