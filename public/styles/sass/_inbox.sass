@@ -79,7 +79,7 @@ sup
     
 .wrap-up
   margin: 2em auto 0 auto
-  max-width: 720px
+  max-width: 900px
   width: 90%
   h4
     margin-top: 0.75em
@@ -106,3 +106,55 @@ sup
       width: 49%
     +respond-to(1800px)
       width: 33%
+      
+.video--rotator
+  display: block
+  margin: 2em -4px 0 0
+  padding: 2em
+  position: relative
+  text-align: center
+  .list-inline &
+    float: none
+  a
+    +transition(all 0.25s linear)
+    display: block
+    padding: 1em 0 0 0
+    &:hover
+      background: $color-feature
+      box-shadow: 0 0 0 0.5em lighten(#e5e5e5, 20%)
+      cursor: pointer
+    img
+      height: 200px
+  i
+    font-size: 3em
+  &:last-child
+    a
+      padding: 0 2em
+      img
+        height: auto
+        width: 50%
+  +respond-to(600px)
+    display: inline-block
+    width: percentage(1/2)
+  +respond-to(900px)
+    width: percentage(1/3)
+    &:last-child
+      a img
+        width: 75%
+  +respond-to(1200px)
+    width: percentage(1/4)
+    a img
+      height: 250px
+
+.video--rotating
+  display: block
+  margin: 2em auto
+  
+.year-2013
+  text-align: center
+  h5
+    font-size: 2em
+  ul
+    text-align: center
+  p
+    padding: 0 1em
