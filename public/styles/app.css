@@ -609,30 +609,44 @@ ol {
   text-align: left;
 }
 /* line 37, sass/_home.sass */
+.home .video-wrapper + .video-wrapper {
+  margin-top: 2em;
+}
+@media (min-width: 768px) {
+  /* line 37, sass/_home.sass */
+  .home .video-wrapper + .video-wrapper {
+    margin-top: 0;
+  }
+}
+/* line 43, sass/_home.sass */
+.home svg {
+  font-family: "ChunkFive", "Chunkfive-webfont", Georgia, sans-serif;
+}
+/* line 46, sass/_home.sass */
 .home form {
   margin: 2em auto;
   overflow: hidden;
   padding-left: 0 !important;
   width: 100%;
 }
-/* line 43, sass/_home.sass */
+/* line 52, sass/_home.sass */
 .home #mc_embed_signup input.email {
   border-color: #e5e5e5;
   border-radius: 4px;
   line-height: 2.5;
   width: 99% !important;
 }
-/* line 49, sass/_home.sass */
+/* line 58, sass/_home.sass */
 .home #mc_embed_signup input.button {
   height: 48px;
   margin: 1em auto;
 }
 @media (min-width: 768px) {
-  /* line 55, sass/_home.sass */
+  /* line 64, sass/_home.sass */
   .home .block-to-half {
     padding: 0 2em 0 0;
   }
-  /* line 58, sass/_home.sass */
+  /* line 67, sass/_home.sass */
   .home .block-to-half + .block-to-half {
     padding: 0 0 0 2em;
   }
