@@ -11,11 +11,11 @@
     <body class="{% if mixture.url == 'index' %}home{% elsif mixture.url == '2012' %}prev-2012{% elsif mixture.url == '2011' %}prev-2011{% elsif mixture.url == '2010' %}prev-2010{% elsif mixture.url == '2009' %}prev-2009{% elsif mixture.url == 'registration-info' %}registration{% endif %}">
       <nav class="nav--toggle">
         <a href="/" {% if mixture.url == "index" %}class="current"{% endif %}>Home</a>
-        <a href="/registration-info" {% if mixture.url == "registration-info" %}class="current"{% endif %}>Registration</a>
+        <!-- <a href="/registration-info" {% if mixture.url == "registration-info" %}class="current"{% endif %}>Registration</a>
         <a href="/registration-info#pre-conf" class="sub {% if mixture.url == "registration-info#pre-conf" %}current{% endif %}">#pre-conf</a>
         <a href="/registration-info#day-one" class="sub {% if mixture.url == "registration-info#day-one" %}current{% endif %}">#day-one</a>
         <a href="/registration-info#day-two" class="sub {% if mixture.url == "registration-info#day-two" %}current{% endif %}">#day-two</a>
-        <a href="/registration-info#area-info" class="sub {% if mixture.url == "registration-info#area-info" %}current{% endif %}">#area-info</a>
+        <a href="/registration-info#area-info" class="sub {% if mixture.url == "registration-info#area-info" %}current{% endif %}">#area-info</a> -->
         <a href="/2012" class="{% if mixture.url == "2012" %}current{% endif %}">2012</a>
         <a href="/2011" class="{% if mixture.url == "2011" %}current{% endif %}">2011</a>
         <a href="/2010" class="{% if mixture.url == "2010" %}current{% endif %}">2010</a>
