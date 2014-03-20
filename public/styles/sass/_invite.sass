@@ -1,0 +1,49 @@
+//-------------------------------------
+//  Home
+//-------------------------------------
+
+.invite
+  background: url('/public/images/stage.svg') center top no-repeat
+  background-size: 100% auto
+  &::before
+    background: rgba(#500e10, 0.9)
+    bottom: 0
+    content: ""
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 1100
+    
+.invite--content
+  color: #fff
+  margin: 0 auto
+  max-width: 720px
+  padding: 1em 3em
+  position: relative
+  width: 90%
+  z-index: 1200
+  
+  h1, h2, h3
+    color: rgba(#fff, 0.5)
+    border: 0
+    text-align: left
+    text-shadow: none
+    
+  h1
+    font-size: 1.5em
+    +respond-to(768px)
+      font-size: 2.5em
+      
+  h2
+    font-size: 1.5em
+    +respond-to(768px)
+      font-size: 2em
+      
+  p
+    +respond-to(768px)
+      font-size: 1.25em
+      
+  a
+    color: #FFEA40
+

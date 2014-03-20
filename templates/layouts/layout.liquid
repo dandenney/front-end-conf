@@ -4,7 +4,7 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>{% block title %}Front-End Conf 2013{% endblock %}</title>
+      <title>{% block title %}Front-End Conf 2014{% endblock %}</title>
       {{ "app.css" | asset_url | stylesheet_tag }}     
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     </head>
@@ -16,6 +16,7 @@
         <a href="/registration-info#day-one" class="sub {% if mixture.url == "registration-info#day-one" %}current{% endif %}">#day-one</a>
         <a href="/registration-info#day-two" class="sub {% if mixture.url == "registration-info#day-two" %}current{% endif %}">#day-two</a>
         <a href="/registration-info#area-info" class="sub {% if mixture.url == "registration-info#area-info" %}current{% endif %}">#area-info</a> -->
+        <a href="/2013" class="{% if mixture.url == "2013" %}current{% endif %}">2013</a>
         <a href="/2012" class="{% if mixture.url == "2012" %}current{% endif %}">2012</a>
         <a href="/2011" class="{% if mixture.url == "2011" %}current{% endif %}">2011</a>
         <a href="/2010" class="{% if mixture.url == "2010" %}current{% endif %}">2010</a>

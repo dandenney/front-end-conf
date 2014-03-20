@@ -1699,6 +1699,71 @@ h3.day-two {
   margin: 0.25em 0 0 0;
 }
 
+/* line 5, sass/_invite.sass */
+.invite {
+  background: url("/public/images/stage.svg") center top no-repeat;
+  background-size: 100% auto;
+}
+/* line 8, sass/_invite.sass */
+.invite::before {
+  background: rgba(80, 14, 16, 0.9);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1100;
+}
+
+/* line 18, sass/_invite.sass */
+.invite--content {
+  color: white;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1em 3em;
+  position: relative;
+  width: 90%;
+  z-index: 1200;
+}
+/* line 27, sass/_invite.sass */
+.invite--content h1, .invite--content h2, .invite--content h3 {
+  color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  text-align: left;
+  text-shadow: none;
+}
+/* line 33, sass/_invite.sass */
+.invite--content h1 {
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 33, sass/_invite.sass */
+  .invite--content h1 {
+    font-size: 2.5em;
+  }
+}
+/* line 38, sass/_invite.sass */
+.invite--content h2 {
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 38, sass/_invite.sass */
+  .invite--content h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 43, sass/_invite.sass */
+  .invite--content p {
+    font-size: 1.25em;
+  }
+}
+/* line 47, sass/_invite.sass */
+.invite--content a {
+  color: #ffea40;
+}
+
 /* line 5, sass/_inbox.sass */
 sup {
   font-family: "Museo Sans", "MuseoSans_300-webfont", "MuseoSans", Helvetica, sans-serif;
@@ -1957,14 +2022,14 @@ sup {
   padding: 0 1em;
 }
 
-/* line 22, sass/app.sass */
+/* line 23, sass/app.sass */
 header,
 footer {
   background: #f9f9f9;
   padding: 0.5em 1em;
 }
 
-/* line 28, sass/app.sass */
+/* line 29, sass/app.sass */
 header {
   left: 0;
   position: fixed;
@@ -1974,12 +2039,12 @@ header {
   z-index: 1000;
 }
 @media (min-width: 768px) {
-  /* line 28, sass/app.sass */
+  /* line 29, sass/app.sass */
   header {
     position: static;
   }
 }
-/* line 38, sass/app.sass */
+/* line 39, sass/app.sass */
 header i {
   cursor: pointer;
   color: #aeaeae;
@@ -1988,7 +2053,7 @@ header i {
   margin-top: 0.3em;
 }
 
-/* line 45, sass/app.sass */
+/* line 46, sass/app.sass */
 .logo {
   color: #b51f24;
   cursor: pointer;
@@ -1998,7 +2063,7 @@ header i {
   margin-bottom: 0.25em;
   text-shadow: 0 1px 1px white;
 }
-/* line 53, sass/app.sass */
+/* line 54, sass/app.sass */
 .logo span {
   color: #aeaeae;
   display: block;
@@ -2008,44 +2073,44 @@ header i {
   text-transform: lowercase;
 }
 
-/* line 63, sass/app.sass */
+/* line 64, sass/app.sass */
 main {
   padding-top: 4em;
 }
-/* line 65, sass/app.sass */
+/* line 66, sass/app.sass */
 .home main {
   padding-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 63, sass/app.sass */
+  /* line 64, sass/app.sass */
   main {
     padding-top: 0;
   }
 }
 
-/* line 72, sass/app.sass */
+/* line 73, sass/app.sass */
 footer {
   background: #333333;
   margin-top: 2em;
   padding-top: 1em;
   text-align: center;
 }
-/* line 77, sass/app.sass */
+/* line 78, sass/app.sass */
 footer li {
   display: inline-block;
 }
-/* line 80, sass/app.sass */
+/* line 81, sass/app.sass */
 footer li + li:before {
   content: "-";
   color: #bababa;
   margin: 0 0.5em;
 }
-/* line 84, sass/app.sass */
+/* line 85, sass/app.sass */
 footer a {
   color: white;
 }
 
-/* line 87, sass/app.sass */
+/* line 88, sass/app.sass */
 .mixture {
   color: #999999;
   display: inline-block;
@@ -2053,7 +2118,7 @@ footer a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 93, sass/app.sass */
+/* line 94, sass/app.sass */
 .mixture img {
   display: inline-block;
   margin: 0 0 0 0.5em;
@@ -2062,18 +2127,18 @@ footer a {
   width: 32px;
 }
 
-/* line 102, sass/app.sass */
+/* line 103, sass/app.sass */
 .center-group {
   text-align: center;
 }
 
-/* line 105, sass/app.sass */
+/* line 106, sass/app.sass */
 .coming-soon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
 
-/* line 108, sass/app.sass */
+/* line 109, sass/app.sass */
 .temp {
   color: white;
   display: block;
@@ -2088,97 +2153,97 @@ footer a {
   width: 100%;
 }
 
-/* line 121, sass/app.sass */
+/* line 122, sass/app.sass */
 .sub-title {
   text-align: center;
   margin: -1em 0 1em 0;
 }
 
-/* line 125, sass/app.sass */
+/* line 126, sass/app.sass */
 .dark-sub-title {
   color: #333333;
 }
 
-/* line 128, sass/app.sass */
+/* line 129, sass/app.sass */
 .holy-shit-pay-attention-to-me {
   background: rgba(255, 229, 69, 0.6);
   margin-top: 1em;
   padding: 0.5em;
   text-align: center;
 }
-/* line 133, sass/app.sass */
+/* line 134, sass/app.sass */
 #hotels + .holy-shit-pay-attention-to-me {
   margin-bottom: 1em;
 }
-/* line 135, sass/app.sass */
+/* line 136, sass/app.sass */
 .home .holy-shit-pay-attention-to-me {
   margin-top: 0;
 }
 
-/* line 139, sass/app.sass */
+/* line 140, sass/app.sass */
 .sold-out h3 {
   margin-top: 0.5em;
 }
-/* line 141, sass/app.sass */
+/* line 142, sass/app.sass */
 .sold-out h3 + p {
   margin-top: -1em;
 }
 
-/* line 144, sass/app.sass */
+/* line 145, sass/app.sass */
 .github {
   margin-top: 9em;
 }
 
-/* line 147, sass/app.sass */
+/* line 148, sass/app.sass */
 .conftocat {
   margin-top: 4em;
 }
 
-/* line 150, sass/app.sass */
+/* line 151, sass/app.sass */
 .align-right {
   padding-right: 2em;
   text-align: right;
 }
 
-/* line 154, sass/app.sass */
+/* line 155, sass/app.sass */
 .event {
   padding: 1em 0;
 }
-/* line 156, sass/app.sass */
+/* line 157, sass/app.sass */
 .event h4 {
   margin-top: 0.125em;
 }
-/* line 159, sass/app.sass */
+/* line 160, sass/app.sass */
 .event .block-to-half:first-child {
   text-align: center;
 }
-/* line 161, sass/app.sass */
+/* line 162, sass/app.sass */
 .event .block-to-half img {
   height: 100px;
 }
 @media (min-width: 1200px) {
-  /* line 154, sass/app.sass */
+  /* line 155, sass/app.sass */
   .event {
     font-size: 1.5em;
   }
 }
 @media (min-width: 768px) {
-  /* line 169, sass/app.sass */
+  /* line 170, sass/app.sass */
   .event .block-to-half:first-child {
     text-align: right;
     width: 45%;
   }
-  /* line 172, sass/app.sass */
+  /* line 173, sass/app.sass */
   .event .block-to-half:first-child img {
     height: 80px;
   }
-  /* line 174, sass/app.sass */
+  /* line 175, sass/app.sass */
   .event .block-to-half:last-child {
     width: 53%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 178, sass/app.sass */
+  /* line 179, sass/app.sass */
   .event .block-to-half:first-child img {
     height: 150px;
   }
