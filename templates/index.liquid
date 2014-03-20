@@ -1,63 +1,113 @@
 {% block content %}
 
-  <section class="home videos">
+  <section class="preview">
 
-    <h1>2013 Rocked</h1>
+    <h1>2014 St. Pete</h1>
 
-    <div class="block-to-half video-wrapper">
+    <p class="intro">Front-End Conf is annual event where a few hundred awesome people get togther to share knowledge and celebrate our community.</p>
 
-      <h4>Live Shop Talk Show</h4>
+    <article class="workshop">
 
-      <iframe src="//player.vimeo.com/video/72548909?byline=0&amp;portrait=0" width="280" height="158" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="fitvid"></iframe>
+      <h2>Workshop - July 10</h2>
 
-    </div>
+      <div class="sparkbox">
 
-    <div class="block-to-half video-wrapper">
+        <figure>
+          <img src="{{ "rob-tarr.png" | asset_url }}" alt="Rob Tarr" width="176" />
+          <figcaption>Rob Tarr</figcaption>
+        </figure>
 
-      <h4>2013 Wrap-Up</h4>
+        <img src="{{ "frontend-tooling.png" | asset_url }}" alt="Frontend Tooling" class="workshop--brand" width="112" />
 
-      <iframe src="http://player.vimeo.com/video/70512830?byline=0&amp;portrait=0" width="280" height="158" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="fitvid"></iframe>
+        <figure>
+          <img src="{{ "neil-renicker.png" | asset_url }}" alt="Neil Renicker" width="176" />
+          <figcaption>Neil Renicker</figcaption>
+        </figure>
 
-    </div>
 
-  </section>
 
-  <section class="home inner">
+        <h3>Frontend Developer Tooling</h3>
+        <p>The Build Right Frontend Tooling Workshop will help you eliminate development pain and friction by introducing you to modern development processes and tools. Staying ahead of the curve is difficult, and it's easy to quickly feel out-of-date or left behind.</p>
 
-    <img src="{{ "map.svg" | asset_url }}" alt="map marking Florida and Oregon, with text 2014 2 locations 2 formats" >
+        <button class="show--trigger btn--hollow mbm mtm">Details</button>
 
-    <div class="block-to-half">
+        <div class="show--content is-hidden">
 
-      <h2>Portland</h2>
+          <p>We'll help you make the leap into Preprocessors of all kinds, plumb the depths of your favorite text editors, get you up and running with source control (tldr; use it!), discover browser development tools, and explore the best ways to test your code across a range of browsers and devices. To top it all off, we’ll mix in all the other tasty essentials you’ll want to know about: the dreaded terminal, performance tuning, automated deployment, and much more!</p>
 
-      <p>We recently found out that <a href="http://www.webvisionsevent.com">WebVisions</a> is in Portland in May, so we're now looking at July or August. This will be a much different style of event to match up with the area.</p>
+          <p>We want you to walk away from our workshop feeling empowered to work faster, cleaner, and with more confidence in your frontend development role. We promise that you'll leave the workshop with your head overflowing with alternatives that challenge the way you're writing code today and that you'll be ready to hit the ground running tomorrow. Workshop topics include:</p>
 
-    </div>
+          <ul>
+            <li>Productivity</li>
+            <li>Source control</li>
+            <li>Design tools</li>
+            <li>Templating</li>
+            <li>Editors</li>
+            <li>Preprocessing</li>
+            <li>Browser / Dev tools</li>
+            <li>Local Servers</li>
+            <li>Automated Deployment</li>
+            <li>Browser/Device Testing</li>
+          </ul>
 
-    <div class="block-to-half">
+        </div>
 
-      <h2>St. Pete</h2>
+      </div>
 
-      <p>We were looking to bring the fun back a little earlier in '14, but it's looking like July 11-12. We'll share details as soon as we can, with the goal of having the site up and tickets for sale in February.</p>
+    </article>
 
-    </div>
+    <article>
 
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-    <form action="http://frontenddesignconference.us2.list-manage2.com/subscribe/post?u=040435af75d83823cc94edc9b&amp;id=88b2a28d01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <label for="mce-EMAIL">Add your email to our MailChimp list for updates on future events!</label>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </form>
-    </div>
+      <h2>Conference, July 11-12</h2>
 
-    <!--End mc_embed_signup-->
+      <p class="intro">St. Petersburg, Florida - Our locations for the events are pending contracts, but they will all be downtown.</p>
+
+      <ol>
+        <li>
+          <h4>July 11</h4>
+          <p><strong>(7)</strong> 45 Minute Presentations and an evening party. The speakers will be announced soon...</p>
+        </li>
+        <li>
+          <h4>July 12</h4>
+          <p><strong>(10)</strong> 25 Minute Presentations. The speakers are coming from an open call and will be announced late April.</p>
+        </li>
+      </ol>
+
+    </article>
+
+    <article>
+
+      <h2>Call For Speakers</h2>
+
+      <p class="h5">If you had only one shot, or one opportunity, to speak at this year's Front-End Conf... Would you capture it? Or just let it slip?</p>
+
+      <div class="its-late">
+
+        <figure>
+          <img src="{{ "carl-smith-2014.jpg" | asset_url }}" alt="Carl Smith" width="200" />
+          <figcaption>Carl Smith</figcaption>
+        </figure>
+
+
+        <p>We're doing something new this year. In the past, the second day was filled with attendee presentations on a volunteer basis. This year, Carl Smith will be kicking off the second day and helping us choose the other 9 speakers. We'll be covering travel and lodging expenses for everyone that is chosen. <a href="https://dandenney.wufoo.com/forms/frontend-conf-call-for-speakers">Submit a talk!</a></p>
+
+      </div>
+
+    </article>
+
+    <article class="coc">
+
+      <h5>Conference Code of Conduct</h5>
+      <p>We have been lucky each year to have an event filled with kind and respectful people. This event is run by a family and we consider all attendees our new friends. That said, we would like to make sure that we will not tolerate harrassment of any kind. We will deal with any complaint swiftly and professionally.</p>
+
+    </article>
+
+    <p class="tac">
+      <strong class="db mbm h5">Conference Only = $175</strong>
+      <strong class="db mbm h5">Workshop Only = $300</strong>
+      <strong class="db mbm h5">Conference + Workshop = $475</strong>
+      <a class="btn" href="http://tito.io/dandenney/frontendconf">Registration is available</a>
+    </p>
 
   </section>
 

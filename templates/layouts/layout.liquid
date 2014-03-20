@@ -5,10 +5,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>{% block title %}Front-End Conf 2014{% endblock %}</title>
-      {{ "app.css" | asset_url | stylesheet_tag }}     
+      {{ "app.css" | asset_url | stylesheet_tag }}
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     </head>
-    <body class="{% if mixture.url == 'index' %}home{% elsif mixture.url == '2012' %}prev-2012{% elsif mixture.url == '2011' %}prev-2011{% elsif mixture.url == '2010' %}prev-2010{% elsif mixture.url == '2009' %}prev-2009{% elsif mixture.url == 'registration-info' %}registration{% endif %}">
+    <body class="{% if mixture.url == 'index' %}boom{% elsif mixture.url == '2012' %}prev-2012{% elsif mixture.url == '2011' %}prev-2011{% elsif mixture.url == '2010' %}prev-2010{% elsif mixture.url == '2009' %}prev-2009{% elsif mixture.url == 'registration-info' %}registration{% endif %}">
       <nav class="nav--toggle">
         <a href="/" {% if mixture.url == "index" %}class="current"{% endif %}>Home</a>
         <!-- <a href="/registration-info" {% if mixture.url == "registration-info" %}class="current"{% endif %}>Registration</a>
@@ -26,7 +26,7 @@
         <a href="/" class="logo">
           Front-End <span>Design Conference</span>
         </a>
-        <i aria-role="hidden" data-icon="&#x6d;" class="nav--toggle nav--trigger"></i> 
+        <i aria-role="hidden" data-icon="&#x6d;" class="nav--toggle nav--trigger"></i>
       </header>
       <main>
         {% block content %}{% endblock %}
@@ -34,15 +34,15 @@
       <footer>
         {% include "navigation" %}
         <div class="contact">
-          Contact Info: 
+          Contact Info:
           <a href="https://twitter.com/frontendconf">
-            <i aria-role="hidden" data-icon="&#x74;"></i> 
+            <i aria-role="hidden" data-icon="&#x74;"></i>
           </a>
           <a href="http://www.facebook.com/FrontEndDesign">
-            <i aria-role="hidden" data-icon="&#x66;"></i> 
+            <i aria-role="hidden" data-icon="&#x66;"></i>
           </a>
           <a href="https://dandenney.wufoo.com/forms/frontend-design-conference-support/">
-            <i aria-role="hidden" data-icon="&#x63;"></i> 
+            <i aria-role="hidden" data-icon="&#x63;"></i>
           </a>
         </div>
         <a href="http://mixture.io" class="mixture">Built and hosted with Mixture.io <img src="{{ "mixture.png" | asset_url }}" alt="Mixture.io" /></a>
