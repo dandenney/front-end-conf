@@ -1,17 +1,17 @@
-#global jQuery 
+#global jQuery
 
-#!    
+#!
 #* FitText.js 1.1
 #*
 #* Copyright 2011, Dave Rupert http://daverupert.com
-#* Released under the WTFPL license 
+#* Released under the WTFPL license
 #* http://sam.zoy.org/wtfpl/
 #*
 #* Date: Thu May 05 14:23:00 2011 -0600
 #
 (($) ->
   $.fn.fitText = (kompressor, options) ->
-    
+
     # Setup options
     compressor = kompressor or 1
     settings = $.extend(
@@ -19,26 +19,26 @@
       maxFontSize: Number.POSITIVE_INFINITY
     , options)
     @each ->
-      
+
       # Store the object
       $this = $(this)
-      
+
       # Resizer() resizes items based on the object width divided by the compressor * 10
       resizer = ->
         $this.css "font-size", Math.max(Math.min($this.width() / (compressor * 10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize))
 
-      
+
       # Call once to set.
       resizer()
-      
-      # Call on resize. Opera debounces their resize by default. 
+
+      # Call on resize. Opera debounces their resize by default.
       $(window).on "resize", resizer
 
 ) jQuery
 
-#global jQuery 
+#global jQuery
 
-#jshint multistr:true browser:true 
+#jshint multistr:true browser:true
 
 #!
 #* FitVids 1.0
@@ -123,7 +123,16 @@ window.FE = {
   tylerPatch: ->
     $(".attendee-website a:not([href^=\"http://\"]):not([href^=\"https://\"])").each ->
       $(this).attr "href", "http://" + $(this).attr("href")
-    
+
+  #-----------------------------------------------------------------------
+  #  Content Show
+  #-----------------------------------------------------------------------
+
+  contentToggle: ->
+    $(".show--trigger").click ->
+      $(this).toggleClass "is-showing"
+      $(".show--content").toggleClass "is-hidden"
+
 }
 
 #-----------------------------------------------------------------------
@@ -135,6 +144,5 @@ jQuery ($) ->
   FE.swap()
   FE.navToggle()
   FE.tylerPatch()
+  FE.contentToggle()
   $(".video-wrapper").fitVids()
-
-

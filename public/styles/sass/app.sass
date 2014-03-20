@@ -12,6 +12,8 @@
 @import "attendee"
 @import "invite"
 
+@import "preview"
+
 @import "inbox"
 
 //-------------------------------------
@@ -25,7 +27,7 @@ footer
   @extend %group
   background: $color-feature
   padding: 0.5em 1em
-  
+
 header
   left: 0
   position: fixed
@@ -35,14 +37,14 @@ header
   z-index: 1000
   +respond-to(768px)
     position: static
-  
+
   i
     cursor: pointer
     color: scale-color($color-feature, $lightness: -30%)
     float: right
     font-size: 2.5em
     margin-top: 0.3em
-    
+
 .logo
   color: $color-highlight
   cursor: pointer
@@ -58,7 +60,7 @@ header
     font-size: 23px
     margin-top: -.75em
     text-transform: lowercase
-    
+
 // ----- Main ----- //
 
 main
@@ -69,7 +71,7 @@ main
     padding-top: 0
 
 // ----- Footer ----- //
-    
+
 footer
   background: $color-base
   margin-top: 2em
@@ -84,7 +86,7 @@ footer
         margin: 0 0.5em
   a
     color: #fff
-    
+
 .mixture
   color: #999
   display: inline-block
@@ -97,12 +99,12 @@ footer
     position: relative
     top: 10px
     width: 32px
-    
+
 // ----- Helpers ----- //
 
 .center-group
   text-align: center
-  
+
 .coming-soon
   +opacity(0.3)
 
@@ -122,7 +124,7 @@ footer
 .sub-title
   text-align: center
   margin: -1em 0 1em 0
-  
+
 .dark-sub-title
   color: $color-base
 
@@ -131,27 +133,27 @@ footer
   margin-top: 1em
   padding: 0.5em
   text-align: center
-  #hotels + & 
+  #hotels + &
     margin-bottom: 1em
   .home &
     margin-top: 0
-    
+
 .sold-out
   h3
     margin-top: 0.5em
-    + p 
+    + p
       margin-top: -1em
-      
+
 .github
   margin-top: 9em
-  
+
 .conftocat
   margin-top: 4em
-  
+
 .align-right
   padding-right: 2em
   text-align: right
-  
+
 .event
   padding: 1em 0
   h4
@@ -161,10 +163,10 @@ footer
       text-align: center
     img
       height: 100px
-  
+
   +respond-to(1200px)
     font-size: 1.5em
-    
+
   .block-to-half
     +respond-to(768px)
       &:first-child
