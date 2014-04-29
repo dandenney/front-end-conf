@@ -97,7 +97,22 @@
     contentToggle: function() {
       return $(".show--trigger").click(function() {
         $(this).toggleClass("is-showing");
-        return $(".show--content").toggleClass("is-hidden");
+        return $(this).next(".show--content").toggleClass("is-hidden");
+      });
+    },
+    pseudoModal: function() {
+      return $(".modal--trigger").click(function() {
+        var target, trigger;
+        trigger = $(this).attr("data-id");
+        target = $('#' + trigger);
+        $(".modal").removeClass("is-visible");
+        $(target).addClass("is-visible");
+        $(".modal").click(function() {
+          return $(this).removeClass("is-visible");
+        });
+        return $(".card").click(function(event) {
+          return event.stopPropagation();
+        });
       });
     }
   };
@@ -108,6 +123,7 @@
     FE.navToggle();
     FE.tylerPatch();
     FE.contentToggle();
+    FE.pseudoModal();
     return $(".video-wrapper").fitVids();
   });
 

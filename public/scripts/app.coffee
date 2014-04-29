@@ -131,7 +131,24 @@ window.FE = {
   contentToggle: ->
     $(".show--trigger").click ->
       $(this).toggleClass "is-showing"
-      $(".show--content").toggleClass "is-hidden"
+      $(this).next(".show--content").toggleClass "is-hidden"
+
+  #-----------------------------------------------------------------------
+  #  Pseudo Modal
+  #-----------------------------------------------------------------------
+
+  pseudoModal: ->
+    $(".modal--trigger").click ->
+      trigger = $(this).attr("data-id")
+      target = $('#' + trigger)
+      $(".modal").removeClass "is-visible"
+      $(target).addClass "is-visible"
+
+      $(".modal").click ->
+        $(this).removeClass "is-visible"
+
+      $(".card").click (event) ->
+        event.stopPropagation()
 
 }
 
@@ -145,4 +162,5 @@ jQuery ($) ->
   FE.navToggle()
   FE.tylerPatch()
   FE.contentToggle()
+  FE.pseudoModal()
   $(".video-wrapper").fitVids()

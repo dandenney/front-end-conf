@@ -3,7 +3,6 @@
 @import "settings"
 @import "reset"
 @import "base"
-@import "home"
 @import "prev-events"
 @import "presentation"
 @import "nav"
@@ -180,3 +179,21 @@ footer
       &:first-child
         img
           height: 150px
+
+.temp--speakers
+  overflow: hidden
+
+
+.temp--speaker
+  float: left
+  width: ((1 / 7) * 100%)
+
+  + .temp--speaker
+    border-left: 1px solid #fff
+
+.attendee--image
+  display: block
+
+.speaker--meta
+  box-sizing: border-box
+  padding: 0 10px 10px 10px

@@ -1,10 +1,35 @@
 //-------------------------------------
-//  Previewt
+//  Preview
 //-------------------------------------
+
+.sparkbox
+  text-align: center
+
+  figure,
+  .workshop--brand
+    display: inline-block
+    vertical-align: middle
+
+  figure
+    max-width: 176px
+    width: 35%
+
+  .workshop--brand
+    margin: -2em 0 0 0
+    max-width: 112px
+    width: 25%
+
+  p
+    text-align: left
+
+  +respond-to(768px)
+
+    .workshop--brand
+      margin: -1.5em 1.5em 0
 
 .preview
   margin: 0 auto
-  max-width: 680px
+  max-width: 60em
   padding: 1.5em
 
   h1
@@ -141,35 +166,3 @@
 
 .db
   display: block
-
-
-//----- Workshop ----- //
-
-.sparkbox
-  text-align: center
-
-  h3
-    color: #000
-
-  p,
-  ul
-    text-align: left
-
-  figure,
-  .workshop--brand
-    display: inline-block
-    vertical-align: middle
-
-  figure
-    max-width: 176px
-    width: 35%
-
-  .workshop--brand
-    margin: -2em 0 0 0
-    max-width: 112px
-    width: 25%
-
-  +respond-to(768px)
-
-    .workshop--brand
-      margin: -1.5em 1.5em 0
