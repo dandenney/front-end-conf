@@ -1,0 +1,23 @@
+// *************************************
+//
+//   Cell
+//   -> Width-limiting blocks
+//
+// *************************************
+
+.cell
+  @extend .mbm
+  @extend .mhc
+  @extend .mtm
+  @extend .por
+  max-width: $b-maxWidth
+
+.cell--a
+  @extend .cell
+  margin: 0 auto
+  @extend .pam
+
+.cell--b
+  @extend .cell
+  max-width: 37.5em
+  width: 90%

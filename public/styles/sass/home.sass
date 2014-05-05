@@ -1,0 +1,385 @@
+// *************************************
+//
+//   Application
+//   -> MVCSS v4.0.0-alpha
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import "foundation/reset.scss"
+@import "foundation/settings"
+@import "foundation/helpers"
+@import "foundation/utilities"
+@import "foundation/base"
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/bucket"
+@import "components/card"
+@import "components/cell"
+@import "components/grid"
+@import "components/row"
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import "structures/buttons"
+@import "structures/person"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+// Icons
+
+[data-icon]:before
+  -webkit-font-smoothing: antialiased
+  content: attr(data-icon)
+  font-family: 'icomoon'
+  font-weight: normal
+  line-height: 1
+  position: relative
+  top: 0.1em
+  speak: none
+
+// Home Intro
+
+// .home--intro
+//   background: url('../images/2014/bg--photo-01-alt.jpg') center bottom no-repeat
+//   background-size: cover
+//
+// .people--speakers
+//   @extend .tac
+//
+// .person
+//   @extend .dib
+//   box-sizing: border-box
+//   margin-right: -4px
+//   @extend .por
+//   padding: $b-whitespace / 8
+//   vertical-align: top
+//   width: percentage(1 / 7)
+//
+// .person--meta
+//   background: $c-background--s
+//   padding: $b-whitespace / 4
+//   @extend .tal
+//   display: none
+//
+// .person--name
+//   @extend .tfh
+//   background: rgba($c-background, 0.8)
+//   display: none
+//   font-size: 110%
+//   margin-top: -1.5em
+//   position: relative
+//   z-index: 1
+//
+// .people--attendees
+//   .person
+//     width: 100px
+//
+// .toggle--info
+//   background: none
+//   border: 0
+//   display: none
+
+
+// *************************************
+//
+//   Strucutre
+//   -> This is an example structure
+//
+// *************************************
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+.btn--hollow
+  background: $c-background
+  border: 2px solid #e5e5e5
+  border-radius: 4px
+  color: darken(#e5e5e5, 40%)
+  cursor: pointer
+  font-size: 80%
+  outline: none
+  padding: 1em 2.5em
+  transition: all 0.3s ease-in-out
+  &:hover,
+  &:active
+    border-color: #c5c5c5
+
+  &.show--trigger
+    &::before
+      content: "Show "
+    &::after
+      content: " ↓"
+    &.is-showing
+      opacity: 0.5
+      &::before
+        content: "Hide "
+      &::after
+        content: " ↑"
+
+.show--content
+  max-height: 100%
+  padding: $b-whitespace
+  overflow-y: hidden
+  transition: max-height 0.3s ease-in-out, opacity 0.3s linear
+
+  &.is-hidden
+    max-height: 0
+    padding: 0
+    opacity: 0
+    transition: max-height 0.3s ease-in-out, opacity 0.3s linear
+
+// -------------------------------------
+//   Home Locations
+// -------------------------------------
+
+.location--intro
+  font-size: 80%
+  margin: $b-whitespace 0 $b-whitespace * 2
+
+
++respond-to(768px)
+
+  .location--intro
+    font-size: 100%
+    margin: 10px auto -30px
+    max-width: 35em
+    text-align: center
+
+  %location
+    background: rgba(#fff, 0.6)
+    border-radius: $b-borderRadius
+    padding: $b-whitespace / 2
+
+  .home--locations
+    background: url(../images/map.svg) center top no-repeat
+    background-size: 100% auto
+    height: 37.5em
+    position: relative
+
+  .location--stpete
+    @extend %location
+    position: absolute
+    right: 35%
+    bottom: 0
+
+  .location--portland
+    @extend %location
+    left: 20%
+    position: absolute
+    top: 3em
+
+// -------------------------------------
+//   Locations
+// -------------------------------------
+
+.current--locations
+  .cell
+    margin-bottom: 0 !important
+    margin-top: 0 !important
+
++respond-to(768px)
+  .current--locations
+    background: url('../images/2014/bg--map.png') center center no-repeat
+    background-size: cover
+
+// -------------------------------------
+//   Workshop
+// -------------------------------------
+
+.current--workshop
+  background: $c-background--d
+
+  +respond-to(768px)
+    background: url('../images/2014/bg--workshop--alt.png') center top no-repeat $c-background--d
+    background-size: cover
+
+  figure,
+  .workshop--brand
+    display: inline-block
+    vertical-align: middle
+
+  figure
+    max-width: 176px
+    width: 35%
+
+  .workshop--brand
+    margin: -2em 0 0 0
+    max-width: 112px
+    width: 25%
+
+  +respond-to(768px)
+
+    .workshop--brand
+      margin: -1.5em 1.5em 0
+
+// -------------------------------------
+//   Speakers
+// -------------------------------------
+
+.person
+  border: $b-border
+  margin-bottom: $b-whitespace !important
+  padding-left: 0 !important
+  @extend .tac
+  &:nth-child(odd)
+    clear: left
+  &:nth-child(even)
+    clear: right
+
+  +respond-to(768px)
+    text-align: left
+
+.modal--trigger
+  &:hover
+    cursor: pointer
+
+.modal
+  background: rgba($c-highlight, 0.95)
+  bottom: 0
+  display: none
+  left: 0
+  overflow-y: scroll
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 1
+  .card
+    background: $c-invert
+  &.is-visible
+    display: block
+
+.modal--close
+  background: $c-highlight
+  border: $b-border
+  border-radius: 50%
+  color: $c-invert
+  cursor: pointer
+  height: 30px
+  line-height: 30px
+  position: absolute
+  right: $b-whitespace
+  top: $b-whitespace
+  transition: background 0.3s linear, color 0.3s linear
+  width: 30px
+  z-index: 2
+  &:hover
+    background: $c-invert
+    color: $c-highlight
+
+
+.person--meta,
+.person--photo
+  vertical-align: middle
+
+.person--meta
+  margin-left: 0
+  +respond-to(768px)
+    margin-left: $b-whitespace
+
+.person--info
+  @extend .bci
+  border-radius: 50%
+  bottom: 10px
+  color: $c-highlight
+  height: 30px
+  line-height: 30px
+  opacity: 0.8
+  right: 5px
+  position: absolute
+  transition: opacity 0.3s linear
+  width: 30px
+
+.person--modal:hover
+  .person--info
+    opacity: 1
+
+.person--socials a + a
+  margin-left: $b-whitespace / 4
+
+.super
+  font-size: 400%
+  line-height: 0.8
+
+// -------------------------------------
+//   Attendee
+// -------------------------------------
+
+.attendee
+  border: $b-border
+  box-sizing: border-box
+  overflow: hidden
+  vertical-align: top
+  width: 200px
+
+.codepen
+  fill: $c-highlight
+  position: relative
+  top: 4px
+  &:hover
+    fill: #a5a5a5
+
+ul,
+li
+  list-style: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Footer
+// -------------------------------------
+
+footer
+  background: $c-background--d
+  margin-top: 2em
+  @extend .ptm
+  text-align: center
+  li
+    display: inline-block
+    + li
+      &:before
+        content: "-"
+        color: #bababa
+        margin: 0 0.5em
+  a
+    color: rgba($c-highlight, 0.9)
+
+  .nav
+    margin-bottom: 0
+
+.mixture
+  display: inline-block
+  margin-bottom: 1em
+  text-align: center
+  vertical-align: middle
+  img
+    display: inline-block
+    margin: 0 0 0 0.5em
+    position: relative
+    top: 6px
+    width: 24px

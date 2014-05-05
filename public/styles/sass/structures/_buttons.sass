@@ -1,0 +1,46 @@
+// *************************************
+//
+//   Strucutre
+//   -> This is an example structure
+//
+// *************************************
+
+.btn
+  background: $c-highlight
+  border: 1px solid darken($c-highlight, 3%)
+  border-radius: $b-borderRadius
+  box-shadow: 0 2px 0 darken($c-highlight, 10%)
+  @extend .tci
+  @extend .dib
+  line-height: 2.5
+  padding: 0 $b-whitespace
+  text-decoration: none
+  transition: background 0.3s linear, color 0.3s linear
+  &:active,
+  &:hover
+    background: darken($c-highlight, 5%)
+    @extend .tci
+    
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// .structure-sub

@@ -1,0 +1,88 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html
+  @extend .tfb
+  @extend .tcb
+  background: $c-background
+  font-size: $b-fontSize
+  line-height: $b-lineHeight
+
+body
+  font-size: 100%
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p
+  @extend .mbm
+  @extend .mtf
+
+ol
+  list-style: none
+  @extend .maf
+  padding: 0
+
+li
+  @extend .mbs
+  @extend .mtf
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5
+  @extend .mbxs
+  @extend .mtf
+  @extend .tfh
+  @extend .twn
+  line-height: 1.2
+
+h1, .h1,
+h2, .h2
+  @extend .tch
+
+h1, .h1
+  font-size: 200%
+  +respond-to(1000px)
+    font-size: 300%
+
+h2, .h2
+  font-size: 160%
+  +respond-to(1000px)
+    font-size: 200%
+
+h3, .h3
+  font-size: 140%
+  +respond-to(1000px)
+    font-size: 150%
+
+h4, .h4
+  font-size: 120%
+
+h5, .h5
+  font-size: 100%
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  @extend .tch
+  text-decoration: none
+  &:hover,
+  &:focus
+    @extend .tcs
+
+i
+  font-style: normal
+
+img
+  max-width: 100%
