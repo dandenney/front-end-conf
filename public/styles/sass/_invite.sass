@@ -3,10 +3,15 @@
 //-------------------------------------
 
 .invite
-  background: url('/public/images/stage.svg') center top no-repeat
-  background-size: 100% auto
+  background: url('/public/images/stage.svg') center top no-repeat rgba(#500e10, 0.9)
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 1
   &::before
-    background: rgba(#500e10, 0.9)
+    background: rgba(#000, 0.9)
     bottom: 0
     content: ""
     left: 0
@@ -14,36 +19,100 @@
     right: 0
     top: 0
     z-index: 1100
-    
+
+  &.invite--chris
+    background: url('/public/images/characters/chris-coyier.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--dave
+    background: url('/public/images/characters/dave-rupert.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--doug
+    background: url('/public/images/characters/doug-neiner.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--jason
+    background: url('/public/images/characters/jason-vanlue.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--jenn
+    background: url('/public/images/characters/jenn-lukas.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--matt
+    background: url('/public/images/characters/matt-graham.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
+  &.invite--sarah
+    background: url('/public/images/characters/sarah-parmenter.svg') center center no-repeat, url('/public/images/stage.svg') center top no-repeat, rgba(#500e10, 0.9)
+    background-size: auto auto, cover, auto auto
+
 .invite--content
   color: #fff
-  margin: 0 auto
+  margin: 5em auto
   max-width: 720px
-  padding: 1em 3em
+  padding: 1em
   position: relative
   width: 90%
   z-index: 1200
-  
+
   h1, h2, h3
-    color: rgba(#fff, 0.5)
+    color: rgba(#fff, 0.9)
     border: 0
-    text-align: left
+    text-align: center
     text-shadow: none
-    
+
   h1
     font-size: 1.5em
     +respond-to(768px)
       font-size: 2.5em
-      
+
   h2
     font-size: 1.5em
     +respond-to(768px)
       font-size: 2em
-      
-  p
+
+  p, li
     +respond-to(768px)
       font-size: 1.25em
-      
+
+  li + li
+    margin-top: 1em
+
   a
     color: #FFEA40
 
+  +respond-to(1000px)
+    margin: 0 auto
+    max-width: 90%
+
+    h1
+      font-size: 400%
+
+    .invite--details
+      border-radius: 0.5em
+      float: left
+      padding: 1em
+      margin-top: 2em
+      width: 30%
+
+    .invite--personal
+      border-radius: 0.5em
+      float: right
+      margin-top: 2em
+      padding: 1em
+      width: 30%
+
+.fadeSwap
+
+  +respond-to(1000px)
+
+    .invite::before
+      background: rgba(#000, 0)
+      transition: background 10s linear
+
+    .invite--details,
+    .invite--personal
+      background: rgba(#500e10, 0.7)
+      transition: background 10s linear

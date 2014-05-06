@@ -1617,12 +1617,17 @@ h3.day-two {
 
 /* line 5, sass/_invite.sass */
 .invite {
-  background: url("/public/images/stage.svg") center top no-repeat;
-  background-size: 100% auto;
+  background: url("/public/images/stage.svg") center top no-repeat rgba(80, 14, 16, 0.9);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
-/* line 8, sass/_invite.sass */
+/* line 13, sass/_invite.sass */
 .invite::before {
-  background: rgba(80, 14, 16, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   bottom: 0;
   content: "";
   left: 0;
@@ -1631,53 +1636,133 @@ h3.day-two {
   top: 0;
   z-index: 1100;
 }
+/* line 23, sass/_invite.sass */
+.invite.invite--chris {
+  background: url("/public/images/characters/chris-coyier.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 27, sass/_invite.sass */
+.invite.invite--dave {
+  background: url("/public/images/characters/dave-rupert.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 31, sass/_invite.sass */
+.invite.invite--doug {
+  background: url("/public/images/characters/doug-neiner.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 35, sass/_invite.sass */
+.invite.invite--jason {
+  background: url("/public/images/characters/jason-vanlue.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 39, sass/_invite.sass */
+.invite.invite--jenn {
+  background: url("/public/images/characters/jenn-lukas.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 43, sass/_invite.sass */
+.invite.invite--matt {
+  background: url("/public/images/characters/matt-graham.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 47, sass/_invite.sass */
+.invite.invite--sarah {
+  background: url("/public/images/characters/sarah-parmenter.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
 
-/* line 18, sass/_invite.sass */
+/* line 51, sass/_invite.sass */
 .invite--content {
   color: white;
-  margin: 0 auto;
+  margin: 5em auto;
   max-width: 720px;
-  padding: 1em 3em;
+  padding: 1em;
   position: relative;
   width: 90%;
   z-index: 1200;
 }
-/* line 27, sass/_invite.sass */
+/* line 60, sass/_invite.sass */
 .invite--content h1, .invite--content h2, .invite--content h3 {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   border: 0;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
 }
-/* line 33, sass/_invite.sass */
+/* line 66, sass/_invite.sass */
 .invite--content h1 {
   font-size: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 33, sass/_invite.sass */
+  /* line 66, sass/_invite.sass */
   .invite--content h1 {
     font-size: 2.5em;
   }
 }
-/* line 38, sass/_invite.sass */
+/* line 71, sass/_invite.sass */
 .invite--content h2 {
   font-size: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 38, sass/_invite.sass */
+  /* line 71, sass/_invite.sass */
   .invite--content h2 {
     font-size: 2em;
   }
 }
 @media (min-width: 768px) {
-  /* line 43, sass/_invite.sass */
-  .invite--content p {
+  /* line 76, sass/_invite.sass */
+  .invite--content p, .invite--content li {
     font-size: 1.25em;
   }
 }
-/* line 47, sass/_invite.sass */
+/* line 80, sass/_invite.sass */
+.invite--content li + li {
+  margin-top: 1em;
+}
+/* line 83, sass/_invite.sass */
 .invite--content a {
   color: #ffea40;
+}
+@media (min-width: 1000px) {
+  /* line 51, sass/_invite.sass */
+  .invite--content {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  /* line 90, sass/_invite.sass */
+  .invite--content h1 {
+    font-size: 400%;
+  }
+  /* line 93, sass/_invite.sass */
+  .invite--content .invite--details {
+    border-radius: 0.5em;
+    float: left;
+    padding: 1em;
+    margin-top: 2em;
+    width: 30%;
+  }
+  /* line 100, sass/_invite.sass */
+  .invite--content .invite--personal {
+    border-radius: 0.5em;
+    float: right;
+    margin-top: 2em;
+    padding: 1em;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 111, sass/_invite.sass */
+  .fadeSwap .invite::before {
+    background: rgba(0, 0, 0, 0);
+    transition: background 10s linear;
+  }
+  /* line 115, sass/_invite.sass */
+  .fadeSwap .invite--details,
+  .fadeSwap .invite--personal {
+    background: rgba(80, 14, 16, 0.7);
+    transition: background 10s linear;
+  }
 }
 
 /* line 5, sass/_preview.sass */
