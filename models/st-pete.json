@@ -1697,6 +1697,54 @@
       "codepen":"",
       "github":"",
       "avatar": "jared-fager.jpg"
+    },
+    {
+      "number":136,
+      "fullName":"Henry Hollingsworth",
+      "permission":"Yup",
+      "title":"Web Design Specialist",
+      "company":"Vology",
+      "twitter":"",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "anonymous.jpg"
+    },
+    {
+      "number":137,
+      "fullName":"Anthony Garand",
+      "permission":"Yup",
+      "title":"Front-End Developer",
+      "company":"Lift",
+      "twitter":"garand",
+      "dribbble":"garand",
+      "codepen":"garand",
+      "github":"garand",
+      "avatar": "anthony-garand.jpg"
+    },
+    {
+      "number":138,
+      "fullName":"Chris Morata",
+      "permission":"Yup",
+      "title":"UI/UX Designer",
+      "company":"Qgiv",
+      "twitter":"chrismorata",
+      "dribbble":"chrismorata",
+      "codepen":"chrismorata",
+      "github":"chrismorata",
+      "avatar": "chris-morata.jpg"
+    },
+    {
+      "number":139,
+      "fullName":"Josh Story",
+      "permission":"Yup",
+      "title":"UI/UX Designer",
+      "company":"Qgiv",
+      "twitter":"joshstormy",
+      "dribbble":"joshstormy",
+      "codepen":"joshstory",
+      "github":"joshstory",
+      "avatar": "josh-story.jpg"
     }
   ]
 }
