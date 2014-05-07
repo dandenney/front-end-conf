@@ -1,4 +1,6 @@
 {
+  "workshop" : "30",
+  "conf" : "169",
   "speakers" : [
     {
     "firstName" : "Elyse",
@@ -1745,6 +1747,54 @@
       "codepen":"joshstory",
       "github":"joshstory",
       "avatar": "josh-story.jpg"
+    },
+    {
+      "number":140,
+      "fullName":"Arron Mabrey",
+      "permission":"Yup",
+      "title":"Software Developer",
+      "company":"",
+      "twitter":"arronmabrey",
+      "dribbble":"",
+      "codepen":"",
+      "github":"arronmabrey",
+      "avatar": "arron-mabrey.jpg"
+    },
+    {
+      "number":141,
+      "fullName":"Jon Carey",
+      "permission":"Yup",
+      "title":"Frontend Developer",
+      "company":"",
+      "twitter":"JonDCarey",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "jon-carey.jpg"
+    },
+    {
+      "number":142,
+      "fullName":"Caroline Baltrusis",
+      "permission":"Yup",
+      "title":"Creative Director",
+      "company":"iDatix",
+      "twitter":"dbck",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "caroline-baltrusis.jpg"
+    },
+    {
+      "number":143,
+      "fullName":"Andrea Graves",
+      "permission":"Yup",
+      "title":"Graphic Designer",
+      "company":"(ISC)2",
+      "twitter":"LaLunaBright",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "andrea-graves.jpg"
     }
   ]
 }
