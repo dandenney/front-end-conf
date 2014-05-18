@@ -1657,8 +1657,8 @@ h3.day-two {
   background-size: auto auto, cover, auto auto;
 }
 /* line 39, sass/_invite.sass */
-.invite.invite--jenn {
-  background: url("/public/images/characters/jenn-lukas.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+.invite.invite--ben {
+  background: url("/public/images/characters/ben-callahan.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
   background-size: auto auto, cover, auto auto;
 }
 /* line 43, sass/_invite.sass */

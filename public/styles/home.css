@@ -853,6 +853,11 @@ h5, .h5 {
 }
 
 /* line 273, sass/foundation/_utilities.sass */
+.vam {
+  vertical-align: middle;
+}
+
+/* line 278, sass/foundation/_utilities.sass */
 .twn, h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -861,7 +866,7 @@ h5, .h5 {
   font-weight: normal;
 }
 
-/* line 275, sass/foundation/_utilities.sass */
+/* line 280, sass/foundation/_utilities.sass */
 .twb {
   font-weight: bold;
 }
