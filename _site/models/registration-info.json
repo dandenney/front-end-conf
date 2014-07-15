@@ -1,0 +1,157 @@
+{
+  "speakers" : [
+    {
+      "speaker-firstName" : "Alex",
+      "speaker-lastName" : "DiSebastian",
+      "topic-title" : "SEO: Mysticism of the Front-End World",
+      "topic-description" : "Design must be useful, aesthetic, discrete, lasting, useful. Most importantly, good design must be as little as possible. \r\n\r\nIn today's web design, we seem to have reached a level of aesthetic saturation. Design has struggled to find happiness in the minimal. We will explore how micro-interactions can bring a sublime sense of happiness to the user. During this talk, we will explore how the nuances of User Interface Design can positively make a user remember their experience. Isn't that what we all strive for as designers? We seek to evoke emotion. By the end of our conversation, we will have examined and come to the conclusion that happiness bears no extravagant and excessive design. Rather, happiness is born out of the microinteractions that tap into the user's psychological emotion.\r\n\r\nOne part theory and one part technical, this talk will employ the theoretical basis set up by UI Design Principles and offer simple visual & code examples and that can achieve successful micro-interactions. \r\n\r\nUI Design Principles that we will talk about include:\r\n- Our vision is optimized to see structure\r\n- Know your user\r\n- State visualization\r\n- Focus\r\n- Help\r\n- Aesthetics\r\n\r\nWe will make use of code snippets that include:\r\n- SASS (Mixins, Compass)\r\n- CSS3 Transitions\r\n- CSS3 Animations\r\n- CSS3 Flex-box\r\n- CSS3 Gradients\r\n\r\nNote: This talk can also be offered in a 15 minute timeslot. We would focus solely on examining Design Theory and UI Design Principles.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "I'm Alex DiSebastian, the SEO Director at PaperStreet, a full service award winning design firm located in Fort Lauderdale, Florida.",
+      "speaker-twitter" : "paperstreet",
+      "speaker-website" : "paperstreet.com",
+      "speaker-avatar" : "/public/images/avatars/alex-disebastian.jpg"
+    },
+    {
+      "speaker-firstName" : "Ricardo",
+      "speaker-lastName" : "Vazquez",
+      "topic-title" : "Finding Happiness In User Interface Design",
+      "topic-description" : "Design must be useful, aesthetic, discrete, lasting, useful. Most importantly, good design must be as little as possible. \r\n\r\nIn today's web design, we seem to have reached a level of aesthetic saturation. Design has struggled to find happiness in the minimal. We will explore how micro-interactions can bring a sublime sense of happiness to the user. During this talk, we will explore how the nuances of User Interface Design can positively make a user remember their experience. Isn't that what we all strive for as designers? We seek to evoke emotion. By the end of our conversation, we will have examined and come to the conclusion that happiness bears no extravagant and excessive design. Rather, happiness is born out of the microinteractions that tap into the user's psychological emotion.\r\n\r\nOne part theory and one part technical, this talk will employ the theoretical basis set up by UI Design Principles and offer simple visual & code examples and that can achieve successful micro-interactions. \r\n\r\nUI Design Principles that we will talk about include:\r\n- Our vision is optimized to see structure\r\n- Know your user\r\n- State visualization\r\n- Focus\r\n- Help\r\n- Aesthetics\r\n\r\nWe will make use of code snippets that include:\r\n- SASS (Mixins, Compass)\r\n- CSS3 Transitions\r\n- CSS3 Animations\r\n- CSS3 Flex-box\r\n- CSS3 Gradients\r\n\r\nNote: This talk can also be offered in a 15 minute timeslot. We would focus solely on examining Design Theory and UI Design Principles.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "UI/UX Designer @500px. I'm interested in culture, design, aeshetic, wit, reality, existence, history, education, thought, & the relentless pursuit of happiness.",
+      "speaker-twitter" : "iamrvazquez",
+      "speaker-website" : "rvazquez.ca",
+      "speaker-avatar" : "/public/images/avatars/ricardo-vazquez.jpg"
+    },
+    {
+      "speaker-firstName" : "Dan",
+      "speaker-lastName" : "Tello",
+      "topic-title" : "HTML 5 game development with JavaScript and Canvas",
+      "topic-description" : "In the past year, I've had the opportunity to dive into some HTML 5 game development, and it's been a blast. Creating Run Puma Run (http://puma.com/runpumarun) was my first experience in this realm, and I'd love to share what I learned throughout the process, and provide some resources for others who are interested in getting started in this area of front end development.\r\n\r\nI started putting together a simplified code example based on my work on Run Puma Run to show my approach for an informal talk I gave a few months ago. See here: https://github.com/greypants/blockblaster-boilerplate. I'd put a little more polish on that before the talk. By the time Front-End Conf rolls around, I'll have completed another canvas game for Puma, as part of a heavily interactive microsite that I'm overseeing. I can definitely tailor my talk to whatever time is available.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "Dan is a Sriracha-powered ex-graphic designer turned front-end dev @Viget who believes that every successful day starts with a plate of bacon.",
+      "speaker-twitter" : "dantello5",
+      "speaker-website" : "viget.com/about/team/dtello",
+      "speaker-avatar" : "/public/images/avatars/dan-tello.jpg"
+    },
+    {
+      "speaker-firstName" : "Travis",
+      "speaker-lastName" : "Miller",
+      "topic-title" : "Hip Hop & The Web: How A Culture Can Define a Process",
+      "topic-description" : "Content marketing is such a buzz term, but so few people really understand it. So let’s make it simple. You know Jay-Z? Kanye? Biggie? They are the masters of content marketing. Always relevant. Constantly remixing, repackaging and sampling their lyrics. Dolling out free mix tapes to get audiences interested in their next project. \r\n\r\nSo how can we apply the tactics of hip-hop in our web strategies? I’d be excited to share on this topic, content marketing, and how development can be key to everything.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "Travis Miller is a Full Stack Web Developer at SPARK, an Advertising Agency based in Tampa, FL. He specializes in Web Development, Digital and Content Strategy.",
+      "speaker-twitter" : "tm_web",
+      "speaker-website" : "spark.us",
+      "speaker-avatar" : "/public/images/avatars/travis-miller.jpg"
+    },
+    {
+      "speaker-firstName" : "Justin",
+      "speaker-lastName" : "Mezzell",
+      "topic-title" : "A Call to Collaboration: Why Extracurricular Design is Essential",
+      "topic-description" : "Content marketing is such a buzz term, but so few people really understand it. So let’s make it simple. You know Jay-Z? Kanye? Biggie? They are the masters of content marketing. Always relevant. Constantly remixing, repackaging and sampling their lyrics. Dolling out free mix tapes to get audiences interested in their next project. \r\n\r\nSo how can we apply the tactics of hip-hop in our web strategies? I’d be excited to share on this topic, content marketing, and how development can be key to everything.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "Designer. Illustrator. Friend of science. Reader of comics. 140 character essayist.",
+      "speaker-twitter" : "justinmezzell",
+      "speaker-website" : "justinmezzell.com",
+      "speaker-avatar" : "/public/images/avatars/justin-mezzell.jpg"
+    },
+    {
+      "speaker-firstName" : "Milton",
+      "speaker-lastName" : "Jackson",
+      "topic-title" : "Our Sites Suck Because…",
+      "topic-description" : "How the WatchESPN team strategized, prototyped, tested, strategized, built and launched live sports scores and content for 8 sports in 250 pixels on the iPad. ",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "Milton is the Senior Designer at WatchESPN/ESPN. He's also an avid side job dude who dabbles in web application development with CodeIgniter for non-profits. ",
+      "speaker-twitter" : "iammilton",
+      "speaker-website" : "watchespn.com",
+      "speaker-avatar" : "/public/images/avatars/milton-jackson.jpg"
+    },
+    {
+      "speaker-firstName" : "Mina",
+      "speaker-lastName" : "Markham",
+      "topic-title" : "Sassy Responsive Design with Foundation",
+      "topic-description" : "How to use Foundation & Sass to streamline the responsive design process, focusing on media queries and the power of mixins. I'll share some tips to best optimize your Sass for responsive design and some examples of sites utilizing these techniques.",
+      "topic-length" : "15 Minutes",
+      "speaker-bio" : "Mina Markham is a  designer/developer hybrid and a a self-proclaimed \"geek in pink.\" A recent Sass convert, she's currently a front-end developer at Parago.",
+      "speaker-twitter" : "minamarkham",
+      "speaker-website" : "mina.is/here",
+      "speaker-avatar" : "/public/images/avatars/mina-markham.jpg"
+    },
+    {
+      "speaker-firstName" : "David",
+      "speaker-lastName" : "Bisset",
+      "topic-title" : "Building Social Sites With WordPress & BuddyPress",
+      "topic-description" : "Quick Walkthrough Of What Kinds Of Social Sites Can Be Built With the WordPress Platform and BuddyPress. Quick Intro to BuddyPress, It's Features, Some Examples (Including Startup Examples), and Pros/Cons of Using The Solution",
+      "topic-length" : "15 Minutes",
+      "speaker-bio" : "Father of 3. I work w/ WordPress & BuddyPress. I also help organize WordCamp Miami.",
+      "speaker-twitter" : "dimensionmedia",
+      "speaker-website" : "dimensionmedia.com",
+      "speaker-avatar" : "/public/images/avatars/david-bisset.jpg"
+    },
+    {
+      "speaker-firstName" : "Regi",
+      "speaker-lastName" : "Ellis",
+      "topic-title" : "Workflow Manifesto",
+      "topic-description" : "With the flood of open-source tools on the market, the space has become \r\ncomplex, and more then ever confusing. A lot of these tools promise opinionated\r\n\"workflows\" in a clean \"sewed up\" package, and although these tools are excellence, time\r\nsavers, and created by insanely smart people. They remove and most often times\r\nprevent develops from learning critical problem solving skills. A \"dependent\" relationship forms, creating a \"druggy pusher\" relationship that hurts the developer is the tools no longer gives them their \"fix\".\r\n\r\nI want to talk about how workflows are constance, how they live outside of tools and platforms, how they should be a tried, test and true philosophies when working. The talk will include, how using these tools should be worked into your workflow, but should not depend on them.\r\n \r\n",
+      "topic-length" : "15 Minutes",
+      "speaker-bio" : "I am a Award-winning freelance Applications Developer currently living and working in the \r\nOrange County area of Central Florida. Former Senior Developer @ Push",
+      "speaker-twitter" : "regiellis",
+      "speaker-website" : "persona.io",
+      "speaker-avatar" : "/public/images/avatars/regi-ellis.jpg"
+    },
+    {
+      "speaker-firstName" : "Cole",
+      "speaker-lastName" : "Krumbholz",
+      "topic-title" : "Prototyping with Backlift",
+      "topic-description" : "Backlift is an increasingly popular platform for prototyping front end code and learning JavaScript. Startups like Automatic.com are using Backlift to iterate on their design before launch, and code schools like the Nashville Software School are teaching basic JavaScript, using Backlift to deploy code thousands of times a day.   \r\n\r\nThis talk will introduce Backlift. We'll show how with a few clicks you can deploy a functional website prototype to your Dropbox and to the web. We'll then demonstrate backlift's live reload feature, and show how to store and retrieve data using backlift's persistence API via Backbone. ",
+      "topic-length" : "15 Minutes",
+      "speaker-bio" : "Cole Krumbholz is the founder of Backlift, a beer drinker, and a former naval officer. Aye!",
+      "speaker-twitter" : "colevscode",
+      "speaker-website" : "backlift.com",
+      "speaker-avatar" : "/public/images/avatars/cole-krumbholz.jpg"
+    },
+    {
+      "speaker-firstName" : "David",
+      "speaker-lastName" : "Leininger",
+      "topic-title" : "Using False Interactivity to Make Your Website Fun",
+      "topic-description" : "Users and Customers want a website that is fun to use, so we used to build terrible/gross/eye gouging flash websites. Now we all know that flash is the devil. Flash did one thing right through, they made web pages \"fun\".\r\n\r\nI want to talk about smart/creative/current ways of using HTML5/CSS3/jQuery to do some of the same things, such as animating things based on scroll. This gives the user the illusion that they are really doing something when they are just scrolling. It keeps them on the page longer, and in the end isn't that what we want?",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "I'm a professional nerd. I'm obsessed with music, design, typography, printing, programming, pizza, photography, apple products, being Catholic, and my savior.",
+      "speaker-twitter" : "davidleininger",
+      "speaker-avatar" : "/public/images/avatars/david-leininger.jpg"
+    },
+    {
+      "speaker-firstName" : "Robert",
+      "speaker-lastName" : "DeLuca",
+      "topic-title" : "Front End Developer",
+      "topic-description" : "What is Thumper, how to get started, who you should you use it, and why you should. I'd like to present my responsive grid and why I think its prefect for those few in the same situation I am in where I work.",
+      "topic-length" : "15 Minutes",
+      "speaker-bio" : "Web developer at ThreeTwelveCreative, self proclaimed front end development genius, and creator of Thumper, a responsive framework built upon LESS.",
+      "speaker-twitter" : "robdel12",      
+      "speaker-website" : "Robert-Deluca.com",
+      "speaker-avatar" : "/public/images/avatars/robert-deluca.jpg"
+    },
+    {
+      "speaker-firstName" : "miguel",
+      "speaker-lastName" : "elasmar",
+      "topic-title" : "UX Art Director",
+      "topic-description" : "I would like to explain the process of design and development of my app \"meetr\" for iPhone.\r\nIf selected, I'd like to bring in my friend and Developer Patrick Denney for the talk. \r\n\r\nThe application has a fascinating process visually and conceptually and I have a great archive of how it evolved from sketches, prototypes all the way to the release available at the App Store. The app has received rave reviews on it's vintage electronic Ui, and ease of use.\r\n\r\nI have done presentations both in the process of design and taught a few classes at the Ringling College of art on vector art. I would be honored to be able to share this project with other young, aspiring designers.\r\n\r\n",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "The process behind @meetr_app the meeting cost calculator for iPhone.\r\nHow a lifeless desktop device was redesigned, improved and ported to iOS.",
+      "speaker-twitter" : "miguelelasmar",
+      "speaker-website" : "miguelelasmar.com",
+      "speaker-avatar" : "/public/images/avatars/miguel-elasmar.jpg"
+    },
+    {
+      "speaker-firstName" : "Joel",
+      "speaker-lastName" : "Glovier",
+      "topic-title" : "Cultivating User Experiences Through Empathy",
+      "topic-description" : "This talk about how user experiences are something that must be cultivated. It's about a relationship with the audience. Empathy is a core component to cultivating good user experiences.\r\n\r\nThe principle of you sowing and reaping applies just as much: in user experience design. What you put into your users experience is directly related to what they get out of it.",
+      "topic-length" : "30 Minutes",
+      "speaker-bio" : "Joel Glovier is a UX designer and front-end developer working full-time at appendTo, and responsible for DevTe.es, RemoteJobs.io, and Userbase.io.",
+      "speaker-twitter" : "jglovier",
+      "speaker-website" : "joelglovier.com",
+      "speaker-avatar" : "/public/images/avatars/joel-glovier.jpg"
+    }
+  ]
+}

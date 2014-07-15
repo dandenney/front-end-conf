@@ -1,0 +1,539 @@
+// *************************************
+//
+//   Application
+//   -> MVCSS v4.0.0-alpha
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import "foundation/reset.scss"
+@import "foundation/settings"
+@import "foundation/helpers"
+@import "foundation/utilities"
+@import "foundation/base"
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/bucket"
+@import "components/card"
+@import "components/cell"
+@import "components/grid"
+@import "components/row"
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import "structures/buttons"
+@import "structures/person"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+.timeline
+  display: block
+
+.timeline-item
+  display: block
+  margin-top: $b-whitespace * 2
+  min-height: 22px
+  overflow: hidden
+  position: relative
+
+.timeline-title
+  border-bottom: $b-border
+  margin-bottom: 0
+  padding-bottom: $b-whitespace / 4
+  @extend .tac
+  +respond-to(760px)
+    font-size: 330%
+
+.timeline-meta
+  color: #a1a1a1
+
++respond-to(760px)
+
+  .timeline
+    border-bottom: $b-border
+    margin-top: 0
+    overflow: hidden
+    padding-bottom: $b-whitespace * 2
+    position: relative
+    &:before
+      background: #e5e5e5
+      content: ""
+      height: 10000px
+      left: 50%
+      position: absolute
+      top: 0
+      width: 1px
+
+  .timeline-meta,
+  .timeline-event
+    box-sizing: border-box
+    width: 50%
+
+  .timeline-item
+    &::after
+      background: $c-background
+      border: 1px solid #e5e5e5
+      border-radius: 6px
+      content: ""
+      height: 10px
+      left: 50%
+      margin-left: -6px
+      position: absolute
+      top: 6px
+      width: 10px
+
+    &:nth-child(odd)
+      .timeline-meta
+        float: left
+        padding-right: $b-whitespace
+        text-align: right
+      .timeline-event
+        float: right
+        padding-left: $b-whitespace
+
+    &:nth-child(even)
+      .timeline-event
+        float: left
+        padding-right: $b-whitespace
+        text-align: right
+      .timeline-meta
+        float: right
+        padding-left: $b-whitespace
+
+
+// Icons
+
+[data-icon]:before
+  -webkit-font-smoothing: antialiased
+  content: attr(data-icon)
+  font-family: 'icomoon'
+  font-weight: normal
+  line-height: 1
+  position: relative
+  top: 0.1em
+  speak: none
+
+// Home Intro
+
+// .home--intro
+//   background: url('../images/2014/bg--photo-01-alt.jpg') center bottom no-repeat
+//   background-size: cover
+//
+// .people--speakers
+//   @extend .tac
+//
+// .person
+//   @extend .dib
+//   box-sizing: border-box
+//   margin-right: -4px
+//   @extend .por
+//   padding: $b-whitespace / 8
+//   vertical-align: top
+//   width: percentage(1 / 7)
+//
+// .person--meta
+//   background: $c-background--s
+//   padding: $b-whitespace / 4
+//   @extend .tal
+//   display: none
+//
+// .person--name
+//   @extend .tfh
+//   background: rgba($c-background, 0.8)
+//   display: none
+//   font-size: 110%
+//   margin-top: -1.5em
+//   position: relative
+//   z-index: 1
+//
+// .people--attendees
+//   .person
+//     width: 100px
+//
+// .toggle--info
+//   background: none
+//   border: 0
+//   display: none
+
+
+// *************************************
+//
+//   Strucutre
+//   -> This is an example structure
+//
+// *************************************
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+.btn--hollow
+  background: $c-background
+  border: 2px solid #e5e5e5
+  border-radius: 4px
+  color: darken(#e5e5e5, 40%)
+  cursor: pointer
+  font-size: 80%
+  outline: none
+  padding: 1em 2.5em
+  transition: all 0.3s ease-in-out
+  &:hover,
+  &:active
+    border-color: #c5c5c5
+
+  &.show--trigger
+    &::before
+      content: "Show "
+    &::after
+      content: " ↓"
+    &.is-showing
+      opacity: 0.5
+      &::before
+        content: "Hide "
+      &::after
+        content: " ↑"
+
+.show--content
+  max-height: 100%
+  padding: $b-whitespace
+  overflow-y: hidden
+  transition: max-height 0.3s ease-in-out, opacity 0.3s linear
+
+  &.is-hidden
+    max-height: 0
+    padding: 0
+    opacity: 0
+    transition: max-height 0.3s ease-in-out, opacity 0.3s linear
+
+// -------------------------------------
+//   Home Locations
+// -------------------------------------
+
+.location--intro
+  font-size: 80%
+  margin: $b-whitespace 0 $b-whitespace * 2
+
+.location--portland
+  margin-top: 3em
+
+
++respond-to(768px)
+
+  .location--intro
+    font-size: 120%
+    margin: 0 auto 2em
+    max-width: 35em
+    text-align: center
+
+  // %location
+  //   background: rgba(#fff, 0.6)
+  //   border-radius: $b-borderRadius
+  //   padding: $b-whitespace / 2
+
+  .home--locations
+    background: url('../images/map.svg') center top no-repeat
+    background-size: auto 100%
+    margin-bottom: $b-whitespace * 2
+    position: relative
+
+  .location--portland
+    margin-top: 0
+
+  // .location--stpete
+  //   @extend %location
+  //   position: absolute
+  //   right: 35%
+  //   bottom: 0
+  //
+  // .location--portland
+  //   @extend %location
+  //   left: 20%
+  //   position: absolute
+  //   top: 3em
+
+// -------------------------------------
+//   Locations
+// -------------------------------------
+
+.current--locations
+  .cell
+    margin-bottom: 0 !important
+    margin-top: 0 !important
+
++respond-to(768px)
+  .current--locations
+    background: url('../images/2014/bg--map.png') center center no-repeat
+    background-size: cover
+
+// -------------------------------------
+//   Workshop
+// -------------------------------------
+
+.current--workshop
+  background: $c-background--d
+
+  +respond-to(768px)
+    background: url('../images/2014/bg--workshop--alt.png') center top no-repeat $c-background--d
+    background-size: cover
+
+  figure,
+  .workshop--brand
+    display: inline-block
+    vertical-align: middle
+
+  figure
+    max-width: 176px
+    width: 35%
+
+  .workshop--brand
+    margin: -2em 0 0 0
+    max-width: 112px
+    width: 25%
+
+  +respond-to(768px)
+
+    .workshop--brand
+      margin: -1.5em 1.5em 0
+
+// -------------------------------------
+//   Speakers
+// -------------------------------------
+
+.person
+  border: $b-border
+  margin-bottom: $b-whitespace !important
+  padding-left: 0 !important
+  @extend .tac
+  &:nth-child(odd)
+    clear: left
+  &:nth-child(even)
+    clear: right
+
+  +respond-to(768px)
+    text-align: left
+
+.modal--trigger
+  &:hover
+    cursor: pointer
+
+.modal
+  background: rgba($c-highlight, 0.95)
+  bottom: 0
+  display: none
+  left: 0
+  overflow-y: scroll
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 1
+  .card
+    background: $c-invert
+  &.is-visible
+    display: block
+
+.modal--close
+  background: $c-highlight
+  border: $b-border
+  border-radius: 50%
+  color: $c-invert
+  cursor: pointer
+  height: 30px
+  line-height: 30px
+  position: absolute
+  right: $b-whitespace
+  top: $b-whitespace
+  transition: background 0.3s linear, color 0.3s linear
+  width: 30px
+  z-index: 2
+  &:hover
+    background: $c-invert
+    color: $c-highlight
+
++respond-to(760px, max-width)
+  .person--image.fr,
+  .person--meta.fr
+    float: left
+
+  .person--meta.mrm
+    margin-left: $b-whitespace
+
+.person--meta
+  +respond-to(760px)
+    max-width: 210px
+
+  +respond-to(1000px)
+    max-width: 340px
+
+.person--info
+  @extend .bci
+  border-radius: 50%
+  bottom: 10px
+  color: $c-highlight
+  height: 30px
+  line-height: 30px
+  opacity: 0.8
+  right: 5px
+  transition: opacity 0.3s linear
+  width: 30px
+
+.person--title,
+.person--company
+  font-size: 87.5%
+
+.person--socials
+  @extend .tsm
+  @extend .mtxs
+
+.person--modal:hover
+  .person--info
+    opacity: 1
+
+.person--socials a + a
+  margin-left: $b-whitespace / 4
+
+.super
+  font-size: 400%
+  line-height: 0.8
+
+// -------------------------------------
+//   Attendee
+// -------------------------------------
+
+.attendee
+  border: $b-border
+  box-sizing: border-box
+  overflow: hidden
+  vertical-align: top
+  width: 200px
+
+.codepen
+  fill: $c-highlight
+  position: relative
+  top: 4px
+  &:hover
+    fill: #a5a5a5
+
+ul,
+li
+  list-style: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Schedule
+// -------------------------------------
+
+.schedule-item
+  border: 1px solid #f5f5f5
+
+.schedule-meta
+  max-width: 360px
+
+// -------------------------------------
+//   Footer
+// -------------------------------------
+
+footer
+  background: $c-background--d
+  margin-top: 2em
+  @extend .ptm
+  text-align: center
+  li
+    display: inline-block
+    + li
+      &:before
+        content: "-"
+        color: #bababa
+        margin: 0 0.5em
+  a
+    color: rgba($c-highlight, 0.9)
+
+  .nav
+    margin-bottom: 0
+
+.mixture
+  display: inline-block
+  margin-bottom: 1em
+  text-align: center
+  vertical-align: middle
+  img
+    display: inline-block
+    margin: 0 0 0 0.5em
+    position: relative
+    top: 6px
+    width: 24px
+
+.speaker-schedule
+  td
+    padding: $b-whitespace
+  tr:nth-child(even)
+    td
+      padding-bottom: $b-whitespace *3
+
+  @media (max-width: 1000px)
+    td
+      display: block
+      width: 100%
+      + td
+        padding-left: 0 !important
+
+.home-characters
+  background: #f5f5f5
+  margin-bottom: -2em
+  padding: $b-whitespace 0
+
+.home-character
+  float: left
+  width: percentage(1/7)
+
+.portland-header
+  font-size: 300%
+  @extend .tac
+  @extend .tci
+
+  +respond-to(1000px)
+    font-size: 800%
+
+.portland-stage
+  background: url('../images/stage-alt.svg') center center no-repeat
+  background-size: cover
+  padding: $b-whitespace 0
+  position: relative
+
+  +respond-to(1000px)
+    padding-top: $b-whitespace * 4
+
+.portland-characters
+  margin: $b-whitespace auto 0
+  width: 90%
+
+  +respond-to(1000px)
+    margin: $b-whitespace * 4 auto 0
+
+.portland-character
+  float: left
+  width: percentage(1/7)

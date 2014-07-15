@@ -1,0 +1,18 @@
+/* line 1, C:/Users/Neil Kinnish/Desktop/front-end-conf/front-end-conf/public/styles/sass/wufoo.sass */
+#logo {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+/* line 5, C:/Users/Neil Kinnish/Desktop/front-end-conf/front-end-conf/public/styles/sass/wufoo.sass */
+html {
+  background: url("../images/stage.svg") center top no-repeat #140501;
+  background-size: 100% auto;
+}
+
+/* line 8, C:/Users/Neil Kinnish/Desktop/front-end-conf/front-end-conf/public/styles/sass/wufoo.sass */
+input[type="text"],
+input[type="email"] {
+  border-radius: 8px;
+  padding: 5px;
+}
