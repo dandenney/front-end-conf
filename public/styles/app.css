@@ -361,11 +361,12 @@ table {
 
 /* line 8, sass/_base.sass */
 html {
-  background: #fefefe;
+  background: whitesmoke;
 }
 
 /* line 11, sass/_base.sass */
 body {
+  background: #fefefe;
   color: #333333;
   font-family: "Museo Sans", "MuseoSans_300-webfont", "MuseoSans", Helvetica, sans-serif;
   font-size: 14px;
@@ -385,7 +386,7 @@ body {
   }
 }
 
-/* line 24, sass/_base.sass */
+/* line 25, sass/_base.sass */
 h1,
 h2,
 h3,
@@ -400,7 +401,7 @@ h5,
   font-family: "ChunkFive", "Chunkfive-webfont", Georgia, sans-serif;
 }
 
-/* line 37, sass/_base.sass */
+/* line 38, sass/_base.sass */
 h1,
 .h1 {
   border-bottom: 1px solid #f9f9f9;
@@ -409,7 +410,7 @@ h1,
   text-align: center;
 }
 @media (min-width: 1024px) {
-  /* line 37, sass/_base.sass */
+  /* line 38, sass/_base.sass */
   h1,
   .h1 {
     font-size: 7em;
@@ -417,7 +418,7 @@ h1,
   }
 }
 
-/* line 47, sass/_base.sass */
+/* line 48, sass/_base.sass */
 h2,
 .h2 {
   border-bottom: 1px solid #f9f9f9;
@@ -427,7 +428,7 @@ h2,
   text-shadow: 1px 1px 0 white;
 }
 @media (min-width: 1024px) {
-  /* line 47, sass/_base.sass */
+  /* line 48, sass/_base.sass */
   h2,
   .h2 {
     font-size: 4em;
@@ -435,7 +436,7 @@ h2,
   }
 }
 
-/* line 58, sass/_base.sass */
+/* line 59, sass/_base.sass */
 h3,
 .h3 {
   border-bottom: 1px solid #f9f9f9;
@@ -444,7 +445,7 @@ h3,
   margin: 2em 0 0.5em 0;
 }
 @media (min-width: 768px) {
-  /* line 58, sass/_base.sass */
+  /* line 59, sass/_base.sass */
   h3,
   .h3 {
     font-size: 1.75em;
@@ -452,14 +453,14 @@ h3,
   }
 }
 @media (min-width: 1024px) {
-  /* line 58, sass/_base.sass */
+  /* line 59, sass/_base.sass */
   h3,
   .h3 {
     font-size: 3em;
   }
 }
 
-/* line 70, sass/_base.sass */
+/* line 71, sass/_base.sass */
 h4,
 .h4 {
   color: #333333;
@@ -467,7 +468,7 @@ h4,
   line-height: 1.2;
 }
 @media (min-width: 768px) {
-  /* line 70, sass/_base.sass */
+  /* line 71, sass/_base.sass */
   h4,
   .h4 {
     font-size: 1.5em;
@@ -475,64 +476,64 @@ h4,
   }
 }
 @media (min-width: 1024px) {
-  /* line 70, sass/_base.sass */
+  /* line 71, sass/_base.sass */
   h4,
   .h4 {
     font-size: 2.25em;
   }
 }
-/* line 80, sass/_base.sass */
+/* line 81, sass/_base.sass */
 h4 + p,
 .h4 + p {
   margin-top: 0.25em;
 }
 
-/* line 83, sass/_base.sass */
+/* line 84, sass/_base.sass */
 h5,
 .h5 {
   color: #333333;
   font-size: 1.1em;
 }
 
-/* line 88, sass/_base.sass */
+/* line 89, sass/_base.sass */
 p {
   margin: 0.5em 0;
 }
-/* line 90, sass/_base.sass */
+/* line 91, sass/_base.sass */
 p + p {
   margin-top: 1.5em;
 }
 
-/* line 95, sass/_base.sass */
+/* line 96, sass/_base.sass */
 a {
   color: #b51f24;
   text-decoration: none;
 }
-/* line 98, sass/_base.sass */
+/* line 99, sass/_base.sass */
 a:hover, a:focus {
   color: #e2585c;
 }
 
-/* line 102, sass/_base.sass */
+/* line 103, sass/_base.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 105, sass/_base.sass */
+/* line 106, sass/_base.sass */
 img,
 svg,
 iframe {
   max-width: 100%;
 }
 
-/* line 112, sass/_base.sass */
+/* line 113, sass/_base.sass */
 .inner {
   margin-left: auto;
   margin-right: auto;
   padding: 0 2em;
 }
 
-/* line 120, sass/_base.sass */
+/* line 121, sass/_base.sass */
 ul,
 ol {
   list-style: none;
@@ -540,30 +541,30 @@ ol {
   padding: 0;
 }
 
-/* line 130, sass/_base.sass */
+/* line 131, sass/_base.sass */
 .list-inline li {
   float: left;
 }
 
-/* line 133, sass/_base.sass */
+/* line 134, sass/_base.sass */
 .list-bulleted {
   list-style: disc;
 }
-/* line 135, sass/_base.sass */
+/* line 136, sass/_base.sass */
 .list-bulleted li {
   margin-left: 1.5em;
 }
 
-/* line 138, sass/_base.sass */
+/* line 139, sass/_base.sass */
 .list-numbered {
   list-style: decimal;
 }
-/* line 140, sass/_base.sass */
+/* line 141, sass/_base.sass */
 .list-numbered li {
   margin-left: 1.5em;
 }
 
-/* line 144, sass/_base.sass */
+/* line 145, sass/_base.sass */
 .list-spaced li + li {
   margin-top: 1em;
 }
@@ -1671,8 +1672,23 @@ h3.day-two {
   background: url("/public/images/characters/sarah-parmenter.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
   background-size: auto auto, cover, auto auto;
 }
-
 /* line 51, sass/_invite.sass */
+.invite.invite--fabio {
+  background: url("/public/images/characters/fabio-sasso.png") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 55, sass/_invite.sass */
+.invite.invite--ryan {
+  background: url("/public/images/characters/ryan-singer.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+/* line 59, sass/_invite.sass */
+.invite.invite--bermon {
+  background: url("/public/images/characters/bermon-painter.svg") center center no-repeat, url("/public/images/stage.svg") center top no-repeat, rgba(80, 14, 16, 0.9);
+  background-size: auto auto, cover, auto auto;
+}
+
+/* line 63, sass/_invite.sass */
 .invite--content {
   color: white;
   margin: 5em auto;
@@ -1682,58 +1698,58 @@ h3.day-two {
   width: 90%;
   z-index: 1200;
 }
-/* line 60, sass/_invite.sass */
+/* line 72, sass/_invite.sass */
 .invite--content h1, .invite--content h2, .invite--content h3 {
   color: rgba(255, 255, 255, 0.9);
   border: 0;
   text-align: center;
   text-shadow: none;
 }
-/* line 66, sass/_invite.sass */
+/* line 78, sass/_invite.sass */
 .invite--content h1 {
   font-size: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 66, sass/_invite.sass */
+  /* line 78, sass/_invite.sass */
   .invite--content h1 {
     font-size: 2.5em;
   }
 }
-/* line 71, sass/_invite.sass */
+/* line 83, sass/_invite.sass */
 .invite--content h2 {
   font-size: 1.5em;
 }
 @media (min-width: 768px) {
-  /* line 71, sass/_invite.sass */
+  /* line 83, sass/_invite.sass */
   .invite--content h2 {
     font-size: 2em;
   }
 }
 @media (min-width: 768px) {
-  /* line 76, sass/_invite.sass */
+  /* line 88, sass/_invite.sass */
   .invite--content p, .invite--content li {
     font-size: 1.25em;
   }
 }
-/* line 80, sass/_invite.sass */
+/* line 92, sass/_invite.sass */
 .invite--content li + li {
   margin-top: 1em;
 }
-/* line 83, sass/_invite.sass */
+/* line 95, sass/_invite.sass */
 .invite--content a {
   color: #ffea40;
 }
 @media (min-width: 1000px) {
-  /* line 51, sass/_invite.sass */
+  /* line 63, sass/_invite.sass */
   .invite--content {
     margin: 0 auto;
     max-width: 90%;
   }
-  /* line 90, sass/_invite.sass */
+  /* line 102, sass/_invite.sass */
   .invite--content h1 {
     font-size: 400%;
   }
-  /* line 93, sass/_invite.sass */
+  /* line 105, sass/_invite.sass */
   .invite--content .invite--details {
     border-radius: 0.5em;
     float: left;
@@ -1741,7 +1757,7 @@ h3.day-two {
     margin-top: 2em;
     width: 30%;
   }
-  /* line 100, sass/_invite.sass */
+  /* line 112, sass/_invite.sass */
   .invite--content .invite--personal {
     border-radius: 0.5em;
     float: right;
@@ -1752,12 +1768,12 @@ h3.day-two {
 }
 
 @media (min-width: 1000px) {
-  /* line 111, sass/_invite.sass */
+  /* line 123, sass/_invite.sass */
   .fadeSwap .invite::before {
     background: rgba(0, 0, 0, 0);
     transition: background 10s linear;
   }
-  /* line 115, sass/_invite.sass */
+  /* line 127, sass/_invite.sass */
   .fadeSwap .invite--details,
   .fadeSwap .invite--personal {
     background: rgba(80, 14, 16, 0.7);

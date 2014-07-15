@@ -1,8 +1,13 @@
 {
+  "convertHtml": {
+    "relativePaths": false
+  },
   "debug": false,
   "domain": "frontenddesignconference.com",
   "lintScripts": false,
-  "preprocessorLocations": "public",
+  "preprocessorLocations": [
+    "public"
+  ],
   "preprocessorScriptOutput": "public/scripts",
   "preprocessorStyleOutput": "public/styles",
   "projectDescription": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",

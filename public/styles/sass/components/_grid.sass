@@ -41,6 +41,11 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
   padding-right: $grid-gutter / 2
   width: 100%
 
+.grid--l
+  .grid-box
+    padding-left: $grid-gutter
+    padding-right: $grid-gutter
+
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
@@ -49,6 +54,9 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
   @extend .db
   @extend .mhc
   float: none
+
+.mhc-i
+  margin: 0 auto !important
 
 // -------------------------------------
 //   Setup

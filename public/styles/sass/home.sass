@@ -36,6 +36,81 @@
 //   Inbox
 // -------------------------------------
 
+.timeline
+  display: block
+
+.timeline-item
+  display: block
+  margin-top: $b-whitespace * 2
+  min-height: 22px
+  overflow: hidden
+  position: relative
+
+.timeline-title
+  border-bottom: $b-border
+  margin-bottom: 0
+  padding-bottom: $b-whitespace / 4
+  @extend .tac
+  +respond-to(760px)
+    font-size: 330%
+
+.timeline-meta
+  color: #a1a1a1
+
++respond-to(760px)
+
+  .timeline
+    border-bottom: $b-border
+    margin-top: 0
+    overflow: hidden
+    padding-bottom: $b-whitespace * 2
+    position: relative
+    &:before
+      background: #e5e5e5
+      content: ""
+      height: 10000px
+      left: 50%
+      position: absolute
+      top: 0
+      width: 1px
+
+  .timeline-meta,
+  .timeline-event
+    box-sizing: border-box
+    width: 50%
+
+  .timeline-item
+    &::after
+      background: $c-background
+      border: 1px solid #e5e5e5
+      border-radius: 6px
+      content: ""
+      height: 10px
+      left: 50%
+      margin-left: -6px
+      position: absolute
+      top: 6px
+      width: 10px
+
+    &:nth-child(odd)
+      .timeline-meta
+        float: left
+        padding-right: $b-whitespace
+        text-align: right
+      .timeline-event
+        float: right
+        padding-left: $b-whitespace
+
+    &:nth-child(even)
+      .timeline-event
+        float: left
+        padding-right: $b-whitespace
+        text-align: right
+      .timeline-meta
+        float: right
+        padding-left: $b-whitespace
+
+
 // Icons
 
 [data-icon]:before
@@ -162,37 +237,43 @@
   font-size: 80%
   margin: $b-whitespace 0 $b-whitespace * 2
 
+.location--portland
+  margin-top: 3em
+
 
 +respond-to(768px)
 
   .location--intro
-    font-size: 100%
-    margin: 10px auto -30px
+    font-size: 120%
+    margin: 0 auto 2em
     max-width: 35em
     text-align: center
 
-  %location
-    background: rgba(#fff, 0.6)
-    border-radius: $b-borderRadius
-    padding: $b-whitespace / 2
+  // %location
+  //   background: rgba(#fff, 0.6)
+  //   border-radius: $b-borderRadius
+  //   padding: $b-whitespace / 2
 
   .home--locations
-    background: url(../images/map.svg) center top no-repeat
-    background-size: 100% auto
-    height: 37.5em
+    background: url('../images/map.svg') center top no-repeat
+    background-size: auto 100%
+    margin-bottom: $b-whitespace * 2
     position: relative
 
-  .location--stpete
-    @extend %location
-    position: absolute
-    right: 35%
-    bottom: 0
-
   .location--portland
-    @extend %location
-    left: 20%
-    position: absolute
-    top: 3em
+    margin-top: 0
+
+  // .location--stpete
+  //   @extend %location
+  //   position: absolute
+  //   right: 35%
+  //   bottom: 0
+  //
+  // .location--portland
+  //   @extend %location
+  //   left: 20%
+  //   position: absolute
+  //   top: 3em
 
 // -------------------------------------
 //   Locations
@@ -292,15 +373,20 @@
     background: $c-invert
     color: $c-highlight
 
++respond-to(760px, max-width)
+  .person--image.fr,
+  .person--meta.fr
+    float: left
 
-.person--meta,
-.person--photo
-  vertical-align: middle
+  .person--meta.mrm
+    margin-left: $b-whitespace
 
 .person--meta
-  margin-left: 0
-  +respond-to(768px)
-    margin-left: $b-whitespace
+  +respond-to(760px)
+    max-width: 210px
+
+  +respond-to(1000px)
+    max-width: 340px
 
 .person--info
   @extend .bci
@@ -311,9 +397,16 @@
   line-height: 30px
   opacity: 0.8
   right: 5px
-  position: absolute
   transition: opacity 0.3s linear
   width: 30px
+
+.person--title,
+.person--company
+  font-size: 87.5%
+
+.person--socials
+  @extend .tsm
+  @extend .mtxs
 
 .person--modal:hover
   .person--info
@@ -351,6 +444,16 @@ li
   padding: 0
 
 // -------------------------------------
+//   Schedule
+// -------------------------------------
+
+.schedule-item
+  border: 1px solid #f5f5f5
+
+.schedule-meta
+  max-width: 360px
+
+// -------------------------------------
 //   Footer
 // -------------------------------------
 
@@ -383,3 +486,54 @@ footer
     position: relative
     top: 6px
     width: 24px
+
+.speaker-schedule
+  td
+    padding: $b-whitespace
+  tr:nth-child(even)
+    td
+      padding-bottom: $b-whitespace *3
+
+  @media (max-width: 1000px)
+    td
+      display: block
+      width: 100%
+      + td
+        padding-left: 0 !important
+
+.home-characters
+  background: #f5f5f5
+  margin-bottom: -2em
+  padding: $b-whitespace 0
+
+.home-character
+  float: left
+  width: percentage(1/7)
+
+.portland-header
+  font-size: 300%
+  @extend .tac
+  @extend .tci
+
+  +respond-to(1000px)
+    font-size: 800%
+
+.portland-stage
+  background: url('../images/stage-alt.svg') center center no-repeat
+  background-size: cover
+  padding: $b-whitespace 0
+  position: relative
+
+  +respond-to(1000px)
+    padding-top: $b-whitespace * 4
+
+.portland-characters
+  margin: $b-whitespace auto 0
+  width: 90%
+
+  +respond-to(1000px)
+    margin: $b-whitespace * 4 auto 0
+
+.portland-character
+  float: left
+  width: percentage(1/7)
