@@ -3450,7 +3450,7 @@
       "github":"",
       "avatar": "anonymous.jpg"
     },
-     {
+    {
       "number":328,
       "fullName":"Timothy J Barkley",
       "permission":"Yup",
@@ -3497,6 +3497,18 @@
       "codepen":"",
       "github":"",
       "avatar": "alyssa-amrhein.jpg"
+    },
+    {
+      "number":337,
+      "fullName":"Tim Knight",
+      "permission":"Yup",
+      "title":"Senior UX Architect",
+      "company":"GravityFree",
+      "twitter":"timknight",
+      "dribbble":"timknight",
+      "codepen":"-",
+      "github":"timknight",
+      "avatar": "tim-knight.jpg"
     }
   ]
 }

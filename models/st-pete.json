@@ -3497,6 +3497,138 @@
       "codepen":"",
       "github":"",
       "avatar": "alyssa-amrhein.jpg"
+    },
+    {
+      "number":337,
+      "fullName":"Tim Knight",
+      "permission":"Yup",
+      "title":"Senior UX Architect",
+      "company":"GravityFree",
+      "twitter":"timknight",
+      "dribbble":"timknight",
+      "codepen":"",
+      "github":"timknight",
+      "avatar": "tim-knight.jpg"
+    },
+    {
+      "number":338,
+      "fullName":"Andrea Cannistra",
+      "permission":"Yup",
+      "title":"Interactive Designer",
+      "company":"GravityFree",
+      "twitter":"acannist",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "andrea-cannistra.jpg"
+    },
+    {
+      "number":339,
+      "fullName":"Sean Lamberger",
+      "permission":"Yup",
+      "title":"Art Director",
+      "company":"GravityFree",
+      "twitter":"drqshadow",
+      "dribbble":"drqshadow",
+      "codepen":"",
+      "github":"drqshadow",
+      "avatar": "sean-lamberger.jpg"
+    },
+    {
+      "number":341,
+      "fullName":"Mike Calhoun",
+      "permission":"Yup",
+      "title":"CEO",
+      "company":"BizBlueprint",
+      "twitter":"mikecalhoun",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "mike-calhoun.jpg"
+    },
+    {
+      "number":342,
+      "fullName":"Lin Jackson",
+      "permission":"Yup",
+      "title":"",
+      "company":"",
+      "twitter":"linjackson",
+      "dribbble":"",
+      "codepen":"linjackson",
+      "github":"linjackson",
+      "avatar": "lin-jackson.jpg"
+    },
+    {
+      "number":343,
+      "fullName":"Christopher McElveen",
+      "permission":"Yup",
+      "title":"Front-End Developer | Founder",
+      "company":"McElveen & Company",
+      "twitter":"",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "anonymous.jpg"
+    },
+    {
+      "number":345,
+      "fullName":"James Brown",
+      "permission":"Yup",
+      "title":"",
+      "company":"Wrecking Ball Media",
+      "twitter":"ibjhb",
+      "dribbble":"",
+      "codepen":"",
+      "github":"ibjhb",
+      "avatar": "james-brown.jpg"
+    },
+    {
+      "number":346,
+      "fullName":"Carolos Constantakatos",
+      "permission":"Yup",
+      "title":"Developer",
+      "company":"",
+      "twitter":"",
+      "dribbble":"",
+      "codepen":"",
+      "github":"",
+      "avatar": "anonymous.jpg"
+    },
+    {
+      "number":347,
+      "fullName":"David Rogers",
+      "permission":"Yup",
+      "title":"Front End Engineering Instructor",
+      "company":"The Iron Yard",
+      "twitter":"al_the_x",
+      "dribbble":"",
+      "codepen":"",
+      "github":"al-the-x",
+      "avatar": "david-rogers.jpg"
+    },
+    {
+      "number":348,
+      "fullName":"Grant Eben",
+      "permission":"Yup",
+      "title":"Web Developer",
+      "company":"",
+      "twitter":"",
+      "dribbble":"",
+      "codepen":"",
+      "github":"gmeben",
+      "avatar": "grant-eben.jpg"
+    },
+    {
+      "number":350,
+      "fullName":"Darin Lewis",
+      "permission":"Yup",
+      "title":"Founder / Creative Director",
+      "company":"MEGA Inc.",
+      "twitter":"MEGA_Inc",
+      "dribbble":"MEGA_Inc",
+      "codepen":"",
+      "github":"",
+      "avatar": "darin-lewis.png"
     }
   ]
 }
