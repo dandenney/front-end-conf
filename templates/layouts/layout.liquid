@@ -37,6 +37,9 @@
       </footer>
       {{ "app.js" | asset_url | script_tag }}
       {{ "konami.js" | asset_url | script_tag }}
+
+      {% block scripts %}{% endblock %}
+
       <script type="text/javascript">
 
         var photoBooth = new Konami('http://frontenddesignconference.com/konami');
