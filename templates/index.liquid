@@ -2,7 +2,272 @@
 
 {% block content %}
 
-  <section class="home--intro">
+  <section class="portland-stage">
+
+    <h1 class="portland-header">Front-End Finale!</h1>
+
+    <div class="grid portland-characters">
+
+      <img alt="Daniel Ryan" src="{{ "daniel-ryan-2.svg" | asset_url }}" class="portland-character" />
+      <img alt="Rachel Smith" src="{{ "rachel-smith-2.svg" | asset_url }}" class="portland-character" />
+      <img alt="Ben Callahan" src="{{ "ben-callahan.svg" | asset_url }}" class="portland-character" />
+      <img alt="Bermon Painter" src="{{ "bermon-painter.svg" | asset_url }}" class="portland-character" />
+      <img alt="Chris Coyier" src="{{ "chris-coyier.svg" | asset_url }}" class="portland-character" />
+      <img alt="Question" src="{{ "question.svg" | asset_url }}" class="portland-character" />
+      <img alt="Jason VanLue" src="{{ "jason-vanlue.svg" | asset_url }}" class="portland-character" />
+
+    </div>
+
+  </section>
+
+  <section class="portland-details pbl ptl">
+
+    <div class="cell">
+
+      <div class="card">
+
+        <h2 class="tac">Portland, Aug 22 - 23</h2>
+
+        <p>Our first event in Portland is also our last time running the Front-End Design Conference. We hope to meet many of the awesome members of the Portland community that we have heard so much about.</p>
+
+        <div class="grid">
+
+          <div class="grid-box grid-box--tablet--1of2 tac">
+
+            <h3>Conference</h3>
+
+            <p>Aug 22, 9:30am - 5:30pm, 7 Presentations</p>
+
+            <p class="mbs"><img src="{{ "gerding-interior.jpg" | asset_url }}" /></p>
+
+            <p><strong>Gerding Theater at the Armory</strong><br />
+                128 NW Eleventh Avenue, Portland, Oregon 97209</p>
+
+          </div>
+
+          <div class="grid-box grid-box--tablet--1of2">
+
+            <h3 class="tac">Meetups</h3>
+
+            <p class="tac">Aug 23, All day</p>
+
+            <p>While learning from the presentations is the focus of conferences, the conversations outside of them are often the best part of the event. They are what lead to friendships, work opportunities, and collaboration.</p>
+
+            <p>Rather than have a second day of presentations, we're hoping to get people from the event together to explore Portland and hang out.</p>
+
+            <p>Details aren't finalized, but we're lining up some creative jam sessions, some hiking/outdoorsy fun, and times for talking shop over the amazing food and drinks in Portland.</p>
+
+          </div>
+
+        </div>
+
+        <div class="mbl mtl tac">
+
+          <a href="" class="btn">Register now for $199</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="cell--f pbl ptl video-wrapper">
+
+      <p class="tac">Want to know what the vibe is like? See what went down in St. Pete in July!</p>
+
+      <iframe src="//player.vimeo.com/video/70512830?title=0&amp;byline=0&amp;portrait=0&amp;color=b51f24" width="280" height="157" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="mbf tac">Speakers and Schedule</h2>
+    <p class="tac">August 22</p>
+
+    <div class="cell mtm">
+
+      <div class="grid">
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <p class="mbs mtf tcs">8:30am - 9:30am</p>
+            <p class="mbf tsl">Registration and Breakfast</p>
+          </div>
+
+        </div>
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <p class="mbs mtf tcs">9:30am - 9:40am</p>
+            <p class="mbf tsl">Intro</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid mtm">
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a oh">
+
+            <p class="mbs mtf tcs">9:40am - 10:30am</p>
+            <p class="tsl">Human First Web Design</p>
+
+            <img class="fl lazy person--image" data-original="{{ "daniel-ryan.jpg" | asset_url }}" src="{{ "anonymous.jpg" | asset_url }}" width="100" />
+
+            <ol class="fl mlm person--meta">
+              <li class="person--name tfh tsl">
+                <p class="mbf">Daniel Ryan</p>
+                </li>
+              <li class="person--title mbf">Web Developer &amp; Consultant</li>
+              <li class="person--company">WayPaver</li>
+              <li class="person--socials">
+
+                  <i aria-role="hidden" class="modal--trigger person--info mrs" data-icon="r" data-id="DanielRyan"></i>
+
+                  <a href="https://twitter.com/dryan"><i aria-role="hidden" data-icon="t"></i></a>                  <a href="http://dryan.com"><i aria-role="hidden" data-icon="b"></i></a>
+
+              </li>
+
+            </ol>
+          </div>
+
+        </div>
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a oh">
+
+            <p class="mbs mtf tcs">10:30am - 11:20am</p>
+            <p class="tsl">Animating the web in a post-Flash world</p>
+
+            <img class="fl lazy person--image" data-original="{{ "rachel-smith.jpg" | asset_url }}" src="{{ "anonymous.jpg" | asset_url }}" width="100" />
+
+            <ol class="fl mlm person--meta">
+              <li class="person--name tfh tsl">
+                <p class="mbf">Rachel Smith</p>
+                </li>
+              <li class="person--title mbf">Front-End Dev</li>
+              <li class="person--company">Active Theory</li>
+              <li class="person--socials">
+
+                <i aria-role="hidden" class="modal--trigger person--info mrs" data-icon="r" data-id="RachelSmith"></i>
+                <a href="https://twitter.com/rachsmithtweets"><i aria-role="hidden" data-icon="t"></i></a>
+                <a href="http://rachsmith.com"><i aria-role="hidden" data-icon="b"></i></a>
+
+              </li>
+
+            </ol>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mtm tac">
+
+        <div class="card--a">
+          <h3>20 Minute Break</h3>
+          <p class="mbf">11:20am - 11:40am</p>
+        </div>
+
+      </div>
+
+      <div class="grid mtm">
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <p class="mbs mtf tcs">11:40am - 12:30pm</p>
+            <p class="tsl">Small Screen Nav</p>
+            <h5>Ben Callahan</h5>
+          </div>
+
+        </div>
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <p class="mbs mtf tcs">12:30pm - 1:20pm</p>
+            <p class="tsl">Fostering Collaboration with Pattern Libraries and Rapid Prototyping</p>
+              <h5>Bermon Painter</h5>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mtm tac">
+
+        <div class="card--a">
+          <h3>Lunch</h3>
+          <p class="mbf">1:20pm - 2:50pm</p>
+        </div>
+
+      </div>
+
+      <div class="grid mtm">
+
+        <div class="grid-box grid-box--tablet--1of2 mhci">
+
+          <div class="card--a">
+            <h3>Chris Coyier</h3>
+            <p>2:50pm - 3:40pm</p>
+            <p class="mtm">SVG is for Everybody</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mtm tac">
+
+        <div class="card--a">
+          <h3>20 Minute Break</h3>
+          <p class="mbf">11:20am - 11:40am</p>
+        </div>
+
+      </div>
+
+      <div class="grid mtm">
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <h3>TBD</h3>
+            <p>4:00pm - 4:40pm</p>
+            <p class="mtm">TBD</p>
+          </div>
+
+        </div>
+
+        <div class="grid-box grid-box--tablet--1of2">
+
+          <div class="card--a">
+            <h3>Jason VanLue</h3>
+            <p>4:40pm - 5:30pm</p>
+            <p class="mtm">A Study In Pixels:
+Design, the World, and the Other Side of the Screen</p>
+          </div>
+
+        </div>
+
+    </div>
+
+  </section>
+
+  <!-- <section class="home--intro">
 
       <div class="cell--a tac home--locations">
 
@@ -66,7 +331,7 @@
 
       </div>
 
-  </section>
+  </section> -->
 
 {% endblock %}
 

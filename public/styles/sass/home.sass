@@ -510,6 +510,10 @@ footer
   float: left
   width: percentage(1/7)
 
+.portland-details
+  background: url('../images/2014/bg--map-portland.jpg') center center no-repeat
+  background-size: 100% auto
+
 .portland-header
   font-size: 300%
   @extend .tac
@@ -521,6 +525,7 @@ footer
 .portland-stage
   background: url('../images/stage-alt.svg') center center no-repeat
   background-size: cover
+  border-bottom: $b-whitespace / 3 solid #7f6846
   padding: $b-whitespace 0
   position: relative
 
@@ -537,3 +542,7 @@ footer
 .portland-character
   float: left
   width: percentage(1/7)
+
++respond-to(768px)
+  .mhci
+    margin-left: 25% !important
