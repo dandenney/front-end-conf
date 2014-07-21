@@ -382,7 +382,9 @@
     margin-left: $b-whitespace
 
 .person--meta
-  +respond-to(760px)
+  max-width: 120px
+
+  +respond-to(400px)
     max-width: 210px
 
   +respond-to(1000px)
@@ -519,8 +521,11 @@ footer
   @extend .tac
   @extend .tci
 
+  +respond-to(768px)
+    font-size: 400%
+
   +respond-to(1000px)
-    font-size: 800%
+    font-size: 600%
 
 .portland-stage
   background: url('../images/stage-alt.svg') center center no-repeat
@@ -546,3 +551,6 @@ footer
 +respond-to(768px)
   .mhci
     margin-left: 25% !important
+
+.holy-shit-pay-attention-to-me
+  background: rgba(#FFE545, 0.6)
