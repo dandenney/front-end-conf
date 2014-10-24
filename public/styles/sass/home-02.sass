@@ -556,5 +556,30 @@ footer
   background: rgba(#FFE545, 0.6)
 
 .explanation
-  overflow: hidden
   max-height: 0
+  overflow: hidden
+  transition: max-height 0.35s linear
+
+  &.is-visible
+    max-height: 2000px
+
+
+
+.explanation-trigger
+  &:after
+    content: "\2193"
+    display: inline-block
+    margin-left: $b-whitespace / 4
+
+  &.is-visible
+    &:after
+      content: "\2191"
+
+.community
+  background: url('../images/2014/community.jpg') center center no-repeat
+  background-size: cover
+  overflow: hidden
+  padding: $b-whitespace * 3 0
+
+.sponsor-mailchimp
+  background: #6dc5dc

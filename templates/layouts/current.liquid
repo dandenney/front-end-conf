@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>{% block title %}Front-End Conf 2014{% endblock %}</title>
-      {{ "home.css" | asset_url | stylesheet_tag }}
+      {{ "home-02.css" | asset_url | stylesheet_tag }}
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     </head>
     <body class="{% if mixture.url == 'index' %}boom{% elsif mixture.url == '2012' %}prev-2012{% elsif mixture.url == '2011' %}prev-2011{% elsif mixture.url == '2010' %}prev-2010{% elsif mixture.url == '2009' %}prev-2009{% elsif mixture.url == 'registration-info' %}registration{% endif %}">

@@ -8,6 +8,8 @@
 
     <div class="cell--b">
 
+      <p><a href="http://twitter.com/pbbperalta">Patrick Peralta</a> took lots of pics and they're <a href="https://www.flickr.com/photos/dreamcoy/sets/72157645458769129/">up on Flickr</a>.</p>
+
       <p>Here are the wrap-up and notes posts that we've found so far. <a href="http://twitter.com/frontendconf">@frontendconf</a> if we missed yours...
 
       <p><a href="http://www.robert-deluca.com/farewell-front-end-design-conference">Farewell Front End Design Conference</a> - Robert DeLuca</p>
@@ -27,6 +29,8 @@
       <p><a href="https://www.evernote.com/shard/s272/sh/40a597b0-b004-41f1-bc8e-de20b72a6440/0788900f9678004c9b9d8e409299a7ac">Front-End Design Conference Notes</a> - Shammer Diaz</p>
 
       <p><a href="http://heyheyjose.com/blog/2014/07/15/my-conference-experience/">My Conference Experience</a> - Jose Vazquez</p>
+
+      <!-- <p>If you'd like to see the photobooth pics, use your keyboard to do the konami code.</p> -->
 
     </div>
 
@@ -1791,4 +1795,11 @@
 
   </script>
 
+{% endblock %}
+
+
+{% block scripts %}
+  <script>
+    var photoBooth = new Konami('http://frontenddesignconference.com/konami');
+  </script>
 {% endblock %}
