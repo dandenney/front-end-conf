@@ -1,0 +1,1024 @@
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 31, js/bower/normalize-scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 41, js/bower/normalize-scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 54, js/bower/normalize-scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 64, js/bower/normalize-scss/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ * 3.Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+/* line 79, js/bower/normalize-scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 92, js/bower/normalize-scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 104, js/bower/normalize-scss/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/**
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 118, js/bower/normalize-scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 121, js/bower/normalize-scss/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 137, js/bower/normalize-scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 176, js/bower/normalize-scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 185, js/bower/normalize-scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 199, js/bower/normalize-scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 207, js/bower/normalize-scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 217, js/bower/normalize-scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Addresses margins set differently in IE 6/7.
+ */
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 240, js/bower/normalize-scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 252, js/bower/normalize-scss/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ *  Set consistent quote types.
+ */
+/* line 260, js/bower/normalize-scss/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 288, js/bower/normalize-scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 297, js/bower/normalize-scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 304, js/bower/normalize-scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 308, js/bower/normalize-scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 364, js/bower/normalize-scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 375, js/bower/normalize-scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 387, js/bower/normalize-scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 399, js/bower/normalize-scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 412, js/bower/normalize-scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+/* line 431, js/bower/normalize-scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 447, js/bower/normalize-scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 459, js/bower/normalize-scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 476, js/bower/normalize-scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 489, js/bower/normalize-scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 7/8/9/10.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 500, js/bower/normalize-scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 515, js/bower/normalize-scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 528, js/bower/normalize-scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 537, js/bower/normalize-scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 547, js/bower/normalize-scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 560, js/bower/normalize-scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/converge-icomoon.eot?76q23w");
+  src: url("fonts/converge-icomoon.eot?#iefix76q23w") format("embedded-opentype"), url("fonts/converge-icomoon.woff?76q23w") format("woff"), url("fonts/converge-icomoon.ttf?76q23w") format("truetype"), url("fonts/converge-icomoon.svg?76q23w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, vendor/icomoon/style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, vendor/icomoon/style.scss */
+.icon-facebook:before {
+  content: "\e600";
+}
+
+/* line 30, vendor/icomoon/style.scss */
+.icon-twitter:before {
+  content: "\e601";
+}
+
+/* line 33, vendor/icomoon/style.scss */
+.icon-lanyrd:before {
+  content: "\e602";
+}
+
+/* line 9, scss/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 14, scss/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 18, scss/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 22, scss/main.scss */
+body {
+  font-family: "utopia-std", "Times New Roman", Times, serif;
+  font-size: 0.85em;
+  background: #e0e0e0;
+  line-height: 1.3em;
+  color: #333;
+}
+@media screen and (min-width: 600px) {
+  /* line 22, scss/main.scss */
+  body {
+    font-size: 0.95em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 22, scss/main.scss */
+  body {
+    font-size: 1.15em;
+  }
+}
+
+/* line 38, scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ff-enzo-web", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* line 44, scss/main.scss */
+a {
+  color: #cf0000;
+  text-decoration: none;
+}
+/* line 48, scss/main.scss */
+a:hover {
+  color: #0c9be5;
+}
+
+/* line 53, scss/main.scss */
+.stage {
+  color: white;
+  background: url("../images/2015/stage/bg.jpg") bottom center no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+/* line 59, scss/main.scss */
+.stage .stage_floor {
+  background: green url("../images/2015/stage/floor.jpg") top center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100;
+  right: 100;
+  height: 70px;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: height 0.5s;
+          transition: height 0.5s;
+}
+@media screen and (min-width: 600px) {
+  /* line 59, scss/main.scss */
+  .stage .stage_floor {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 59, scss/main.scss */
+  .stage .stage_floor {
+    height: 120px;
+  }
+}
+/* line 80, scss/main.scss */
+.stage .drape {
+  position: absolute;
+  z-index: 400;
+  top: 60px;
+  width: 24%;
+  -webkit-transition: width 0.5s;
+          transition: width 0.5s;
+}
+@media screen and (min-width: 600px) {
+  /* line 80, scss/main.scss */
+  .stage .drape {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 80, scss/main.scss */
+  .stage .drape {
+    width: 14%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 80, scss/main.scss */
+  .stage .drape {
+    width: 168px;
+  }
+}
+/* line 100, scss/main.scss */
+.stage .drape img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 107, scss/main.scss */
+.stage .left_drape {
+  left: 0;
+}
+/* line 110, scss/main.scss */
+.stage .right_drape {
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+/* line 119, scss/main.scss */
+.stage .banner_top {
+  background-image: url("../images/2015/stage/drape_top.png");
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  height: 60px;
+  z-index: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: height 0.5s;
+          transition: height 0.5s;
+}
+@media screen and (min-width: 600px) {
+  /* line 119, scss/main.scss */
+  .stage .banner_top {
+    height: 100px;
+  }
+}
+/* line 136, scss/main.scss */
+.stage .logo {
+  z-index: 500;
+  padding-top: 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  -webkit-transition: width 0.5s;
+          transition: width 0.5s;
+}
+@media screen and (min-width: 600px) {
+  /* line 136, scss/main.scss */
+  .stage .logo {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 136, scss/main.scss */
+  .stage .logo {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 136, scss/main.scss */
+  .stage .logo {
+    width: 540px;
+  }
+}
+/* line 157, scss/main.scss */
+.stage .logo a {
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+}
+/* line 162, scss/main.scss */
+.stage .logo a img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 173, scss/main.scss */
+.characters {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 450;
+  padding-bottom: 10px;
+  -webkit-transition: width 0.5s, padding-bottom 0.5s;
+          transition: width 0.5s, padding-bottom 0.5s;
+}
+@media screen and (min-width: 600px) {
+  /* line 173, scss/main.scss */
+  .characters {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 173, scss/main.scss */
+  .characters {
+    width: 35%;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 173, scss/main.scss */
+  .characters {
+    width: 420px;
+  }
+}
+/* line 197, scss/main.scss */
+.characters img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 203, scss/main.scss */
+.characters .dan, .characters .gene {
+  float: left;
+  position: relative;
+}
+/* line 207, scss/main.scss */
+.characters .dan img, .characters .gene img {
+  width: 100%;
+}
+/* line 210, scss/main.scss */
+.characters .dan .name_tag, .characters .gene .name_tag {
+  width: 60%;
+  position: absolute;
+}
+/* line 216, scss/main.scss */
+.characters .dan {
+  width: 41%;
+  margin-right: 7%;
+  padding-top: 10px;
+}
+/* line 221, scss/main.scss */
+.characters .gene {
+  width: 50%;
+}
+/* line 225, scss/main.scss */
+.characters .dan_tag {
+  left: -40px;
+}
+@media screen and (min-width: 500px) {
+  /* line 225, scss/main.scss */
+  .characters .dan_tag {
+    left: -55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 225, scss/main.scss */
+  .characters .dan_tag {
+    left: -85px;
+  }
+}
+/* line 237, scss/main.scss */
+.characters .gene_tag {
+  right: -55px;
+}
+@media screen and (min-width: 500px) {
+  /* line 237, scss/main.scss */
+  .characters .gene_tag {
+    right: -80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 237, scss/main.scss */
+  .characters .gene_tag {
+    right: -100px;
+  }
+}
+
+/* line 250, scss/main.scss */
+.content {
+  width: 96%;
+  margin: 0 auto;
+  -webkit-transition: width 0.5s;
+          transition: width 0.5s;
+}
+@media screen and (min-width: 800px) {
+  /* line 250, scss/main.scss */
+  .content {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 250, scss/main.scss */
+  .content {
+    width: 960px;
+  }
+}
+
+/* line 265, scss/main.scss */
+.blurb {
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  clear: both;
+}
+/* line 271, scss/main.scss */
+.blurb h1 {
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 1em;
+  margin-bottom: 15px;
+}
+/* line 277, scss/main.scss */
+.blurb p {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+/* line 286, scss/main.scss */
+.wrapper {
+  border-top: 30px solid #050505;
+  padding-top: 40px;
+}
+@media screen and (min-width: 800px) {
+  /* line 286, scss/main.scss */
+  .wrapper {
+    border-top: 30px solid #050505;
+    padding-top: 80px;
+  }
+}
+
+/* line 296, scss/main.scss */
+.story {
+  background: white;
+  padding: 5%;
+  margin-bottom: 60px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 303, scss/main.scss */
+.newsletter {
+  border-radius: 2px;
+  margin-bottom: 60px;
+}
+
+/* line 308, scss/main.scss */
+.social {
+  text-align: center;
+}
+/* line 311, scss/main.scss */
+.social h3 {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+/* line 316, scss/main.scss */
+.social a {
+  text-decoration: none;
+  font-size: 2.4em;
+  margin-right: 10px;
+  color: #0c9be5;
+}
+/* line 322, scss/main.scss */
+.social a:hover {
+  color: #cf0000;
+}
+/* line 326, scss/main.scss */
+.social a span {
+  display: none;
+}
+/* line 331, scss/main.scss */
+.social a [class^="icon-"],
+.social a [class*=" icon-"] {
+  display: inline-block;
+}
+
+/* line 337, scss/main.scss */
+.mailinglist_form {
+  background: #cf0000 url("../images/2015/stage/grain.png") top center;
+  padding: 3%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 343, scss/main.scss */
+.mailinglist_form h3 {
+  color: white;
+}
+/* line 347, scss/main.scss */
+.mailinglist_form label {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+/* line 352, scss/main.scss */
+.mailinglist_form input {
+  border: none;
+  background: white;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1em;
+  margin-right: 5px;
+  border-radius: 4px;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 600px) {
+  /* line 352, scss/main.scss */
+  .mailinglist_form input[type="email"] {
+    width: 300px;
+  }
+}
+/* line 366, scss/main.scss */
+.mailinglist_form .button {
+  background: #0c9be5;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 700;
+}
+/* line 376, scss/main.scss */
+.mailinglist_form button:hover {
+  background: #30b1f4;
+}
+
+/* line 382, scss/main.scss */
+.upcoming_events {
+  background: white;
+  padding: 40px 0;
+}
+/* line 386, scss/main.scss */
+.upcoming_events h2 {
+  margin-bottom: 1em;
+}
+/* line 388, scss/main.scss */
+.upcoming_events h2 span {
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #888;
+  padding-top: 10px;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  /* line 388, scss/main.scss */
+  .upcoming_events h2 span {
+    display: inline;
+    padding-top: 0;
+  }
+}
+
+/* line 403, scss/main.scss */
+.event {
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  /* line 403, scss/main.scss */
+  .event {
+    display: inline-block;
+    margin: 0;
+    width: 48.5%;
+  }
+}
+/* line 415, scss/main.scss */
+.event.convergefl {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  /* line 415, scss/main.scss */
+  .event.convergefl {
+    margin: 0 2% 0 0;
+  }
+}
+/* line 423, scss/main.scss */
+.event a, .event img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+/* line 429, scss/main.scss */
+.event > a {
+  background: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+}
+/* line 435, scss/main.scss */
+.event img {
+  width: 100%;
+}
+/* line 439, scss/main.scss */
+.event .event_details {
+  text-align: left;
+}
+/* line 442, scss/main.scss */
+.event .event_details h2 {
+  margin: 0 0 10px 0;
+}
+/* line 444, scss/main.scss */
+.event .event_details h2 a {
+  color: #0c9be5;
+  text-decoration: none;
+}
+/* line 448, scss/main.scss */
+.event .event_details h2 a:hover {
+  color: #cf0000;
+}
+/* line 453, scss/main.scss */
+.event .event_details h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1em;
+}
+/* line 458, scss/main.scss */
+.event .event_details h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: #666;
+}
+
+/* line 467, scss/main.scss */
+.footer {
+  background: #cf0000 url("../images/2015/stage/grain.png") top center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+/* line 472, scss/main.scss */
+.footer .past_sites {
+  text-align: center;
+}
+/* line 475, scss/main.scss */
+.footer .past_sites a {
+  display: inline-block;
+  padding: 5px;
+  font-family: "jubilat" sans-serif;
+  color: white;
+  text-decoration: none;
+}
