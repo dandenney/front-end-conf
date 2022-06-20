@@ -1,0 +1,9 @@
+<ol class="postlist posts" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in postslist | reverse %}
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <div class="postlist-meta">
+      <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      {% if post.data.summary %}<p>{{post.data.summary}}</p>{% endif %}
+  </li>
+{% endfor %}
+</ol>

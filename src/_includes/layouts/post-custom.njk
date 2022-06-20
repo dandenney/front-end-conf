@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+
+{% set css %}
+  {% include "prism.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<article class="p-8">
+  {{ content | safe }}
+</article>

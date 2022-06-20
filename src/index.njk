@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="mx-auto sm:max-w-4xl">
+
+  <h1 class="font-black text-6xl md:text-9xl">I like big fonts and I cannot lie</h1>
+
+  <p class="mt-4 mx-auto text-lg sm:max-w-2xl">Other front-enders can't deny! When a site loads up with a big ol' font...</p>
+
+  <p class="mt-4 mx-auto text-lg sm:max-w-2xl">Anyways, welcome to my little slice of the internet. I'm Dan Denney, a front-end dev at <a class="link" href="https://www.datacamp.com">DataCamp</a> and all around fan design and dev.</p>
+
+</section>
+
+<section class="pt-32">
+
+  <h2 class="mb-8 mx-auto font-black text-5xl sm:max-w-4xl md:text-8xl">Recent Blog Posts</h2>
+
+  <nav class="flex flex-wrap items-center justify-center pb-12 posts">
+    {% set homePosts = collections.posts | reverse %}
+    {% for homePost in homePosts.slice(0, 3) %}
+      <a class="link-post m-4" href="{{ homePost.url | url }}">{{ homePost.data.title }}</a>
+    {% endfor %} 
+  </nav>
+
+</section>
+
+{% include "social.njk" %}
+
