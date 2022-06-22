@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>front-end</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ '/css/2015.css' | url }}">
+    
+    <script src="//use.typekit.net/npf1guo.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <script src="init.js"></script>
+</head>
+
+<body><!-- .js - javascript is supported -->
+
+    <div class="site_navigation clearfix"><!-- .active - overlay -->
+        <div class="content">
+
+            <a id="nav_trigger" class="navigation_link" href="#mobile">Menu</a>
+            <a id="close_trigger" class="navigation_link_close" href="#">Close</a>
+            
+            <a href="/" class="nav_logo"><img src="/img/2015/svg/logo_small.svg" alt="Front-End Design Conference Logo"></a>
+            
+            <?php require "navigation.php" ?>
+        </div>
+    </div>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+
+    {% include "footer-2015.njk" %}
+
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>
