@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Front-End Design Conference // St. Petersburg, Florida // June 15-17, 2016</title>	
+    <title>Front-End Design Conference // St. Petersburg, Florida // April 25-27th 2018</title>	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
@@ -15,9 +15,9 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">	
 	<!-- Open Graph Stuff -->
-	<meta name="description" content="Front-End Design Conference in St. Petersburg, Florida on June 15-17, 2016 | A conference for designers & developers.">
+	<meta name="description" content="Front-End Design Conference in St. Petersburg, Florida on April 25-27th 2018 | A conference for designers & developers.">
 	<meta name="keywords" content="Front-End Design Conference, FEDC, Web Conference, Design, Development, Business, Marketing, St. Petersburg, Tampa, Florida">
-	<meta property="og:title" content="Front-End Design Conference // St. Petersburg, Florida // June 15-17, 2016"/>
+	<meta property="og:title" content="Front-End Design Conference // St. Petersburg, Florida // April 25-27th 2018"/>
 	<meta property="og:image" content="http://frontenddesignconference.com/fedc-icon.jpg"/>
 	<meta property="og:site_name" content="Front-End Design Conference"/>
 	<meta property="og:url" content="http://frontenddesignconference.com"/>
@@ -34,18 +34,13 @@
 	<!-- 'summary', 'summary_large_image' -->
 	<meta name="twitter:site" content="@Front-Endconf" />
 	<meta name="twitter:creator" content="@Front-Endconf" />
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Noticia+Text:400,400i" rel="stylesheet">
 	
-    <link rel="stylesheet" href="{{ '/css/2016.css' | url }}">
-    
-    <script src="//use.typekit.net/npf1guo.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/2016.js"></script>
+    <link rel="stylesheet" href="{{ '/css/2018.css' | url }}">
 </head>
 
-<body class="open_menu"><!-- .js - javascript is supported -->
-
+<body>
     <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-lanyrd" viewBox="0 0 1024 1024">
@@ -90,126 +85,91 @@
 </symbol> -->
 </defs>
 </svg>
-
-    <canvas id="canvas-handle" class="canvas-handle"></canvas>
     <div id="site_wrapper" class="site_wrapper"> <!-- CLOSES in footer.php -->
 
-        <div class="mobile_header">
-            <a id="nav_trigger" class="navigation_link button button_blue" href="">Menu</a>
-        </div>
-
-        <a href="/" class="logo wrapper">
-            <img src="/img/2016/svg/fedc2016logo.svg" alt="Front-End Design Conference Logo">
-            <span>Front-End Design Conference</span>
+        <div class="social">
+    <div class="social-icon">
+        <a href="http://lanyrd.com/2017/fedc/">
+            <svg class="icon icon-lanyrd">
+                <use xlink:href="#icon-lanyrd"></use>
+            </svg>
+            <span class="mls"> Lanyrd</span>
         </a>
+    </div>
+    <div class="social-icon">
+        <a href="https://twitter.com/frontendconf">
+            <svg class="icon icon-twitter">
+                <use xlink:href="#icon-twitter"></use>
+            </svg>
+            <span class="mls"> Twitter</span>
+        </a>
+    </div>
+    <div class="social-icon">
+        <a href="https://www.facebook.com/FrontEndDesign">
+            <svg class="icon icon-facebook">
+                <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <span class="mls"> Facebook</span>
+        </a>
+    </div>
+</div>
+    
+        <div id="navigation_wrapper">
+            
+            <div class="mobile_header">
+                <a id="nav_trigger" class="navigation_link">NAV</a>
+            </div>
 
-        <nav id="main_site_navigation" class="main_site_navigation wrapper">
-            <ul class="clearfix">
-                <li><a href="/2016/schedule">Schedule</a></li>                
-                <li><a href="/2016/workshops">Workshops</a></li>                
-                <li><a href="/2016/speakers">Speakers</a></li>
-                <li><a href="/2016/about">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-        </nav>
-        <div class="page_content">
+            <nav id="main_site_navigation" class="main_site_navigation">
+                <ul class="clearfix">
+                    <li class="home_button"><a href="/2018"><img src="/img/2018/svg/fedc10.svg" alt=""></a></li> 
+                    
+                    <li><a href="/2018/schedule">Schedule</a></li>                
+                    <li><a href="/2018/workshops">Workshops</a></li>                
+                    <li><a href="/2018/speakers">Speakers</a></li>
+                    <li><a href="/2018/about">About</a></li>
+                    <li><a href="/2018/contact">Contact</a></li>
+
+                    <li class="nav_register_button"><a href="#">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mobile_overlay"></div>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
 
       
-        </div> <!-- END .content -->
-
-        <div class="wrapper clearfix stay_informed">
-            <!-- <h3>Dan Denney has built an amazing event over the last few years and it gets better every time! <a href="http://frontenddesign.tumblr.com/post/104365452033/dan-denney-is-a-hero">Read more about the partnership.</a></h3> -->
-            <div class="content information">
-                <div class="mailinglist_form">
-                    <form class="clearfix" action="http://frontenddesignconference.us2.list-manage.com/subscribe/post?u=040435af75d83823cc94edc9b&amp;id=88b2a28d01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-                        <h3><label for="email">Keep up to date on The Front End Design Conference.</label></h3>
-                        <input type="text" name="EMAIL" id="email" placeholder="Your email...">
-                        <button class="button button_blue" type="submit">Sign Up</button>
-                    </form>
-                </div>
-
-                <div class="social">
-                    <div class="social-icon">
-                        <a href="http://lanyrd.com/2016/frontendconf/"><svg class="icon icon-lanyrd"><use xlink:href="#icon-lanyrd"></use></svg><span class="mls"> Lanyrd</span></a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="http://twitter.com/frontendconf"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="mls"> Twitter</span></a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com/FrontEndDesign"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="mls"> Facebook</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="wrapper sponsors">
-            <div class="content">
-                <h3>Sponsors:</h3>
-                <br>
-           		<a class="ibm"   href="http://www.ibm.com/design/"></a>
-				<a class="prprl" href="http://purplerockscissors.com/"></a>
-				<a class="cc"    href="http://www.creativecircle.com/"></a>
-				<!--
-				<a class="cs"    href="https://www.codeschool.com"></a>
-				<a class="shop"  href="http://www.shopify.com"></a>
-				-->
-            </div>  
-        </div>
-        
-        <div class="wrapper stakeholders">
-            <div class="content">
-                <h3>Presented by:</h3>
-                <br>
-                <a class="ums" href="http://www.unmatchedstyle.com">UnmatchedStyle</a>
-                <a class="tiy" href="http://www.theironyard.com">The Iron Yard</a>
-            </div>  
-        </div>
-        
-        <div class="wrapper footer">
-            <div class="content">
-                <div class="footer_nav">
-                            <nav id="main_site_navigation" class="main_site_navigation wrapper">
-            <ul class="clearfix">
-                <li><a href="/2016/schedule">Schedule</a></li>                
-                <li><a href="/2016/workshops">Workshops</a></li>                
-                <li><a href="/2016/speakers">Speakers</a></li>
-                <li><a href="/2016/about">About</a></li>
-                <li><a href="/2016/contact">Contact</a></li>
-                <li><a href="https://account.unmatchedstyle.com/register/fedc2016/">Register</a></li>
-            </ul>
-        </nav>
-                </div>
-
-                <p class="secondary_nav">&copy; 2016 Front End Design Conference & UnmatchedStyle.com | <a href="#">Terms</a></p>
-                
-                <p class="past_sites">
-                    <a href="http://www.frontenddesignconference.com/2015/">2015</a> |
-                    <a href="http://www.frontenddesignconference.com/2014-portland">2014 Portland</a> |
-                    <a href="http://www.frontenddesignconference.com/2014-st-pete">2014 St. Pete</a> |
-                    <a href="http://www.frontenddesignconference.com/2013">2013</a> | 
-                    <a href="http://www.frontenddesignconference.com/2012">2012</a> | 
-                    <a href="http://www.frontenddesignconference.com/2011">2011</a> | 
-                    <a href="http://www.frontenddesignconference.com/2010">2010</a> | 
-                    <a href="http://www.frontenddesignconference.com/2009">2009</a>
-                </p>
-            </div> <!-- END .content -->
+       <div id="site_footer" class="dark">
+            <nav>
+                <a href="/2018/index">FEDC</a> | 
+                <a href="/2018/schedule">Schedule</a> |                
+                <a href="/2018/workshops">Workshops</a> |                
+                <a href="/2018/speakers">Speakers</a> |
+                <a href="/2018/about">About</a> |
+                <a href="#">Contact</a> |
+                <a href="#">Register</a> 
+            </nav>
+            <p>
+                <a href="http://www.frontenddesignconference.com/2017/">2017</a> |
+                <a href="http://www.frontenddesignconference.com/2016/">2016</a> |
+                <a href="http://www.frontenddesignconference.com/2015/">2015</a> |
+                <a href="http://www.frontenddesignconference.com/2014-portland.html">2014 Portland</a> |
+                <a href="http://www.frontenddesignconference.com/2014-st-pete.html">2014 St. Pete</a> |
+                <a href="http://www.frontenddesignconference.com/2013.html">2013</a> | 
+                <a href="http://www.frontenddesignconference.com/2012.html">2012</a> | 
+                <a href="http://www.frontenddesignconference.com/2011.html">2011</a> | 
+                <a href="http://www.frontenddesignconference.com/2010.html">2010</a> | 
+                <a href="http://www.frontenddesignconference.com/2009.html">2009</a>
+            </p>
+            <p class="secondary_nav">&copy; 2017-18 Front End Design Conference &amp; UnmatchedStyle.com | <a href="#">Terms</a></p>
         </div>
     </div> <!-- END .site_wrapper -->
 </body>
-
-<!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-
-
-</html>
-
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
-</html>
+    <script src="/js/2018.js"></script>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    
+	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/040435af75d83823cc94edc9b/7c822bbcae9f9df2a027b60f1.js");</script>
