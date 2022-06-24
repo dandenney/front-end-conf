@@ -4,8 +4,8 @@
   "description": "This thing holds a series of words that I've spewed onto the internet since 2012. It's mainly so that I have a place to learn and play with front-end development, but also to keep my Google juice up against the guy with my name that created an airplane. Seriously, there's other Dan Denneys?",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --input=src --output=_site --serve & postcss src/styles/tailwind.css --o _tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true rm -rf _site & eleventy --input=src --output=_site & NODE_ENV=production postcss src/styles/tailwind.css --o _site/styles/style.css"
+    "dev": "eleventy --input=src --output=_site --serve",
+    "build": "ELEVENTY_PRODUCTION=true rm -rf _site & eleventy --input=src --output=_site & NODE_ENV=production"
   },
   "repository": {
     "type": "git",
