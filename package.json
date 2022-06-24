@@ -1,11 +1,14 @@
 {
   "name": "dandenney.com-11ty",
   "version": "1.0.0",
-  "description": "This thing holds a series of words that I've spewed onto the internet since 2012. It's mainly so that I have a place to learn and play with front-end development, but also to keep my Google juice up against the guy with my name that created an airplane. Seriously, there's other Dan Denneys?",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --input=src --output=_site --serve",
-    "build": "ELEVENTY_PRODUCTION=true rm -rf _site & eleventy --input=src --output=_site & NODE_ENV=production"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
