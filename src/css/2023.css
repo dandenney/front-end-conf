@@ -235,6 +235,10 @@ p {
   width: 70%;
 }
 
+p {
+  max-width: 600px;
+}
+
 .stage {
   bottom: 0;
   left: 0;
@@ -264,6 +268,14 @@ p {
   max-width: 300px;
 }
 
+#mc_embed_signup {
+  background: transparent !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  width: 100% !important;
+}
+
 .mc-field-group {
   align-items: center;
   display: flex;
@@ -272,10 +284,38 @@ p {
 
 .mc-field-group label {
   flex-shrink: 0;
+  font-family: var(--f-base);
 }
 
 .mc-field-group input {
   flex-grow: 1;
+}
+
+#mc_embed_signup .foot,
+#mc_embed_signup .mc-field-group {
+  width: 100% !important;
+}
+
+#mc_embed_signup .foot {
+  align-items: center;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.brandingLogo {
+  margin: 0 !important;
+}
+
+div.mce_inline_error,
+.response {
+  background-color: transparent !important;
+  left: 0;
+  margin: 0 !important;
+  padding: 0 1rem !important;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% - 0.75rem);
+  text-align: right;
 }
 
 .email {
@@ -293,9 +333,10 @@ p {
 }
 
 .button {
-  background-color: #b51f24;
+  background-color: #b51f24 !important;
   border-radius: 0.25rem;
   font-family: var(--f-heading);
+  margin: 0 !important;
   padding: 0.5rem 1rem;
 }
 
@@ -309,9 +350,25 @@ p {
   }
 }
 
+@media screen and (min-width: 660px) {
+  .dan-and-cherrie {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 660px) and (min-height: 700px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  .dan-and-cherrie {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .dan-and-cherrie {
-    bottom: 4vh;
+    bottom: 7vh;
     left: calc(50% - 250px);
     max-width: 500px;
   }
@@ -319,5 +376,34 @@ p {
   .curtain-left,
   .curtain-right {
     height: 90vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 700px) {
+  main {
+    padding-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1000px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  #mc_embed_signup {
+    margin-top: 2rem;
+  }
+
+  .curtain-left,
+  .curtain-right {
+    height: 90vh;
+  }
+
+  .curtain-left {
+    left: 0;
+  }
+
+  .curtain-right {
+    right: 0;
   }
 }
