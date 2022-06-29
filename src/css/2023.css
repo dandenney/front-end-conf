@@ -309,13 +309,23 @@ p {
 div.mce_inline_error,
 .response {
   background-color: transparent !important;
+  bottom: calc(100% - 0.75rem);
   left: 0;
   margin: 0 !important;
   padding: 0 1rem !important;
   position: absolute;
   right: 0;
-  bottom: calc(100% - 0.75rem);
   text-align: right;
+  top: auto !important;
+}
+
+.response {
+  top: 0 !important;
+  width: 100% !important;
+}
+
+#mce-success-response {
+  color: #74ce1c !important;
 }
 
 .email {
@@ -350,6 +360,12 @@ div.mce_inline_error,
   }
 }
 
+@media screen and (min-width: 410px) and (min-height: 700px) {
+  main {
+    padding-top: 4rem;
+  }
+}
+
 @media screen and (min-width: 660px) {
   .dan-and-cherrie {
     display: none;
@@ -368,7 +384,7 @@ div.mce_inline_error,
 
 @media screen and (min-width: 768px) {
   .dan-and-cherrie {
-    bottom: 7vh;
+    bottom: 4vh;
     left: calc(50% - 250px);
     max-width: 500px;
   }
@@ -382,6 +398,13 @@ div.mce_inline_error,
 @media screen and (min-width: 768px) and (min-height: 700px) {
   main {
     padding-top: 12rem;
+  }
+  .curtain-left {
+    left: -25vw;
+  }
+
+  .curtain-right {
+    right: -25vw;
   }
 }
 
@@ -405,5 +428,17 @@ div.mce_inline_error,
 
   .curtain-right {
     right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 700px) {
+  .dan-and-cherrie {
+    bottom: 8vh;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  main {
+    padding-top: 8rem;
   }
 }
