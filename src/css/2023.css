@@ -1,7 +1,7 @@
 /* Colors */
 :root {
   --c-accent: #bc9f78;
-  --c-bg: #240801;
+  --c-bg: #ffffff;
   --c-subtle: #c7c7c7;
   --c-subtle-bg: #f9f9f9;
   --c-text: #ffffff;
@@ -190,6 +190,15 @@ a:not([class]) {
   cursor: not-allowed;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -207,71 +216,37 @@ a {
   text-decoration: none;
 }
 
-body {
-  overflow: hidden;
-  position: relative;
-}
-
 main {
-  padding: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 section {
-  position: relative;
-  z-index: 10;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
-}
-
-h1,
-p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 70%;
 }
 
 p {
   max-width: 600px;
 }
 
-.stage {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
-
-.curtain-left,
-.curtain-right {
-  height: 95vh;
-  position: absolute;
-}
-
-.curtain-left {
-  left: -40vw;
-  top: 0;
-}
-
-.curtain-right {
-  right: -40vw;
-  top: 0;
-}
-
-.dan-and-cherrie {
-  bottom: 2vh;
-  left: calc(50% - 150px);
-  position: absolute;
-  max-width: 300px;
+.u-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #mc_embed_signup {
   background: transparent !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto 2rem;
   max-width: 600px;
   width: 100% !important;
 }
@@ -354,91 +329,69 @@ div.mce_inline_error,
   width: 180px;
 }
 
-@media screen and (min-width: 360px) and (min-height: 700px) {
-  main {
-    padding-top: 10rem;
-  }
+.section-logos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
 }
 
-@media screen and (min-width: 410px) and (min-height: 700px) {
-  main {
-    padding-top: 4rem;
-  }
+.fedc {
+  animation: fadeOut 2s 1s ease-in forwards;
+  background-color: #152223;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100vh;
+  padding: 2rem;
+  pointer-events: none;
 }
 
-@media screen and (min-width: 660px) {
-  .dan-and-cherrie {
-    display: none;
-  }
+.front-end-conf {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-content: center;
+  height: 100vh;
 }
 
-@media screen and (min-width: 660px) and (min-height: 700px) {
-  main {
-    padding-top: 4rem;
-  }
+.logo {
+  max-width: 600px;
+  width: 100%;
+}
 
-  .dan-and-cherrie {
-    display: block;
-  }
+.arrow {
+  margin-top: 2rem;
+  width: 10vw;
+}
+
+.section-stage {
+  align-items: center;
+  background-image: url("/img/stage.svg");
+  background-size: cover;
+  background-position: center bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100vh;
+  justify-content: flex-end;
+  padding: 1rem 1rem 12vh 1rem;
+  text-align: center;
+}
+
+.dan-and-cherrie {
+  max-width: 400px;
 }
 
 @media screen and (min-width: 768px) {
-  .dan-and-cherrie {
-    bottom: 4vh;
-    left: calc(50% - 250px);
-    max-width: 500px;
+  h1 {
+    font-size: 3rem;
+    max-width: 50rem;
   }
 
-  .curtain-left,
-  .curtain-right {
-    height: 90vh;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-height: 700px) {
-  main {
-    padding-top: 12rem;
-  }
-  .curtain-left {
-    left: -25vw;
-  }
-
-  .curtain-right {
-    right: -25vw;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-height: 1000px) {
-  main {
-    padding-top: 4rem;
-  }
-
-  #mc_embed_signup {
-    margin-top: 2rem;
-  }
-
-  .curtain-left,
-  .curtain-right {
-    height: 90vh;
-  }
-
-  .curtain-left {
-    left: 0;
-  }
-
-  .curtain-right {
-    right: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-height: 700px) {
-  .dan-and-cherrie {
-    bottom: 8vh;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-height: 900px) {
-  main {
-    padding-top: 8rem;
+  p {
+    font-size: 1.25rem;
   }
 }
