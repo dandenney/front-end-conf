@@ -1,10 +1,10 @@
 /* Colors */
 :root {
-  --c-accent: #bc9f78;
+  --c-accent: #b51f24;
   --c-bg: #ffffff;
   --c-subtle: #c7c7c7;
   --c-subtle-bg: #f9f9f9;
-  --c-text: #ffffff;
+  --c-text: #111111;
   --f-base: museo, -apple-system, system-ui, sans-serif;
   --f-heading: chunkfive, -apple-system, system-ui, sans-serif;
 }
@@ -216,26 +216,20 @@ a {
   text-decoration: none;
 }
 
-main {
-  height: 100vh;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
 h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  text-align: center;
+  margin-inline: auto;
+  max-inline-size: 640px;
 }
 
 p {
-  max-width: 600px;
+  margin-inline: auto;
+  max-inline-size: 640px;
+}
+
+p + p {
+  margin-block-start: 1rem;
 }
 
 .u-flex-center {
@@ -244,154 +238,57 @@ p {
   align-items: center;
 }
 
+.dan-and-cherrie {
+  max-inline-size: 400px;
+  margin-inline: auto;
+}
+
 #mc_embed_signup {
-  background: transparent !important;
-  margin: 1rem auto 2rem;
-  max-width: 600px;
+  max-inline-size: 640px;
+  margin-inline: auto;
   width: 100% !important;
 }
 
-.mc-field-group {
-  align-items: center;
-  display: flex;
+.section-signup {
   padding: 1rem;
 }
 
-.mc-field-group label {
-  flex-shrink: 0;
-  font-family: var(--f-base);
-}
-
-.mc-field-group input {
-  flex-grow: 1;
-}
-
-#mc_embed_signup .foot,
-#mc_embed_signup .mc-field-group {
-  width: 100% !important;
-}
-
-#mc_embed_signup .foot {
-  align-items: center;
-  display: flex !important;
-  justify-content: space-between;
-}
-
-.brandingLogo {
+#mc_embed_signup form {
   margin: 0 !important;
 }
 
-div.mce_inline_error,
-.response {
-  background-color: transparent !important;
-  bottom: calc(100% - 0.75rem);
-  left: 0;
-  margin: 0 !important;
-  padding: 0 1rem !important;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: auto !important;
+#mc_embed_signup .mc-field-group label,
+#mc_embed_signup .mc-field-group input {
+  font-family: var(--f-base) !important;
 }
 
-.response {
-  top: 0 !important;
-  width: 100% !important;
+#mc_embed_signup .button {
+  background-color: #1b5d19 !important;
+  font-weight: 700 !important;
 }
 
-#mce-success-response {
-  color: #74ce1c !important;
-}
-
-.email {
-  background-color: #d3bfa5;
-  border-radius: 0.25rem;
-  color: var(--c-bg);
-  margin-left: 0.5rem;
-  padding: 0.5rem;
-}
-
-.optionalParent {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-}
-
-.button {
-  background-color: #b51f24 !important;
-  border-radius: 0.25rem;
-  font-family: var(--f-heading);
-  margin: 0 !important;
-  padding: 0.5rem 1rem;
-}
-
-.brandingLogo {
-  width: 180px;
-}
-
-.section-logos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 100vh;
-}
-
-.fedc {
-  animation: fadeOut 2s 1s ease-in forwards;
-  background-color: #152223;
-  grid-area: 1 / 1 / 2 / 2;
-  height: 100vh;
-  padding: 2rem;
-  pointer-events: none;
-}
-
-.front-end-conf {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  grid-area: 1 / 1 / 2 / 2;
-  justify-content: center;
-  height: 100vh;
-}
-
-.logo {
-  max-width: 600px;
-  width: 100%;
-}
-
-.arrow {
-  margin-top: 2rem;
-  width: 10vw;
-}
-
-.section-stage {
-  align-items: center;
-  background-image: url("/img/stage.svg");
-  background-size: cover;
-  background-position: center bottom;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  grid-area: 1 / 1 / 2 / 2;
-  height: 100vh;
-  justify-content: flex-end;
-  padding: 1rem 1rem 12vh 1rem;
-  text-align: center;
-}
-
-.dan-and-cherrie {
-  max-width: 400px;
+#mc_embed_signup .button:active,
+#mc_embed_signup .button:focus,
+#mc_embed_signup .button:hover {
+  background-color: #237820 !important;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 3rem;
-    max-width: 50rem;
   }
 
   p {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-signup {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    min-height: 100dvh;
   }
 }
