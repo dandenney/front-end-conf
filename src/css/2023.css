@@ -292,3 +292,13 @@ p + p {
     min-height: 100dvh;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .section-signup {
+    align-items: center;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    min-height: 100dvh;
+  }
+}
