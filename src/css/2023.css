@@ -5,8 +5,7 @@
   --c-subtle: #c7c7c7;
   --c-subtle-bg: #f9f9f9;
   --c-text: #111111;
-  --f-base: museo, -apple-system, system-ui, sans-serif;
-  --f-heading: chunkfive, -apple-system, system-ui, sans-serif;
+  --f-base: "Rubik", sans-serif;
 }
 
 /* Fonts */
@@ -82,7 +81,8 @@ body {
   background-color: var(--c-bg);
   color: var(--c-text);
   font-family: var(--f-base);
-  font-weight: 400;
+  font-weight: 500;
+  overflow-x: hidden;
 }
 
 /* Improve media defaults */
@@ -205,42 +205,218 @@ h3,
 h4,
 h5 {
   color: var(--c-text);
-  font-family: var(--f-heading);
-  font-weight: 400;
+  font-family: var(--f-base);
+  font-weight: 800;
   line-height: 1.25;
 }
 
 a {
   color: var(--c-accent);
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
 }
 
-h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  margin-inline: auto;
-  max-inline-size: 640px;
+strong {
+  font-weight: 800;
 }
 
-p {
-  margin-inline: auto;
-  max-inline-size: 640px;
-}
+/* main {
+  scroll-snap-type: y mandatory;
+  height: 100dvh;
+  overflow: auto;
+} */
 
-p + p {
-  margin-block-start: 1rem;
-}
-
-.u-flex-center {
-  display: flex;
-  justify-content: center;
+header {
   align-items: center;
+  background-color: #a61d21;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23b51f24' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  color: var(--c-bg);
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  overflow-x: hidden;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.dan-and-cherrie {
-  max-inline-size: 400px;
-  margin-inline: auto;
+header h1,
+.stairs h2 {
+  color: var(--c-bg);
+  line-height: 1;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 18vw;
+  text-shadow: 0 0.25rem 0.25rem var(--c-accent);
+}
+
+header h1 span {
+  display: block;
+  font-size: 16vw;
+}
+
+header p {
+  font-weight: 400;
+  font-family: var(--f-base);
+  font-size: 9.5vw;
+  text-shadow: 0 0.25rem 0.25rem var(--c-accent);
+}
+
+header img {
+  box-shadow: 0 0 0 1rem var(--c-bg);
+  position: absolute;
+  max-width: 320px;
+  width: 50vw;
+}
+
+header img:nth-of-type(1) {
+  right: 0;
+  transform: rotate(20deg);
+  top: 0;
+}
+
+header img:nth-of-type(2) {
+  bottom: 0;
+  transform: rotate(-20deg);
+  left: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    font-size: 14vw;
+  }
+
+  header h1 span {
+    font-size: 12vw;
+  }
+
+  header p {
+    font-size: 6.5vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  header img:nth-of-type(1) {
+    left: calc(50% + 400px);
+    right: inherit;
+    top: 0;
+  }
+
+  header img:nth-of-type(2) {
+    bottom: 0;
+    left: inherit;
+    right: calc(50% + 400px);
+  }
+}
+
+.stairs {
+  background-color: #280f13;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.stairs figure {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.stairs img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.stairs div {
+  background-color: rgba(0, 0, 0, 0.25);
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.stairs h2 {
+  font-size: 13vw;
+  padding: 10vw 5vw 2vw 5vw;
+}
+
+.stairs p {
+  color: var(--c-bg);
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .stairs {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+  }
+
+  .stairs figure {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .stairs div {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .stairs h2 {
+    background: -webkit-linear-gradient(#fff2e8, #e68d5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6vw;
+  }
+}
+
+.miss-you {
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a3a3a3' fill-opacity='1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  display: flex;
+  height: 100dvh;
+  padding: 5vh;
+}
+
+.miss-you article {
+  background: var(--c-bg);
+  border: 0.5rem double var(--c-text);
+  color: var(--c-bg);
+  padding: 2vw;
+  width: 100%;
+}
+
+.miss-you h2 {
+  color: var(--c-text);
+  font-size: 4vw;
+}
+
+.miss-you p {
+  color: var(--c-text);
+  font-size: 1.5vw;
+  margin-block-start: 1vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .miss-you div {
+    width: 50%;
+  }
+
+  .miss-you article {
+    display: flex;
+    gap: 5vw;
+    justify-content: space-between;
+  }
+
+  .miss-you img {
+    align-self: flex-end;
+    width: 50%;
+  }
 }
 
 #mc_embed_signup {
@@ -271,34 +447,4 @@ p + p {
 #mc_embed_signup .button:focus,
 #mc_embed_signup .button:hover {
   background-color: #237820 !important;
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-signup {
-    align-items: center;
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    min-height: 100dvh;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .section-signup {
-    align-items: center;
-    display: flex;
-    gap: 6rem;
-    justify-content: center;
-    min-height: 100dvh;
-  }
 }
