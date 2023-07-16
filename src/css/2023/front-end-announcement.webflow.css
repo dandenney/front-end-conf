@@ -1905,8 +1905,8 @@ fieldset {
   .divider-text {
     border-left-width: 5px;
     border-right-width: 5px;
-    padding: 4px;
-    font-size: 7.5vw;
+    padding: 4px 15px;
+    font-size: 5.5vw;
   }
 
   .bg-text-heavy {
