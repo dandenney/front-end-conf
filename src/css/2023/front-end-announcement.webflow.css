@@ -1909,6 +1909,10 @@ fieldset {
     font-size: 5.5vw;
   }
 
+  .divider-text-bolder {
+    font-size: 4.5vw;
+  }
+
   .bg-text-heavy {
     font-size: 36vw;
   }
