@@ -3357,6 +3357,11 @@ blockquote {
 }
 
 .ticket {
+  background-image: url("/img/2024/bgPattern-dot-1.png"),
+    url("/img/2024/bgPattern-dot-1.png");
+  background-position: 0 0, right bottom;
+  background-repeat: no-repeat;
+  background-size: 150px;
   padding-top: 2rem;
   position: relative;
   text-align: center;
