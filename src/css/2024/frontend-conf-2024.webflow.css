@@ -10,7 +10,8 @@
   --bg-grey: #d4d4d4;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -4742,6 +4743,10 @@ blockquote {
   .talent-artist-holder.ta-one,
   .talent-artist-holder.ta-two {
     display: none;
+  }
+
+  .blured-mask {
+    background-color: #981a1e;
   }
 }
 
