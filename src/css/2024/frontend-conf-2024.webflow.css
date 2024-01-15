@@ -3005,16 +3005,19 @@ blockquote {
 
 .book-ticket-button {
   color: #000;
-  background-color: #f4e9dd;
+  background-color: #ffc64a;
+  border: 4px solid #000;
   border-radius: 17px;
   padding: 20px 30px;
   font-family: Rubik, sans-serif;
-  transition: background-color 0.35s;
+  font-size: 1.25rem;
+  transition: background-color 0.35s, transform 0.35s;
 }
 
 .book-ticket-button:hover {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: #f4e9dd;
+  transform: scale(1.1) !important;
 }
 
 .book-ticket-button.green {
@@ -3356,6 +3359,19 @@ blockquote {
   position: relative;
 }
 
+.ticket {
+  padding-top: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.ticket .white-box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  overflow: hidden;
+}
+
 .green-color-box {
   width: 100%;
   height: 250px;
@@ -3374,7 +3390,7 @@ blockquote {
 .black-circle {
   z-index: 2;
   height: 100px;
-  background-color: #000;
+  background-color: #b52024;
   border-radius: 100%;
   flex-direction: column;
   justify-content: center;
@@ -3406,7 +3422,9 @@ blockquote {
   margin-top: 20px;
   padding-left: 35px;
   padding-right: 30px;
+  position: relative;
   display: flex;
+  z-index: 10;
 }
 
 .date-text {
@@ -3421,6 +3439,7 @@ blockquote {
   font-size: 50px;
   font-weight: 800;
   line-height: 0.8;
+  margin-top: 2rem;
 }
 
 .black-paragraph {
@@ -3438,13 +3457,14 @@ blockquote {
   align-items: center;
   padding: 20px 30px;
   font-size: 18px;
-  transition: background-color 0.35s;
+  transition: background-color 0.35s, transform 0.35s;
   display: flex;
 }
 
 .black-button:hover {
   color: #f4e9dd;
-  background-color: rgba(0, 0, 0, 0.91);
+  background-color: #7b1518;
+  transform: scale(1.1);
 }
 
 .gallery-image-holder {
@@ -3566,6 +3586,8 @@ blockquote {
 .attendee img {
   border: 4px solid #7b1518;
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .attendee figcaption {
@@ -3625,7 +3647,7 @@ blockquote {
   color: #f4e9dd;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 1rem;
   display: flex;
 }
 
@@ -3636,13 +3658,17 @@ blockquote {
 .location-holder {
   width: 40px;
   height: 40px;
-  background-color: var(--main-green-color);
+  background-color: #f4e9dd;
   color: #f4e9dd;
   border-radius: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.location-container .hero-description {
+  margin-bottom: 0;
 }
 
 .footer-text-block {
@@ -3780,6 +3806,7 @@ blockquote {
 }
 
 .hero-image._06 {
+  border-radius: 50%;
   width: 109px;
   top: auto;
   bottom: 26%;
@@ -3830,11 +3857,7 @@ blockquote {
   justify-content: flex-start;
   align-items: center;
   display: flex;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  margin-bottom: 3rem;
 }
 
 .key-note-holder {
@@ -4143,10 +4166,7 @@ blockquote {
   justify-content: flex-start;
   align-items: center;
   display: flex;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  transform: translateY(100px);
 }
 
 .shipping-content {
@@ -4400,7 +4420,7 @@ blockquote {
 
   .black-text {
     flex-direction: column;
-    font-size: 55px;
+    font-size: 36px;
   }
 
   .accordions-top-text {
@@ -4710,6 +4730,10 @@ blockquote {
 
   .collaborators-grid {
     width: 100%;
+  }
+  .talent-artist-holder.ta-one,
+  .talent-artist-holder.ta-two {
+    display: none;
   }
 }
 
