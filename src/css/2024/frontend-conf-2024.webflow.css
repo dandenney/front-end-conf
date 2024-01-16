@@ -1883,6 +1883,10 @@ blockquote {
   line-height: 1;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .paragraph-m {
   color: #f4e9dd;
   font-size: 24px;
