@@ -1841,6 +1841,12 @@ blockquote {
   transition-duration: 0.675s;
 }
 
+.text-link {
+  color: #ffc64a;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .style-guide-tab-holder:hover {
   color: #f4e9dd;
   background-color: rgba(255, 255, 255, 0.07);
