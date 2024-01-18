@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Nick Walsh",
+    "path": "nick-walsh",
+    "quote": "spacer.gif"
+  },
+  {
+    "name": "Robert DeLuca",
+    "path": "robert-deluca",
+    "quote": "The best connections were made at front end conf!"
+  },
+  {
+    "name": "Brad Miller",
+    "quote": "Make friends first, make sales second, make love third. In no particular order."
+  },
+  {
+    "name": "Jason Beaird",
+    "path": "jason-beaird",
+    "quote": "Take only memories, leave only kebab menus."
+  },
+  {
+    "name": "Benjamin Marte",
+    "path": "ben-marte",
+    "quote": "Stoked to see my FrontEnd Conf Family 😬"
+  },
+  {
+    "name": "Yadimar Marte"
+  },
+  {
+    "name": "Kirsty MacRae"
+  },
+  {
+    "name": "John Jameson",
+    "path": "john-jameson",
+    "quote": "Love all, trust a few, don’t worry about the CSS — I’ll fix it later"
+  },
+  {
+    "name": "Shawn Berg",
+    "path": "shawn-berg"
+  },
+  {
+    "name": "Gene Crawford",
+    "path": "gene-crawford",
+    "quote": "FEDC4Life!"
+  },
+  {
+    "name": "Erik Runyon",
+    "path": "erik-runyon",
+    "quote": "I'm beginning to think this whole web thing isn't just a fad."
+  },
+  {
+    "name": "Matt Graham",
+    "path": "matt-graham"
+  },
+  {
+    "name": "Michele Cynowicz"
+  },
+  {
+    "name": "Ismael Burciaga",
+    "path": "ismael-burciaga",
+    "quote": "Excited to see all my homies :)"
+  },
+  {
+    "name": "Brian Burridge",
+    "path": "brian-burridge"
+  },
+  {
+    "name": "TJ Pitre",
+    "path": "tj-pitre",
+    "quote": "Life can be like a webpage without a stylesheet - you gotta add your own style to make it interesting."
+  },
+  {
+    "name": "Tami Gaines",
+    "path": "tami-gaines",
+    "quote": "Ohh yeah, Class of 2014 is back! Hugs all around! I missed you guys!"
+  },
+  {
+    "name": "Mike Herchel",
+    "path": "mike-herchel",
+    "quote": "Excited this is back"
+  },
+  {
+    "name": "Chris Lagasse",
+    "path": "chris-lagasse"
+  },
+  {
+    "name": "Carl Smith",
+    "path": "carl-smith",
+    "quote": "Of all the things I've lost, it's my mind I miss the most."
+  },
+  {
+    "name": "Daryn St. Pierre",
+    "path": "daryn-st-pierre",
+    "quote": "Shapes, colors, and bacon donuts with all of my old FEDC friends!"
+  },
+  {
+    "name": "Kenyon Kowal",
+    "path": "kenyon-kowal",
+    "quote": "Super stoked for that FEDC is back! Always a great time, with a shi!t ton of smart folks."
+  }
+]

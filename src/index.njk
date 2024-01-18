@@ -1557,8 +1557,6 @@ layout: layouts/2024.njk
     </div>
   </section>
 
-  <!-- Begin Attendees
-
   <section>
     <div class="container">
       <h2 class="center-text-block">Join Us</h2>
@@ -1571,177 +1569,24 @@ layout: layouts/2024.njk
         "yearbook style" message if they want to.
       </p>
       <div class="w-layout-grid grid-5-col">
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/nick-walsh.webp"
-            alt="Nick Walsh"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Nick Walsh</figcaption>
-          <p>spacer.gif</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/robert-deluca.webp"
-            alt="Robert DeLuca"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Robert DeLuca</figcaption>
-          <p>The best connections were made at front end conf!</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/no-image.svg"
-            alt="No image provided"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Brad Miller</figcaption>
-          <p>Make friends first, make sales second, make love third. In no particular order.</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/jason-beaird.webp"
-            alt="Jason Beaird"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Jason Beaird</figcaption>
-          <p>Take only memories, leave only kebab menus.</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/ben-marte.webp"
-            alt="Ben Marte"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Ben Marte</figcaption>
-          <p>Stoked to see my FrontEnd Conf Family 😬</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/no-image.svg"
-            alt="Robert DeLuca"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Yadimar Marte</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/no-image.svg"
-            alt="No image"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Kirsty MacRae</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/john-jameson.webp"
-            alt="John Jameson"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>John Jameson</figcaption>
-          <p>Love all, trust a few, don't worry about the CSS — I'll fix it later</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/shawn-berg.webp"
-            alt="Shawn Berg"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Shawn Berg</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/gene-crawford.webp"
-            alt="Gene Crawford"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Gene Crawford</figcaption>
-          <p>FEDC4Life!</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/erik-runyon.webp"
-            alt="Erik Runyon"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Erik Runyon</figcaption>
-          <p>I'm beginning to think this whole web thing isn't just a fad.</p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/matt-graham.webp"
-            alt="Matt Graham"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Matt Graham</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/no-image.svg"
-            alt="No image"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Michele Cynowicz</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/ismael-burciaga.webp"
-            alt="Ismael Burciaga"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Ismael Burciaga</figcaption>
-          <p></p>
-        </figure>
-        <figure class="attendee">
-          <img
-            src="img/2024/attendees/brian-burridge.webp"
-            alt="Brian Burridge"
-            height="200"
-            width="200"
-            loading="lazy"
-          />
-          <figcaption>Brian Burridge</figcaption>
-          <p></p>
-        </figure>
+        {% for attendee in attendees %}
+          <figure class="attendee">
+            <img
+              src="img/2024/attendees/{% if attendee.path %}{{attendee.path}}.webp{% else %}no-image.svg{% endif %}"
+              alt="Photo of {{attendee.name}}"
+              height="200"
+              width="200"
+              loading="lazy"
+            />
+            <figcaption>{{attendee.name}}</figcaption>
+            {% if attendee.quote %}
+              <p>{{ attendee.quote}}</p>
+            {% endif %}
+          </figure>
+        {% endfor %}
       </div>
-      
     </div>
   </section>
-  End attendees
-  --> 
 
   <section>
     <div class="container">
