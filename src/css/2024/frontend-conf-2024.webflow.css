@@ -1486,6 +1486,13 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grid-3-col._3-row {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .grid-2-col {
   grid-column-gap: 1px;
   grid-row-gap: 1px;
@@ -5780,5 +5787,50 @@ blockquote {
 
   #w-node-_74ab3314-1e2b-a768-0bb3-b25894c1a502-0a144c54 {
     grid-area: span 1 / span 3 / span 1 / span 3;
+  }
+}
+
+.custom-layout div:nth-child(5) {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .custom-layout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding-top: 12px;
+  }
+
+  .custom-layout div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .custom-layout div:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .custom-layout div:nth-child(3) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .custom-layout div:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .custom-layout div:nth-child(5) {
+    grid-area: 1 / 3 / 3 / 5;
+    max-width: 100%;
+  }
+  .custom-layout div:nth-child(6) {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .custom-layout div:nth-child(7) {
+    grid-area: 2 / 5 / 3 / 6;
+  }
+  .custom-layout div:nth-child(8) {
+    grid-area: 1 / 6 / 2 / 7;
+  }
+  .custom-layout div:nth-child(9) {
+    grid-area: 2 / 6 / 3 / 7;
   }
 }
