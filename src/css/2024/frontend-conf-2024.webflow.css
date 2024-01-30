@@ -3633,6 +3633,11 @@ blockquote {
   height: auto;
 }
 
+.hero-section-image-container .hero-image._04,
+.hero-section-image-container .hero-image._02 {
+  border-radius: 50%;
+}
+
 .attendee figcaption {
   font-weight: 800;
   font-size: 1.25rem;
