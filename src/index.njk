@@ -1859,10 +1859,20 @@ layout: layouts/2024.njk
       "yearbook style" message if they want to.
     </p>
     <div class="w-layout-grid grid-5-col">
+      {% set attendeesWithPath = [] %}
+      {% set attendeesWithoutPath = [] %}
       {% for attendee in attendees %}
+        {% if attendee.path %}
+          {% set _dummy = attendeesWithPath.push(attendee) %}
+        {% else %}
+          {% set _dummy = attendeesWithoutPath.push(attendee) %}
+        {% endif %}
+      {% endfor %}
+
+      {% for attendee in attendeesWithPath %}
       <figure class="attendee">
         <img
-          src="img/2024/attendees/{% if attendee.path %}{{attendee.path}}.webp{% else %}no-image.svg{% endif %}"
+          src="img/2024/attendees/{{attendee.path}}.webp"
           alt="Photo of {{attendee.name}}"
           height="200"
           width="200"
@@ -1873,6 +1883,18 @@ layout: layouts/2024.njk
         <p>{{ attendee.quote}}</p>
         {% endif %}
       </figure>
+      {% endfor %}
+
+    </div>
+
+    <div class="w-layout-grid grid-5-col names">
+      {% for attendee in attendeesWithoutPath %}
+      <article class="attendee">
+        <p class="figcaption">{{attendee.name}}</p>
+        {% if attendee.quote %}
+        <p>{{ attendee.quote}}</p>
+        {% endif %}
+      </article>
       {% endfor %}
     </div>
   </div>

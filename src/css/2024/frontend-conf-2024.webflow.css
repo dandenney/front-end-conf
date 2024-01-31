@@ -3384,6 +3384,10 @@ blockquote {
   margin-top: 100px;
 }
 
+.grid-5-col.names {
+  margin-top: 32px;
+}
+
 .white-box {
   z-index: 1;
   width: 100%;
@@ -3638,7 +3642,8 @@ blockquote {
   border-radius: 50%;
 }
 
-.attendee figcaption {
+.attendee figcaption,
+.attendee .figcaption {
   font-weight: 800;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
