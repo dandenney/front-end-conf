@@ -1858,7 +1858,7 @@ layout: layouts/2024.njk
       Some of the people you'll get to meet! We've asked attendees to share a
       "yearbook style" message if they want to.
     </p>
-    <div class="w-layout-grid grid-5-col">
+    <div class="w-layout-grid grid-4-col">
       {% set attendeesWithPath = [] %}
       {% set attendeesWithoutPath = [] %}
       {% for attendee in attendees %}
@@ -1887,7 +1887,7 @@ layout: layouts/2024.njk
 
     </div>
 
-    <div class="w-layout-grid grid-5-col names">
+    <div class="w-layout-grid grid-4-col names">
       {% for attendee in attendeesWithoutPath %}
       <article class="attendee">
         <p class="figcaption">{{attendee.name}}</p>

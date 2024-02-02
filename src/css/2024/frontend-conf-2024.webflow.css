@@ -3376,6 +3376,14 @@ blockquote {
   margin-top: 100px;
 }
 
+.grid-4-col {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 100px;
+}
+
 .grid-5-col {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -3384,7 +3392,7 @@ blockquote {
   margin-top: 100px;
 }
 
-.grid-5-col.names {
+.grid-4-col.names {
   margin-top: 32px;
 }
 
