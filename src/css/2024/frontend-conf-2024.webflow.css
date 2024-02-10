@@ -1183,6 +1183,10 @@ html {
   padding: 10px 16px;
 }
 
+.grid-4-col {
+  grid-template-columns: 1fr;
+}
+
 @media screen and (max-width: 767px) {
   .w-commerce-commercelayoutcontainer {
     flex-direction: column;
@@ -3380,7 +3384,7 @@ blockquote {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 100px;
 }
 
@@ -3631,7 +3635,11 @@ blockquote {
 }
 
 .attendee {
-  background-color: #981a1e;
+  background-color: #ffc64a;
+  background-image: url("/img/2024/bgPattern-dots-yellow.png");
+  background-position: center -4px;
+  background-size: 200px auto;
+  border: 0.5rem solid #ffffff;
   border-radius: 1rem;
   color: #f4e9dd;
   padding: 1rem;
@@ -3639,7 +3647,7 @@ blockquote {
 }
 
 .attendee img {
-  border: 4px solid #7b1518;
+  border: 6px solid #000000;
   border-radius: 50%;
   max-width: 100%;
   height: auto;
@@ -3652,10 +3660,24 @@ blockquote {
 
 .attendee figcaption,
 .attendee .figcaption {
+  color: #000;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  transform: rotate(-5deg);
+}
+
+.attendee p {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  transform: rotate(-5deg);
+}
+
+.attendee.no-quote {
+  padding-bottom: 2rem;
 }
 
 .lottie-animation {
@@ -4443,6 +4465,22 @@ blockquote {
   .green-box {
     display: block;
   }
+
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -4463,7 +4501,7 @@ blockquote {
   }
 
   .input-field {
-    background-color: #f4e9dd1f1;
+    background-color: #f4e9dd;
   }
 
   .checkout-container {
@@ -4573,8 +4611,7 @@ blockquote {
     padding: 1em 2em;
   }
 
-  .grid-6-col,
-  .grid-4-col {
+  .grid-6-col {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -4835,10 +4872,6 @@ blockquote {
   .nav-menu {
     padding-left: 1em;
     padding-right: 1em;
-  }
-
-  .grid-4-col {
-    grid-template-columns: 1fr 1fr;
   }
 
   .grid-4-col._3-row {
