@@ -2345,6 +2345,14 @@ blockquote {
   font-weight: 500;
 }
 
+.pricing-description {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 1em;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
 .event-description {
   max-width: 800px;
   margin-left: auto;
