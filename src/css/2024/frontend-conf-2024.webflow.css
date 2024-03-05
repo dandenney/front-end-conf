@@ -3688,6 +3688,17 @@ blockquote {
   padding-bottom: 2rem;
 }
 
+.attendee.no-image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.attendee.no-image p + p {
+  margin-top: 0;
+}
+
 .lottie-animation {
   width: 60px;
   height: 60px;
