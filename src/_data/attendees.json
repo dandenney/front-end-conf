@@ -368,5 +368,10 @@
     "name": "Chris Burns",
     "path": "chris-burns",
     "quote": "I pretend I can accomplish anything, because my parents never told me I couldn't."
+  },
+  {
+    "name": "Ryan Clements",
+    "path": "ryan-clements",
+    "quote": "VM175:1 Uncaught TypeError: Cannot read properties of undefined (reading 'quote')"
   }
 ]
