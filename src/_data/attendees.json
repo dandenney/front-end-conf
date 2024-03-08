@@ -373,5 +373,9 @@
     "name": "Ryan Clements",
     "path": "ryan-clements",
     "quote": "VM175:1 Uncaught TypeError: Cannot read properties of undefined (reading 'quote')"
+  },
+  {
+    "name": "Clint McKoy",
+    "path": "clint-mckoy"
   }
 ]
