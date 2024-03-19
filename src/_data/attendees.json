@@ -337,6 +337,10 @@
     "quote": "Always design with <style>, just don't make everything too !important."
   },
   {
+    "name": "Samantha Pitts",
+    "quote": "Console of Life"
+  },
+  {
     "name": "Paige Helms"
   },
   {
@@ -393,5 +397,8 @@
   {
     "name": "Kevin Hanselman",
     "path": "kevin-hanselman"
+  },
+  {
+    "name": "Patrick Fulton"
   }
 ]
