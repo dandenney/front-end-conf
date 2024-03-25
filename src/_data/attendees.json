@@ -400,5 +400,25 @@
   },
   {
     "name": "Patrick Fulton"
+  },
+  {
+    "name": "Charlton Trezevant"
+  },
+  {
+    "name": "Jose Vazquez",
+    "quote": "this should be interesting"
+  },
+  {
+    "name": "Charles Villard",
+    "path": "charles-villard",
+    "quote": "Let's enjoy the humanity in code and design before the AI overlords take over."
+  },
+  {
+    "name": "Jason Valle",
+    "quote": "I'm here to design and party and I don't know how to design"
+  },
+  {
+    "name": "Jeffrey Pereira",
+    "quote": "UI > BE"
   }
 ]
