@@ -25,7 +25,9 @@
     "quote": "Stoked to see my FrontEnd Conf Family 😬"
   },
   {
-    "name": "Yadimar Marte"
+    "name": "Alex Curtis-Slep",
+    "path": "alex-curtis-slep",
+    "quote": "CSS flexing my way back into tech!"
   },
   {
     "name": "Kirsty MacRae"
@@ -443,5 +445,9 @@
     "name": "Helen Solle Conner",
     "path": "helen-solle-conner",
     "quote": "Dux Femina Facti"
+  },
+  {
+    "name": "Ryan Smith",
+    "quote": "Looking forward to more rooftop vibes!"
   }
 ]
