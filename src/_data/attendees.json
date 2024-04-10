@@ -448,5 +448,10 @@
   },
   {
     "name": "Jennifer Calderone"
+  },
+  {
+    "name": "Justin Linn",
+    "path": "justin-linn",
+    "quote": "Think atomically, design molecularly, and build organisms. Great interfaces start small."
   }
 ]
