@@ -453,5 +453,13 @@
     "name": "Justin Linn",
     "path": "justin-linn",
     "quote": "Think atomically, design molecularly, and build organisms. Great interfaces start small."
+  },
+  {
+    "name": "Marcus Burnette",
+    "path": "marcus-burnette",
+    "quote": "All my friends are plugins."
+  },
+  {
+    "name": "Matt Smiley"
   }
 ]
