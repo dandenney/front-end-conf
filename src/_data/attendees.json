@@ -107,10 +107,6 @@
     "quote": "Life is a lot like debugging code—sometimes you just have to embrace the errors and keep on compiling your journey to success."
   },
   {
-    "name": "Jeffrey Cherewaty",
-    "path": "jeffrey-cherewaty"
-  },
-  {
     "name": "Lin Jackson",
     "path": "lin-jackson"
   },
@@ -473,5 +469,9 @@
   },
   {
     "name": "Clavel Macias"
+  },
+  {
+    "name": "Mathieu Guilbault",
+    "path": "mathieu-guilbault"
   }
 ]
