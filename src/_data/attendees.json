@@ -38,7 +38,7 @@
     "quote": "Love all, trust a few, don’t worry about the CSS — I’ll fix it later"
   },
   {
-    "name": "Dylan Almonte",
+    "name": "Dylan Almonte"
   },
   {
     "name": "Gene Crawford",
@@ -478,5 +478,10 @@
     "name": "Liz Tiller",
     "path": "liz-tiller",
     "quote": "Can't wait to see everyone again!"
+  },
+  {
+    "name": "Peter Drysdale",
+    "path": "peter-drysdale",
+    "quote": "Up front?"
   }
 ]
